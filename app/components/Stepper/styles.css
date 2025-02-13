@@ -20,95 +20,47 @@
 }
 
 .position-bar-0 {
-    left: 56px;
+    left: 46px;
 }
 
 .position-bar-1 {
-    left: 113px;
+    left: 93px;
 }
 
 .position-bar-2 {
-    left: 170px;
+    left: 141px;
 }
 
 .position-bar-3 {
-    left: 227px;
+    left: 189px;
 }
 
 .position-bar-4 {
-    left: 284px;
+    left: 237px;
 }
 .position-bar-5 {
-    left:341px;
+    left: 284px;
 }
 
 .text-bar-0 {
-    left: 55px;
+    left: 45px;
 }
 
 .text-bar-1 {
-    left: 112px;
+    left: 92px;
 }
 
 .text-bar-2 {
-    left: 169px;
+    left: 140px;
 }
 
 .text-bar-3 {
-    left: 226px;
+    left: 188px;
 }
 
 .text-bar-4 {
-    left: 283px;
+    left: 236px;
 }
 .text-bar-5 {
-    left: 340px;
-}
-
-@media screen and (max-width: 40em) {
-    .position-bar-0 {
-        left: 42px;
-    }
-    
-    .position-bar-1 {
-        left: 87px;
-    }
-    
-    .position-bar-2 {
-        left: 131px;
-    }
-    
-    .position-bar-3 {
-        left: 175px;
-    }
-    
-    .position-bar-4 {
-        left: 219px;
-    }
-    .position-bar-5 {
-        left: 264px;
-    }
-    
-    .text-bar-0 {
-        left: 41px;
-    }
-    
-    .text-bar-1 {
-        left: 86px;
-    }
-    
-    .text-bar-2 {
-        left: 130px;
-    }
-    
-    .text-bar-3 {
-        left: 174px;
-    }
-    
-    .text-bar-4 {
-        left: 218px;
-    }
-    .text-bar-5 {
-        left: 263px;
-    }
+    left: 283px;
 }
