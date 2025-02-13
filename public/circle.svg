@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1020.317" height="1019.89" viewBox="0 0 1020.317 1019.89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_2260" data-name="Rettangolo 2260" width="768.317" height="1019.89" fill="#b1b4ce"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rettangolo_2257" data-name="Rettangolo 2257" width="515.976" height="515.976" transform="translate(0 251.957)" fill="#b1b4ce"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rettangolo_2258" data-name="Rettangolo 2258" width="491.446" height="1019.89" transform="translate(276.871)" fill="#b1b4ce"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_2596" data-name="Raggruppa 2596" transform="translate(3941 -2758)">
+    <g id="Raggruppa_2584" data-name="Raggruppa 2584" transform="translate(-3172.683 3777.89) rotate(180)" opacity="0.396">
+      <g id="Raggruppa_2583" data-name="Raggruppa 2583" clip-path="url(#clip-path)">
+        <g id="Raggruppa_2582" data-name="Raggruppa 2582">
+          <g id="Raggruppa_2581" data-name="Raggruppa 2581" clip-path="url(#clip-path)">
+            <g id="Raggruppa_2577" data-name="Raggruppa 2577" opacity="0.33">
+              <g id="Raggruppa_2576" data-name="Raggruppa 2576">
+                <g id="Raggruppa_2575" data-name="Raggruppa 2575" clip-path="url(#clip-path-3)">
+                  <path id="Tracciato_975" data-name="Tracciato 975" d="M515.976,509.945c0,142.483-115.505,257.988-257.988,257.988S0,652.428,0,509.945,115.5,251.957,257.988,251.957,515.976,367.462,515.976,509.945" fill="#b1b4ce"/>
+                </g>
+              </g>
+            </g>
+            <g id="Raggruppa_2580" data-name="Raggruppa 2580" opacity="0.33">
+              <g id="Raggruppa_2579" data-name="Raggruppa 2579">
+                <g id="Raggruppa_2578" data-name="Raggruppa 2578" clip-path="url(#clip-path-4)">
+                  <path id="Tracciato_976" data-name="Tracciato 976" d="M276.871,0V209.3c157.344,9.781,282.367,140.876,282.367,300.642S434.215,800.807,276.871,810.588v209.3c272.678-9.973,491.446-234.873,491.446-509.946S549.549,9.972,276.871,0" fill="#b1b4ce"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Raggruppa_2583-2" data-name="Raggruppa 2583" transform="translate(-3689 2758)" opacity="0.402" clip-path="url(#clip-path)">
+      <g id="Raggruppa_2582-2" data-name="Raggruppa 2582">
+        <g id="Raggruppa_2581-2" data-name="Raggruppa 2581" clip-path="url(#clip-path)">
+          <g id="Raggruppa_2580-2" data-name="Raggruppa 2580" opacity="0.33">
+            <g id="Raggruppa_2579-2" data-name="Raggruppa 2579">
+              <g id="Raggruppa_2578-2" data-name="Raggruppa 2578" clip-path="url(#clip-path-4)">
+                <path id="Tracciato_976-2" data-name="Tracciato 976" d="M276.871,0V209.3c157.344,9.781,282.367,140.876,282.367,300.642S434.215,800.807,276.871,810.588v209.3c272.678-9.973,491.446-234.873,491.446-509.946S549.549,9.972,276.871,0" fill="#b1b4ce"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

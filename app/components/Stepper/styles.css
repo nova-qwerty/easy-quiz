@@ -1,0 +1,114 @@
+.bg-bar-color-active {
+    background-color: #9EA5C4;
+}
+
+.text-bar-color-active {
+    color: #9EA5C4;
+}
+
+.bg-bar-color {
+    background-color: #ffffff;
+}
+
+.margin-text {
+    margin-top: 4.5rem;
+}
+
+.position-bar {
+    position: absolute;
+    top: 5px;
+}
+
+.position-bar-0 {
+    left: 56px;
+}
+
+.position-bar-1 {
+    left: 113px;
+}
+
+.position-bar-2 {
+    left: 170px;
+}
+
+.position-bar-3 {
+    left: 227px;
+}
+
+.position-bar-4 {
+    left: 284px;
+}
+.position-bar-5 {
+    left:341px;
+}
+
+.text-bar-0 {
+    left: 55px;
+}
+
+.text-bar-1 {
+    left: 112px;
+}
+
+.text-bar-2 {
+    left: 169px;
+}
+
+.text-bar-3 {
+    left: 226px;
+}
+
+.text-bar-4 {
+    left: 283px;
+}
+.text-bar-5 {
+    left: 340px;
+}
+
+@media screen and (max-width: 40em) {
+    .position-bar-0 {
+        left: 42px;
+    }
+    
+    .position-bar-1 {
+        left: 87px;
+    }
+    
+    .position-bar-2 {
+        left: 131px;
+    }
+    
+    .position-bar-3 {
+        left: 175px;
+    }
+    
+    .position-bar-4 {
+        left: 219px;
+    }
+    .position-bar-5 {
+        left: 264px;
+    }
+    
+    .text-bar-0 {
+        left: 41px;
+    }
+    
+    .text-bar-1 {
+        left: 86px;
+    }
+    
+    .text-bar-2 {
+        left: 130px;
+    }
+    
+    .text-bar-3 {
+        left: 174px;
+    }
+    
+    .text-bar-4 {
+        left: 218px;
+    }
+    .text-bar-5 {
+        left: 263px;
+    }
+}
