@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 import "./styles.css";
 
 interface StepperProps {
@@ -53,27 +54,33 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         </div>
       </div>
 
-      <h2 className="text-lg font-semibold text-center margin-text">{steps[currentStep]}</h2>
+      <h2 className="text-lg font-semibold text-center margin-text w-full">{steps[currentStep]}</h2>
 
-      <div className="flex gap-4">
-        <button
-          onClick={handlePrevious}
-          disabled={currentStep === 0}
-          className={`px-4 py-2 rounded-md ${
-            currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
-          } text-white`}
-        >
-          Indietro
-        </button>
-        <button
-          onClick={handleNext}
-          disabled={currentStep === steps.length - 1}
-          className={`px-4 py-2 rounded-md ${
-            currentStep === steps.length - 1 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
-          } text-white`}
-        >
-          Continua
-        </button>
+      <div className="flex justify-between w-full position-button p-6">
+        <div>
+          <button
+            onClick={handlePrevious}
+            style={{ display: currentStep === 0 ? "none" : "" }}
+            className={`rounded-md previous-button ${
+              currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+            } text-white`}
+          >
+            <Image className="rotate-image" src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+            INDIETRO
+          </button>
+        </div>
+        <div>
+          <button
+            onClick={handleNext}
+            style={{ display: currentStep === steps.length - 1 ? "none" : "" }}
+            className={`rounded-md next-button ${
+              currentStep === steps.length - 1 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+            } text-white`}
+          >
+            CONTINUA
+            <Image src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+          </button>
+        </div>
       </div>
     </div>
   );

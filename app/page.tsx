@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Stepper from './components/Stepper/Stepper';
+import Footer from './components/Footer/Footer';
 
 const steps = [
   "Qual'è il sottotono della tua pelle?",
@@ -18,11 +19,12 @@ const Home: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <Header />
       <main className="p-4">
         <Stepper steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />
       </main>
+      <Footer />
     </div>
   );
 };

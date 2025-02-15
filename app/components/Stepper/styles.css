@@ -1,3 +1,37 @@
+.position-button {
+    position: absolute;
+    bottom: 13rem;
+    width: 100%;
+}
+
+.next-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+}
+
+.previous-button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+}
+
+.next-button:hover,
+.previous-button:hover {
+    background: transparent;
+    border: none;
+}
+
+.rotate-image {
+    transform: rotate(180deg)
+}
+
 .bg-bar-color-active {
     background-color: #9EA5C4;
 }
