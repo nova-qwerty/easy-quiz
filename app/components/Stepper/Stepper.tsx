@@ -2,8 +2,13 @@ import React from "react";
 import Image from "next/image"
 import "./styles.css";
 
+interface Step {
+  question: string,
+  type: string,
+  replies?: string[]
+}
 interface StepperProps {
-  steps: string[];
+  steps: Step[];
   currentStep: number;
   setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -54,7 +59,23 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         </div>
       </div>
 
-      <h2 className="text-lg font-semibold text-center margin-text w-full">{steps[currentStep]}</h2>
+      <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
+      <div className={steps[currentStep].type == "GRID_IMAGE" ? "grid grid-cols-2 gap-4" : "flex flex-col gap-2 w-full"}>
+        {steps[currentStep].replies?.map((option, index) => (
+          <button
+            key={index}
+            className={`
+              border rounded-lg w-full flex flex-col items-center hover:shadow-lg transition-all 
+              ${steps[currentStep].type == "GRID_IMAGE_HORIZONTAL" ? "card-height-double" : 
+                steps[currentStep].type == "GRID_IMAGE_VERTICAL" ? "card-height-triple" : "card-height-vertical"
+              }`
+            }
+          >
+            <span className="mt-2 font-medium">{option}</span>
+            <div className="w-full h-32 bg-cover bg-center rounded-md" style={{ backgroundImage: `url(/logo-giulietta.svg)` }}></div>
+          </button>
+        ))}
+      </div>
 
       <div className="flex justify-between w-full position-button p-6">
         <div>

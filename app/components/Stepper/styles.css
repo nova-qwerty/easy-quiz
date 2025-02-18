@@ -98,3 +98,16 @@
 .text-bar-5 {
     left: 283px;
 }
+
+.card-height-vertical {
+    height: 250px;
+    width: 150px;
+}
+
+.card-height-double {
+    height: 75px;
+}
+
+.card-height-triple {
+    height: 130px;
+}
