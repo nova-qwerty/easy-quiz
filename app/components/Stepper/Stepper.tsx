@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image"
 import "./styles.css";
+import StepperImage from "./StepperImage";
+import StepperImageHorizontal from "./StepperImageHorizontal";
+import StepperImageVertical from "./StepperImageVertical";
+import StepperFormContact from "./StepperFormContact";
+import StepperFinal from "./StepperFinal";
 
 interface Step {
   question: string,
@@ -15,7 +20,7 @@ interface StepperProps {
 
 const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep }) => {
   const handleNext = () => {
-    if (currentStep < steps.length - 1) {
+    if (currentStep < steps.length) {
       setCurrentStep((prev) => prev + 1);
     }
   };
@@ -59,50 +64,51 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         </div>
       </div>
 
-      <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
-      <div className={steps[currentStep].type == "GRID_IMAGE" ? "grid grid-cols-2 gap-4" : "flex flex-col gap-2 w-full"}>
-        {steps[currentStep].replies?.map((option, index) => (
-          <button
-            key={index}
-            className={`
-              border rounded-lg w-full flex flex-col items-center hover:shadow-lg transition-all 
-              ${steps[currentStep].type == "GRID_IMAGE_HORIZONTAL" ? "card-height-double" : 
-                steps[currentStep].type == "GRID_IMAGE_VERTICAL" ? "card-height-triple" : "card-height-vertical"
-              }`
-            }
-          >
-            <span className="mt-2 font-medium">{option}</span>
-            <div className="w-full h-32 bg-cover bg-center rounded-md" style={{ backgroundImage: `url(/logo-giulietta.svg)` }}></div>
-          </button>
-        ))}
-      </div>
-
-      <div className="flex justify-between w-full position-button p-6">
-        <div>
-          <button
-            onClick={handlePrevious}
-            style={{ display: currentStep === 0 ? "none" : "" }}
-            className={`rounded-md previous-button ${
-              currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
-            } text-white`}
-          >
-            <Image className="rotate-image" src="/arrow.svg" alt="Next arrow" width={10} height={10} />
-            INDIETRO
-          </button>
-        </div>
-        <div>
-          <button
-            onClick={handleNext}
-            style={{ display: currentStep === steps.length - 1 ? "none" : "" }}
-            className={`rounded-md next-button ${
-              currentStep === steps.length - 1 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
-            } text-white`}
-          >
-            CONTINUA
-            <Image src="/arrow.svg" alt="Next arrow" width={10} height={10} />
-          </button>
-        </div>
-      </div>
+      {
+              steps[currentStep]?.type === "GRID_IMAGE" 
+          ? (<StepperImage steps={steps} currentStep={currentStep} />) 
+            : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL" 
+          ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} />) 
+            : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL" 
+          ? (<StepperImageVertical steps={steps} currentStep={currentStep} />) 
+            : steps[currentStep]?.type === "FORM_CONTACT"
+          ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />) 
+            : steps[currentStep]?.type === "FINAL"
+          ? (<StepperFinal steps={steps} currentStep={currentStep} />) 
+            : null 
+      }
+      {
+        steps[currentStep]?.type !== "FORM_CONTACT" 
+        ? 
+          <div className="flex justify-between w-full position-button p-6">
+            <div>
+              <button
+                onClick={handlePrevious}
+                style={{ display: currentStep === 0 ? "none" : "" }}
+                className={`rounded-md previous-button ${
+                  currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+                } text-white`}
+              >
+                <Image className="rotate-image" src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+                INDIETRO
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={handleNext}
+                style={{ display: currentStep === steps.length ? "none" : "" }}
+                className={`rounded-md next-button ${
+                  currentStep === steps.length ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+                } text-white`}
+              >
+                CONTINUA
+                <Image src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+              </button>
+            </div>
+          </div> 
+        : null
+      }
+      
     </div>
   );
 };

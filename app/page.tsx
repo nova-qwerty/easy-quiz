@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Stepper from './components/Stepper/Stepper';
 import Footer from './components/Footer/Footer';
+import Thanks from './components/Thanks/Thanks';
+import Result from './components/Result/Result';
 
 const steps = [
   {
@@ -36,19 +38,20 @@ const steps = [
     replies: ["TIMIDO, RISERVATO", "ESUBERANTE, ESTROVERSO"]
   },
   {
-    question: "Hai quasi finito",
+    question: "Hai quasi finito 😊",
     type: "FORM_CONTACT"
   },
   {
-    question: "Grazie",
+    question: "Grazie!",
     type: "FINAL"
   }
 ];
 
 const Home: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
+  const [showResult, setShowResult] = useState(false);
 
-  return (
+  return currentStep !== 8 ? (
     <div className="min-h-screen relative">
       <Header />
       <main className="p-4">
@@ -56,7 +59,15 @@ const Home: React.FC = () => {
       </main>
       <Footer />
     </div>
-  );
+  ) : (
+    <div className="min-h-screen relative">
+      <Header />
+      <main className="p-4">
+        {showResult ? <Result /> : <Thanks setShowResult={setShowResult} />}
+      </main>
+      <Footer />
+    </div>
+  )
 };
 
 export default Home;
