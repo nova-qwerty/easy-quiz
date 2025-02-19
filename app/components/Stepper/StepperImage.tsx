@@ -13,8 +13,8 @@ interface StepperProps {
 
 const StepperImage: React.FC<StepperProps> = ({ steps, currentStep }) => {
   return (
-    <div>
-      <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
+    <div className="mt-4">
+      <h2 className="text-xl font-semibold text-center margin-text mb-4 w-full">{steps[currentStep].question}</h2>
       <div className="grid grid-cols-2 gap-4">
         {steps[currentStep].replies?.map((option, index) => (
           <button
