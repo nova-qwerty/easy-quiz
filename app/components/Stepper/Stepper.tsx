@@ -63,20 +63,21 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           ))}
         </div>
       </div>
-
-      {
-              steps[currentStep]?.type === "GRID_IMAGE" 
-          ? (<StepperImage steps={steps} currentStep={currentStep} />) 
-            : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL" 
-          ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} />) 
-            : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL" 
-          ? (<StepperImageVertical steps={steps} currentStep={currentStep} />) 
-            : steps[currentStep]?.type === "FORM_CONTACT"
-          ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />) 
-            : steps[currentStep]?.type === "FINAL"
-          ? (<StepperFinal steps={steps} currentStep={currentStep} />) 
-            : null 
-      }
+      <div>
+        {
+                steps[currentStep]?.type === "GRID_IMAGE" 
+            ? (<StepperImage steps={steps} currentStep={currentStep} />) 
+              : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL" 
+            ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} />) 
+              : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL" 
+            ? (<StepperImageVertical steps={steps} currentStep={currentStep} />) 
+              : steps[currentStep]?.type === "FORM_CONTACT"
+            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />) 
+              : steps[currentStep]?.type === "FINAL"
+            ? (<StepperFinal steps={steps} currentStep={currentStep} />) 
+              : null 
+        }
+      </div>
       {
         steps[currentStep]?.type !== "FORM_CONTACT" 
         ? 

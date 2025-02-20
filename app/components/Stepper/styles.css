@@ -1,6 +1,6 @@
 .position-button {
-    position: absolute;
-    bottom: 13rem;
+    /* position: absolute;
+    bottom: 13rem; */
     width: 100%;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .card-height-vertical {
-    height: 250px;
+    height: 240px;
     width: 150px;
 }
 

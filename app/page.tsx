@@ -52,19 +52,23 @@ const Home: React.FC = () => {
   const [showResult, setShowResult] = useState(false);
 
   return currentStep !== 8 ? (
-    <div className="min-h-screen relative">
-      <Header />
-      <main className="p-4">
-        <Stepper steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />
-      </main>
+    <div>
+      <div className="min-screen relative">
+        <Header />
+        <main className="p-4">
+          <Stepper steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />
+        </main>
+      </div>
       <Footer />
     </div>
   ) : (
-    <div className="min-h-screen relative">
-      <Header />
-      <main className="p-4">
-        {showResult ? <Result /> : <Thanks setShowResult={setShowResult} />}
-      </main>
+    <div>
+      <div className="min-screen-2 relative">
+        <Header />
+        <main className="p-4">
+          {showResult ? <Result /> : <Thanks setShowResult={setShowResult} />}
+        </main>
+      </div>
       <Footer />
     </div>
   )

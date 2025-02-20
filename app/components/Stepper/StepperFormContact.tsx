@@ -22,23 +22,26 @@ const StepperFormContact: React.FC<StepperProps> = ({ steps, currentStep, setCur
     <div>
       <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
       <p className="text-center mt-2">Inserisci la tua mail e scopri il risultato</p>
-      <input 
-        type="email" 
-        placeholder="Il tuo indirizzo mail" 
-        className="w-full focus:outline-none input-email mb-2"
-      />
-      
-      <button
-        onClick={handleNext}
-        className="w-full transition input-button">
-        INVIA
-      </button>
-      <div className="mt-6 text-sm">
+
+      <div className="mt-6">
+        <input 
+          type="email" 
+          placeholder="Il tuo indirizzo mail" 
+          className="w-full focus:outline-none input-email mb-2"
+        />
+        <button
+          onClick={handleNext}
+          className="w-full transition input-button">
+          INVIA
+        </button>
+      </div>
+
+      <div className="mt-6 text-[11px]">
         <p className="text-center">Preso atto dell&apos;informativa e avendola compresa</p>
 
-        <p className="w-full text-center m-0 p-0 whitespace-nowrap">Acconsento (barrando l&apos;apposita casella) al trattamento per le</p>
-        <p className="w-full text-center m-0 p-0 whitespace-nowrap">finalita indicate al punto 2 lett. A della informativa (in sintesi: per</p>
-        <p className="w-full text-center m-0 p-0 whitespace-nowrap">rispondere alla richiesta)</p>
+        <p className="w-full text-center m-0 p-0">Acconsento (barrando l&apos;apposita casella) al trattamento per le</p>
+        <p className="w-full text-center m-0 p-0">finalita indicate al punto 2 lett. A della informativa (in sintesi: per</p>
+        <p className="w-full text-center m-0 p-0">rispondere alla richiesta)</p>
 
         <div className="flex justify-center items-center space-x-8 mt-3">
           <label className="flex items-center space-x-1">
@@ -52,9 +55,9 @@ const StepperFormContact: React.FC<StepperProps> = ({ steps, currentStep, setCur
         </div>
 
         <div className="mt-3">
-          <p className="w-full text-center m-0 p-0 whitespace-nowrap">Acconsento (barrando l&apos;apposita casella) al trattamento per le</p>
-          <p className="w-full text-center m-0 p-0 whitespace-nowrap">finalita indicate al punto 2 lett. A della informativa (in sintesi</p>
-          <p className="w-full text-center m-0 p-0 whitespace-nowrap">ricezione di comunicazioni pubblicitarie/informative)</p>
+          <p className="w-full text-center m-0 p-0">Acconsento (barrando l&apos;apposita casella) al trattamento per le</p>
+          <p className="w-full text-center m-0 p-0">finalita indicate al punto 2 lett. A della informativa (in sintesi</p>
+          <p className="w-full text-center m-0 p-0">ricezione di comunicazioni pubblicitarie/informative)</p>
         </div>
 
         <div className="flex justify-center items-center space-x-8 mt-3">

@@ -53,7 +53,7 @@ const Result: React.FC = () => {
                 </button>
             </div>
 
-            <div className="mt-0 pb-24">
+            <div className="mt-0">
                 <button
                     onClick={() => setShowResult(true)}
                     className="w-full transition input-button-2 px-3 mt-4">
