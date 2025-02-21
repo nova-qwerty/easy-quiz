@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image"
 import "./styles.css";
 import StepperImage from "./StepperImage";
@@ -19,6 +19,7 @@ interface StepperProps {
 }
 
 const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep }) => {
+  const [selections, setSelections] = useState<{ [key: number]: string | null }>({});
   const handleNext = () => {
     if (currentStep < steps.length) {
       setCurrentStep((prev) => prev + 1);
@@ -30,6 +31,14 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       setCurrentStep((prev) => prev - 1);
     }
   };
+
+  const handleSelection = (stepIndex: number, value: string) => {
+    setSelections((prev) => ({
+      ...prev,
+      [stepIndex]: value,
+    }));
+  };
+
 
   return (
     <div className="flex flex-col items-center p-6 text-white rounded-xl max-w-md mx-auto">
@@ -66,13 +75,13 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       <div>
         {
                 steps[currentStep]?.type === "GRID_IMAGE" 
-            ? (<StepperImage steps={steps} currentStep={currentStep} />) 
+            ? (<StepperImage steps={steps} currentStep={currentStep} onSelect={handleSelection} />) 
               : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL" 
-            ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} />) 
+            ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} onSelect={handleSelection} />) 
               : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL" 
-            ? (<StepperImageVertical steps={steps} currentStep={currentStep} />) 
+            ? (<StepperImageVertical steps={steps} currentStep={currentStep} onSelect={handleSelection} />) 
               : steps[currentStep]?.type === "FORM_CONTACT"
-            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />) 
+            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} selections={selections} />) 
               : steps[currentStep]?.type === "FINAL"
             ? (<StepperFinal steps={steps} currentStep={currentStep} />) 
               : null 
