@@ -57,7 +57,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         <div className="w-full h-2 bg-bar-color rounded-full overflow-hidden relative">
           <div
             className="h-2 bg-bar-color-active transition-all"
-            style={{ width: `${((currentStep + 1) / 7) * 100}%` }} // Máximo en paso 6
+            style={{ width: `${((currentStep + 1) / 7) * 100}%` }}
           ></div>
         </div>
 
@@ -99,7 +99,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
                   currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
                 } text-white`}
               >
-                <Image className="rotate-image" src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+                <Image className="rotate-image" src="/Arrow.svg" alt="Next arrow" width={10} height={10} />
                 INDIETRO
               </button>
             </div>
@@ -112,7 +112,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
                 } text-white`}
               >
                 CONTINUA
-                <Image src="/arrow.svg" alt="Next arrow" width={10} height={10} />
+                <Image src="/Arrow.svg" alt="Next arrow" width={10} height={10} />
               </button>
             </div>
           </div> 
