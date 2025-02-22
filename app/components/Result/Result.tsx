@@ -48,7 +48,7 @@ const Result: React.FC = () => {
 
             <div className="mt-2">
                 <button
-                    className="w-full transition input-button px-3 mt-4">
+                    className="w-full transition input-button text-white px-3 mt-4">
                     StORE LOCATOR
                 </button>
             </div>
@@ -56,7 +56,7 @@ const Result: React.FC = () => {
             <div className="mt-0">
                 <button
                     onClick={() => setShowResult(true)}
-                    className="w-full transition input-button-2 px-3 mt-4">
+                    className="w-full transition text-white input-button-2 px-3 mt-4">
                     CONDIVIDI SUI SOCIAL
                 </button>
             </div>
