@@ -2,10 +2,15 @@ import React from "react";
 import Image from "next/image"
 import "./styles.css";
 
+interface Option {
+  answer: string,
+  logo: string,
+}
 interface Step {
+  code: string,
   question: string,
   type: string,
-  replies?: string[]
+  replies?: Option[],
 }
 interface StepperProps {
   steps: Step[];

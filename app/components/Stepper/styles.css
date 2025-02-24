@@ -40,6 +40,10 @@
     color: #9EA5C4;
 }
 
+.text-custom-center {
+    margin: auto 0;
+}
+
 .bg-bar-color {
     background-color: #ffffff;
 }
