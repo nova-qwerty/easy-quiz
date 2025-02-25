@@ -1,121 +1,134 @@
 "use client";
-import React, { useState } from 'react';
-import Header from './components/Header/Header';
-import Stepper from './components/Stepper/Stepper';
-import Footer from './components/Footer/Footer';
-import Thanks from './components/Thanks/Thanks';
-import Result from './components/Result/Result';
+import React, { useState } from "react";
+import Header from "./components/Header/Header";
+import Stepper from "./components/Stepper/Stepper";
+import Footer from "./components/Footer/Footer";
+import Thanks from "./components/Thanks/Thanks";
+import Result from "./components/Result/Result";
 
 const steps = [
   {
-    code: "STEP_1",
-    question: "Qual'è il sottotono della tua pelle?",
+    code: "SKIN_UNDERTONE",
+    question: "Qual è il sottotone della tua pelle?",
     type: "GRID_IMAGE",
     replies: [
       {
         answer: "ROSATO - BEIGE OLIVASTRO",
         logo: "Pelle_Beige_q1.svg",
+        value: "FREDDO",
       },
-     {
+      {
         answer: "PESCA - AVORIO AMBRATO",
-        logo: "Pelle_Pesca_q1.svg"
-      }
+        logo: "Pelle_Pesca_q1.svg",
+        value: "CALDO",
+      },
     ],
   },
   {
-    code: "STEP_2",
-    question: "Qual'è il colore della tue labbra?",
+    code: "LIP_COLOR",
+    question: "Qual è il colore della tue labbra?",
     type: "GRID_IMAGE",
     replies: [
-     {
-      answer:  "ROSATE",
-      logo: "Labbra_Rosate_q2.png"
-     },
-     {
-      answer:  "PESCA",
-      logo: "Labbra_Pesca_q2.png"
-     }
-      
-    ]
+      {
+        answer: "ROSATE",
+        logo: "Labbra_Rosate_q2.png",
+        value: "FREDDO",
+      },
+      {
+        answer: "PESCA",
+        logo: "Labbra_Pesca_q2.png",
+        value: "CALDO",
+      },
+    ],
   },
   {
-    code: "STEP_3",
+    code: "TANNED_SKIN",
     question: "Qual è il colore della tua pelle dopo l'abbronzatura?",
     type: "GRID_IMAGE",
     replies: [
       {
-        answer:  "ROSATRA",
-        logo: "Pelle_Arrossata_q3.png"
-       },
-       {
-        answer:  "DORATA",
-        logo: "Pelle_Dorata_q3.png"
-       }
-    ]
+        answer: "TENDENZA ARROSAMENTO",
+        logo: "Pelle_Arrossata_q3.png",
+        value: "FREDDO",
+      },
+      {
+        answer: "DORATA",
+        logo: "Pelle_Dorata_q3.png",
+        value: "CALDO",
+      },
+    ],
   },
   {
-    code: "STEP_4",
-    question: "Qual'è il colore naturale dei tuoi capelli?",
+    code: "NATURAL_HAIR_COLOR",
+    question: "Qual è il colore naturale dei tuoi capelli?",
     type: "GRID_IMAGE_HORIZONTAL",
     replies: [
       {
-        answer:  "SCURI",
-        logo: "Hair_L5_q4.png"
-       },
-       {
-        answer:  "MEDI",
-        logo: "Hair_L7_q4.png"
-       },
-       {
-        answer:  "CHIARI",
-        logo: "Hair_L9_q4.png"
-       }
-    ]
+        answer: "SCURI (livelli da 1 a 5)",
+        logo: "Hair_L5_q4.png",
+        value: "SCURO",
+      },
+      {
+        answer: "MEDI (livelli da 6 a 7)",
+        logo: "Hair_L7_q4.png",
+        value: "MEDIO",
+      },
+      {
+        answer: "CHIARI (livelli da 8 a 11)",
+        logo: "Hair_L9_q4.png",
+        value: "CHIARO",
+      },
+    ],
   },
   {
-    code: "STEP_5",
+    code: "EYEBROW_COLOR",
     question: "Qual è il colore delle tue soppracciglia?",
     type: "GRID_IMAGE_HORIZONTAL",
     replies: [
       {
-        answer:  "SCURI",
-        logo: "Eyebrown_L3_q5.png"
-       },
-       {
-        answer:  "MEDI",
-        logo: "Eyebrown_L6_q5.png"
-       },
-       {
-        answer:  "CHIARI",
-        logo: "Eyebrown_L8_q5.png"
-       }
-    ]
+        answer: "SCURI (livelli da 1 a 5)",
+        logo: "Hair_L5_q4.png",
+        value: "SCURO",
+      },
+      {
+        answer: "MEDI (livelli da 6 a 7)",
+        logo: "Hair_L7_q4.png",
+        value: "MEDIO",
+      },
+      {
+        answer: "CHIARI (livelli da 8 a 11)",
+        logo: "Hair_L9_q4.png",
+        value: "CHIARO",
+      },
+    ],
   },
   {
-    code: "STEP_6",
+    code: "PERSONALITY",
     question: "Com'è il tuo carattere?",
     type: "GRID_IMAGE_VERTICAL",
     replies: [
       {
-        answer:  "TIMIDO, RISERVATO",
-        logo: ""
-       },
-       {
-        answer:  "ESUBERANTE, ESTROVERSO",
-        logo: ""
-       },
-    ]
+        answer: "TIMIDO, RISERVATO",
+        logo: "",
+        value: "TIMIDO",
+      },
+      {
+        answer: "ESUBERANTE, ESTROVERSO",
+        logo: "",
+        value: "ESTROVERSO",
+      },
+    ],
   },
   {
     code: "STEP_7",
     question: "Hai quasi finito 😊",
-    type: "FORM_CONTACT"
+    type: "FORM_CONTACT",
   },
   {
     code: "STEP_8",
     question: "Grazie!",
-    type: "FINAL"
-  }
+    type: "FINAL",
+  },
 ];
 
 const Home: React.FC = () => {
@@ -127,7 +140,11 @@ const Home: React.FC = () => {
       <div className="min-screen relative">
         <Header />
         <main className="p-4">
-          <Stepper steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} />
+          <Stepper
+            steps={steps}
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep}
+          />
         </main>
       </div>
       <Footer />
@@ -142,7 +159,7 @@ const Home: React.FC = () => {
       </div>
       <Footer />
     </div>
-  )
+  );
 };
 
 export default Home;

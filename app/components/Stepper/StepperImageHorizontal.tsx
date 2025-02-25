@@ -4,6 +4,7 @@ import "./styles.css";
 interface Option {
   answer: string,
   logo: string,
+  value:string
 }
 interface Step {
   code: string,
@@ -24,9 +25,9 @@ const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: nu
         {steps[currentStep].replies?.map((option, index) => (
           <button
             key={index}
-            onClick={() => onSelect(currentStep, option.answer)}
+            onClick={() => onSelect(currentStep, option.value)}
             style={{ backgroundImage: `url(/${option.logo})` }}
-            className={`border rounded-lg w-full flex flex-col items-center hover:shadow-lg transition-all card-height-double ${selectedOption === option.answer ? "bg-gray-500 text-white" : ""}`}
+            className={`border rounded-lg w-full flex flex-col items-center hover:shadow-lg transition-all card-height-double ${selectedOption === option.value ? "bg-gray-500 text-white" : ""}`}
           >
             <span className="mt-2 font-medium text-custom-center">{option.answer}</span>
           </button>

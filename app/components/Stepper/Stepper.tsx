@@ -10,6 +10,7 @@ import StepperFinal from "./StepperFinal";
 interface Option {
   answer: string,
   logo: string,
+  value: string
 }
 interface Step {
   code: string,
@@ -40,7 +41,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
   const handleSelection = (stepIndex: number, value: string) => {
     setSelections((prev) => ({
       ...prev,
-      [stepIndex]: value, // Guarda la selección del paso actual
+      [stepIndex]: value,
     }));
   };
 
