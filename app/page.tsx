@@ -110,7 +110,7 @@ const steps = [
       {
         answer: "TIMIDO, RISERVATO",
         logo: "",
-        value: "TIMIDO",
+        value: "INTROVERSO",
       },
       {
         answer: "ESUBERANTE, ESTROVERSO",
