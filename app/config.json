@@ -1,0 +1,172 @@
+{
+    "logoUrl": "",
+    "titleImgUrl": "",
+    "backgroundColor": "",
+    "backgroundImage": "",
+    "scrollColor": "",
+    "steps": [
+        {
+            "code": "STEP_1",
+            "title": {
+                "it": "Qual è il sottotone della tua pelle?",
+                "en": "Qual è il sottotone della tua pelle?",
+                "fr": "Qual è il sottotone della tua pelle?",
+                "es": "Qual è il sottotone della tua pelle?"
+            },
+            "options": {
+                "type": "GRID_IMAGE",
+                "replies": [
+                    {
+                        "code": "ROSATO_BEIGE_OLIVASTRO",
+                        "text": {
+                            "it": "ROSATO - BEIGE OLIVASTRO",
+                            "en": "ROSATO - BEIGE OLIVASTRO",
+                            "fr": "ROSATO - BEIGE OLIVASTRO",
+                            "es": "ROSATO - BEIGE OLIVASTRO"
+                        },
+                        "imageUrl": ""
+                    },
+                    {
+                        "code": "PESCA_AVORIO_AMBRATO",
+                        "text": {
+                            "it": "PESCA - AVORIO AMBRATO",
+                            "en": "PESCA - AVORIO AMBRATO",
+                            "fr": "PESCA - AVORIO AMBRATO",
+                            "es": "PESCA - AVORIO AMBRATO"
+                        },
+                        "imageUrl": ""
+                    }
+                ]
+            }
+        },
+        {
+            "title": {
+                "it": "Qual è il sottotone della tua pelle?",
+                "en": "Qual è il sottotone della tua pelle?",
+                "fr": "Qual è il sottotone della tua pelle?",
+                "es": "Qual è il sottotone della tua pelle?"
+            },
+            "question": {
+                "text": {
+                    "it": "",
+                    "en": "",
+                    "fr": "",
+                    "es": ""
+                }
+            },
+            "options": {
+                "type": "GRID_IMAGE_HORIZONTAL",
+                "replies": [
+                    {
+                        "code": "ROSATO_BEIGE_OLIVASTRO",
+                        "text": {
+                            "it": "",
+                            "en": "",
+                            "fr": "Qual è il sottotone della tua pelle?",
+                            "es": ""
+                        },
+                        "imageUrl": ""
+                    },
+                    {
+                        "code": "PESCA_AVORIO_AMBRATO",
+                        "text": {
+                            "it": "",
+                            "en": "",
+                            "fr": "Qual è il sottotone della tua pelle?",
+                            "es": ""
+                        },
+                        "imageUrl": ""
+                    }
+                ]
+            }
+        }
+    ],
+    "final-steps": [
+        {
+            "code": "FORM_CONTACT",
+            "title": {
+                "it": "Hai quasi finito",
+                "en": "Hai quasi finito",
+                "fr": "Hai quasi finito",
+                "es": "Hai quasi finito"
+            },
+            "subtitle": {
+                "it": "Inserisci la tua email e scopri il risultato",
+                "en": "Inserisci la tua email e scopri il risultato",
+                "fr": "Inserisci la tua email e scopri il risultato",
+                "es": "Inserisci la tua email e scopri il risultato"
+            },
+            "component": {
+                "type": "FORM_CONTACT",
+                "placeholder": {
+                    "it": "Inserisci la tua email",
+                    "en": "Inserisci la tua email",
+                    "fr": "Inserisci la tua email",
+                    "es": "Inserisci la tua email"
+                }
+            }
+        },
+        {
+            "code": "THANKING",
+            "iconHeaderUrl": "",
+            "title": {
+                "it": "Qual è il sottotone della tua pelle?",
+                "en": "Qual è il sottotone della tua pelle?",
+                "fr": "Qual è il sottotone della tua pelle?",
+                "es": "Qual è il sottotone della tua pelle?"
+            },
+            "subtitle": {
+                "it": "Scegli il sottotono della tua pelle",
+                "en": "Scegli il sottotono della tua pelle",
+                "fr": "Scegli il sottotono della tua pelle",
+                "es": "Scegli il sottotono della tua pelle"
+            },
+            "buttons": [
+                {
+                    "text": {
+                        "it": "ROSATO - BEIGE OLIVASTRO",
+                        "en": "ROSATO - BEIGE OLIVASTRO",
+                        "fr": "ROSATO - BEIGE OLIVASTRO",
+                        "es": "ROSATO - BEIGE OLIVASTRO"
+                    },
+                    "link": "https://www.google.com"
+                }
+            ]
+        },
+        {
+            "code": "FINAL",
+            "iconHeaderUrl": "",
+            "title": {
+                "it": "Qual è il sottotone della tua pelle?",
+                "en": "Qual è il sottotone della tua pelle?",
+                "fr": "Qual è il sottotone della tua pelle?",
+                "es": "Qual è il sottotone della tua pelle?"
+            },
+            "subtitle": {
+                "it": "Scegli il sottotono della tua pelle",
+                "en": "Scegli il sottotono della tua pelle",
+                "fr": "Scegli il sottotono della tua pelle",
+                "es": "Scegli il sottotono della tua pelle"
+            },
+            "buttons": [
+                {
+                    "text": {
+                        "it": "ROSATO - BEIGE OLIVASTRO",
+                        "en": "ROSATO - BEIGE OLIVASTRO",
+                        "fr": "ROSATO - BEIGE OLIVASTRO",
+                        "es": "ROSATO - BEIGE OLIVASTRO"
+                    },
+                    "link": "https://www.google.com"
+                }
+            ]
+        }
+    ],
+    "footer":{
+        "text":{
+            "it": "Inserendo la tua email accetti la nostra Privacy Policy",
+            "en": "Inserendo la tua email accetti la nostra Privacy Policy",
+            "fr": "Inserendo la tua email accetti la nostra Privacy Policy",
+            "es": "Inserendo la tua email accetti la nostra Privacy Policy"
+        }
+    }
+}

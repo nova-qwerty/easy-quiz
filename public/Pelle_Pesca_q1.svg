@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="188" viewBox="0 0 125 188">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.87" y1="0.052" x2="-0.173" y2="1.219" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f5c8a7"/>
+      <stop offset="1" stop-color="#b98866"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rettangolo_2271" data-name="Rettangolo 2271" width="125" height="188" fill="url(#linear-gradient)"/>
+</svg>

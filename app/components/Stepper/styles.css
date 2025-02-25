@@ -1,3 +1,37 @@
+.position-button {
+    /* position: absolute;
+    bottom: 13rem; */
+    width: 100%;
+}
+
+.next-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+}
+
+.previous-button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+}
+
+.next-button:hover,
+.previous-button:hover {
+    background: transparent;
+    border: none;
+}
+
+.rotate-image {
+    transform: rotate(180deg)
+}
+
 .bg-bar-color-active {
     background-color: #9EA5C4;
 }
@@ -6,12 +40,12 @@
     color: #9EA5C4;
 }
 
-.bg-bar-color {
-    background-color: #ffffff;
+.text-custom-center {
+    margin: auto 0;
 }
 
-.margin-text {
-    margin-top: 4.5rem;
+.bg-bar-color {
+    background-color: #ffffff;
 }
 
 .position-bar {
@@ -63,4 +97,63 @@
 }
 .text-bar-5 {
     left: 283px;
+}
+
+.card-height-vertical {
+    height: 240px;
+    width: 150px;
+}
+
+.card-height-double {
+    height: 75px;
+}
+
+.card-height-triple {
+    height: 130px;
+}
+
+.input-email {
+    height: 48px;
+    padding: 13px 12px;
+    text-align: center;
+    background-color: #FFFFFF52;
+    color: #FFFFFF;
+}
+
+.input-email::placeholder {
+    color: #FFFFFF;
+}
+
+.input-email:focus-visible {
+    color: #FFFFFF;
+}
+
+.input-button {
+    background-color: #9EA5C4;
+    height: 48px;
+}
+
+.input-radio {
+    accent-color: #909090;
+    width: 20px;
+    height: 20px;
+}
+
+.margin-image {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-text {
+    margin-top: 36px;
+    font-size: 25px;
+}
+
+.margin-text-2 {
+    margin-top: 20px;
+}
+
+.paragraf-text-2 {
+    font-size: 18px;
 }

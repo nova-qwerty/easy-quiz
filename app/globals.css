@@ -29,3 +29,11 @@ body {
     background: var(--background) url("/circle.svg") no-repeat;
   }
 }
+
+.min-screen {
+  min-height: 70vh;
+}
+
+.min-screen-2 {
+  min-height: 85vh;
+}
