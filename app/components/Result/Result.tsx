@@ -7,7 +7,7 @@ import "./styles.css";
 const Result: NextPage = () => {
     const [showResult, setShowResult] = useState(false);
     const router = useRouter();
-    const { suggestion1, suggestion2, pairable1, pairable2 } = router.query;
+    const { suggestion1, suggestion2, pairable1, pairable2, classHair, personality } = router.query;
     console.log(suggestion1, suggestion2, pairable1, pairable2);
 
     if (showResult) {
@@ -21,6 +21,8 @@ const Result: NextPage = () => {
             <p>Suggestion 2: {suggestion2}</p>
             <p>Pairable 1: {pairable1}</p>
             <p>Pairable 2: {pairable2}</p>
+            <p>classHair: {classHair}</p>
+            <p>personality: {personality}</p>
             <div className='mt-3'>
                 <Image src="/result.svg" alt="Logo Giulietta" width={414} height={390} />
             </div>

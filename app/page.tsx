@@ -31,12 +31,12 @@ const steps = [
     replies: [
       {
         answer: "ROSATE",
-        logo: "Labbra_Rosate_q2.png",
+        logo: "Labbra_Rosate_q2.webp",
         value: "FREDDO",
       },
       {
         answer: "PESCA",
-        logo: "Labbra_Pesca_q2.png",
+        logo: "Labbra_Pesca_q2.webp",
         value: "CALDO",
       },
     ],
@@ -48,12 +48,12 @@ const steps = [
     replies: [
       {
         answer: "TENDENZA ARROSAMENTO",
-        logo: "Pelle_Arrossata_q3.png",
+        logo: "Pelle_Arrossata_q3.webp",
         value: "FREDDO",
       },
       {
         answer: "DORATA",
-        logo: "Pelle_Dorata_q3.png",
+        logo: "Pelle_Dorata_q3.webp",
         value: "CALDO",
       },
     ],
@@ -65,17 +65,17 @@ const steps = [
     replies: [
       {
         answer: "SCURI (livelli da 1 a 5)",
-        logo: "Hair_L5_q4.png",
+        logo: "Hair_L5_q4.webp",
         value: "SCURO",
       },
       {
         answer: "MEDI (livelli da 6 a 7)",
-        logo: "Hair_L7_q4.png",
+        logo: "Hair_L7_q4.webp",
         value: "MEDIO",
       },
       {
         answer: "CHIARI (livelli da 8 a 11)",
-        logo: "Hair_L9_q4.png",
+        logo: "Hair_L9_q4.webp",
         value: "CHIARO",
       },
     ],
@@ -87,17 +87,17 @@ const steps = [
     replies: [
       {
         answer: "SCURI (livelli da 1 a 5)",
-        logo: "Hair_L5_q4.png",
+        logo: "Hair_L5_q4.webp",
         value: "SCURO",
       },
       {
         answer: "MEDI (livelli da 6 a 7)",
-        logo: "Hair_L7_q4.png",
+        logo: "Hair_L7_q4.webp",
         value: "MEDIO",
       },
       {
         answer: "CHIARI (livelli da 8 a 11)",
-        logo: "Hair_L9_q4.png",
+        logo: "Hair_L9_q4.webp",
         value: "CHIARO",
       },
     ],
