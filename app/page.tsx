@@ -36,7 +36,7 @@ const steps = [
       },
       {
         answer: "PESCA",
-        logo: "Labbra_Pesca_q2.png",
+        logo: "Labbra_Pesca_q2.webp",
         value: "CALDO",
       },
     ],
