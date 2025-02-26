@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Image from "next/image"
 import "./styles.css";
 
-const Result: React.FC = () => {
+const Result: NextPage = () => {
     const [showResult, setShowResult] = useState(false);
+    const router = useRouter();
+    const { suggestion1, suggestion2, pairable1, pairable2 } = router.query;
+    console.log(suggestion1, suggestion2, pairable1, pairable2);
 
     if (showResult) {
         return <Result />; // Muestra el componente Result en lugar del actual
@@ -11,6 +16,11 @@ const Result: React.FC = () => {
 
     return (
         <div>
+            <h1>Result Page</h1>
+            <p>Suggestion 1: {suggestion1}</p>
+            <p>Suggestion 2: {suggestion2}</p>
+            <p>Pairable 1: {pairable1}</p>
+            <p>Pairable 2: {pairable2}</p>
             <div className='mt-3'>
                 <Image src="/result.svg" alt="Logo Giulietta" width={414} height={390} />
             </div>
