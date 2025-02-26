@@ -33,7 +33,7 @@ const Result: React.FC = () => {
           ECCO IL TUO RISULTATO
         </p>
         <p className="m-0 p-0 text-center text-[22px] text-[#FFFFFF]">
-          CALDO CHIARO
+          {classHair?.replace(/_/g, " ").toUpperCase()}
         </p>
       </div>
 
