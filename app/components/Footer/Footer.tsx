@@ -14,11 +14,11 @@ const Footer: React.FC = () => {
                 Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l.
             </p>
             <div className="mt-2 space-x-1">
-                <a href="#" className="n-underline hover:text-gray-300">Privacy Policy</a>
+                <a href="https://www.ilovesensus.it/privacy-policy/" target="_blank" className="n-underline hover:text-gray-300">Privacy Policy</a>
                 <span>|</span>
-                <a href="#" className="n-underline hover:text-gray-300">Cookie Policy</a>
+                <a href="https://www.ilovesensus.it/cookie-policy/" target="_blank" className="n-underline hover:text-gray-300">Cookie Policy</a>
                 <span>|</span>
-                <a href="#" className="n-underline hover:text-gray-300">Termini d&apos;uso</a>
+                <a href="https://www.ilovesensus.it/termini-uso/"  target="_blank" className="n-underline hover:text-gray-300">Termini d&apos;uso</a>
             </div>
         </footer>
     )

@@ -29,7 +29,9 @@ const StepperFinal: React.FC<StepperProps> = ({ steps, currentStep }) => {
       </div>
 
       <button
-        className="w-full transition input-button px-3 mt-4">
+        className="w-full transition input-button px-3 mt-4"
+        onClick={() => window.open("https://www.ilovesensus.it/salon-locator/", "_blank")}
+        >
         VISITA IL NOSTRO STORE LOCATOR
       </button>
       
