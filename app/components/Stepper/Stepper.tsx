@@ -64,7 +64,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
 
         <div className="w-full h-2 bg-bar-color rounded-full overflow-hidden relative">
           <div
-            className="h-2 bg-bar-color-active transition-all"
+            className="h-2 bg-bar-color-active transition-all rounded-[5px]"
             style={{ width: `${((currentStep + 1) / 7) * 100}%` }}
           ></div>
         </div>
