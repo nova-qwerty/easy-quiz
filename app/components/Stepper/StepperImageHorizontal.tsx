@@ -27,9 +27,13 @@ const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: nu
             key={index}
             onClick={() => onSelect(currentStep, option.value)}
             style={{ backgroundImage: `url(/${option.logo})` }}
-            className={`border rounded-lg w-full flex flex-col items-center hover:shadow-lg transition-all card-height-double ${selectedOption === option.value ? "bg-gray-500 text-white" : ""}`}
+            className={`border rounded-[3px] w-full hover:shadow-lg transition-all card-height-double ${selectedOption === option.value ? "bg-gray-500 text-white" : ""}`}
           >
-            <span className="mt-2 font-medium text-custom-center">{option.answer}</span>
+            <div className="flex flex-col items-center text-center  w-full">
+              {option.answer.replace(" ", "\n").split("\n").map((line, index) => (
+                <span key={index} className="block">{line}</span>
+              ))}
+            </div>
           </button>
         ))}
       </div>

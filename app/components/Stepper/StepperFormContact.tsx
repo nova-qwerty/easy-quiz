@@ -24,7 +24,6 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
   const [consent1, setConsent1] = useState<string | null>(null);
   const [consent2, setConsent2] = useState<string | null>(null);
 
-  // Validar email con regex
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setIsValidEmail(emailRegex.test(email));
@@ -48,8 +47,6 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
       responses: formattedResponses,
     };
 
-    console.log(consent1, consent2);
-
     if (consent1 == "accept" && consent2 == "accept") {
       try {
         const response = await axios.post(
@@ -66,8 +63,6 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
             setCurrentStep((prev) => prev + 1);
           }
         }
-    
-        console.log("Respuesta de la API:", response.data);
       } catch (error) {
         console.error("Error al enviar los datos:", error);
       }
