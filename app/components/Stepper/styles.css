@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
-    /* border-color: #b1b3ce; */
     font-family: "Manrope";
 }
 
@@ -39,6 +38,10 @@
 
 .bg-bar-color-active {
     background-color: #b1b4ce;
+}
+
+.bg-bar-border-active {
+    border: 2px solid white;
 }
 
 .text-bar-color-active {
@@ -151,7 +154,7 @@
 }
 
 .margin-text {
-    margin-top: 36px;
+    margin-top: 80px;
     font-size: 25px;
 }
 
