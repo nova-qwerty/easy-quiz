@@ -37,7 +37,7 @@ const ResultContent: React.FC = () => {
   }, [email]);
 
   return (
-    <div>
+    <div className="min-screen relative">
       <Header />
 
       {data ? (
@@ -45,7 +45,7 @@ const ResultContent: React.FC = () => {
           <p className="m-0 p-0 text-center text-[25px] text-[#9EA5C4]">
             ECCO IL TUO RISULTATO
           </p>
-          <p className="m-0 p-0 text-center text-[22px] text-[#FFFFFF]">
+          <p className="m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
             {data.classHair?.replace(/_/g, " ").toUpperCase()}
           </p>
 
@@ -81,13 +81,21 @@ const ResultContent: React.FC = () => {
 
           <div className="mt-6">
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              La tua palette è neutra. Puoi spaziare tra toni freddi e caldi,
-              ma i toni beige bilanciati e i castani sono particolarmente adatti a te.
+              La tua palette è neutra. Puoi spaziare tra
+            </p>
+            <p className="text-center text-[18px] text-[#FFFFFF]">
+              toni freddi e caldi, ma i toni beige
+            </p>
+            <p className="text-center text-[18px] text-[#FFFFFF]">
+              bilanciati e i castani sono
+            </p>
+            <p className="text-center text-[18px] text-[#FFFFFF]">
+              particolarmente adatti a te
             </p>
           </div>
 
           <div className="mt-6">
-            <p className="text-center text-[22px] text-[#FFFFFF]">ABBINABILI CON</p>
+            <p className="text-center font-bold text-[22px] text-[#FFFFFF]">ABBINABILI CON</p>
           </div>
 
           <div className="mt-6 relative">
@@ -120,16 +128,19 @@ const ResultContent: React.FC = () => {
             </span>
           </div>
 
-          <div className="mt-6">
+          {/* <div className="mt-6 pl-[35px] pr-[35px]">
             <p className="text-center text-[18px] text-[#FFFFFF]">
               Opta per tinte che combinano toni neutri come il beige o il naturale beige.
               Sperimenta con outfit nei toni del grigio, sabbia e rosa antico.
             </p>
-          </div>
+          </div> */}
 
           <div className="mt-6">
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              Trova il salone più vicino a te e chiedigli di Giulietta.
+              Trova il salone più vicino a te e
+            </p>
+            <p className="text-center text-[18px] text-[#FFFFFF]">
+              chiedigli di Giulietta
             </p>
           </div>
 
