@@ -145,7 +145,8 @@ const ResultContent: React.FC = () => {
           </div>
 
           <div className="mt-2 text-center">
-            <button className="w-64 transition input-button text-white px-3 mt-4">
+            <button className="w-64 transition input-button text-white px-3 mt-4"
+                onClick={() => window.open("https://www.ilovesensus.it/salon-locator/", "_blank")}>
               STORE LOCATOR
             </button>
           </div>

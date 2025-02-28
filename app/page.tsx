@@ -9,7 +9,7 @@ import Result from "./components/Result/Result";
 const steps = [
   {
     code: "SKIN_UNDERTONE",
-    question: "Qual è il sottotone della tua pelle?",
+    question: "Qual è il sottotono della tua pelle?",
     type: "GRID_IMAGE",
     replies: [
       {

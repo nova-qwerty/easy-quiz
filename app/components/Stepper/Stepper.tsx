@@ -55,7 +55,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-xl font-bold position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
+              className={`text-xs font-bold position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
             >
               |
             </span>
@@ -73,7 +73,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-sm position-bar text-bar-${index} ${index <= currentStep ? "text-white font-bold" : "text-gray-400"}`}
+              className={`text-xs font-medium position-bar text-bar-${index} ${index <= currentStep ? "text-white font-bold" : "text-gray-400"}`}
             >
               {index + 1}
             </span>
@@ -97,7 +97,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         }
       </div>
       {
-        steps[currentStep]?.type !== "FORM_CONTACT" 
+      steps[currentStep]?.type !== "FORM_CONTACT"  && steps[currentStep]?.type !== "FINAL" 
         ?
           <div className="flex justify-between w-full p-6">
             <div>
@@ -117,7 +117,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
                 onClick={handleNext}
                 disabled={isNextDisabled}
                 style={{ display: currentStep === steps.length ? "none" : "" }}
-                className={`rounded-md next-button ${isNextDisabled ? "bg-gray-500 cursor-not-allowed" : ""} text-white`}
+                className={`text-lg font-normal rounded-md next-button ${isNextDisabled ? "bg-gray-500 cursor-not-allowed" : ""} text-white`}
                 >
                 CONTINUA
                 <Image src="/Arrow.svg" alt="Next arrow" width={10} height={10} />

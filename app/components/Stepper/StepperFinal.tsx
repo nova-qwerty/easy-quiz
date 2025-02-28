@@ -20,7 +20,7 @@ interface StepperProps {
 const StepperFinal: React.FC<StepperProps> = ({ steps, currentStep }) => {
   return (
     <div>
-      <Image className="margin-image" src="/emoticon.svg" alt="Smiling face" width={100} height={100}/>
+      <Image className="margin-image" src="/Emoji.svg" alt="Smiling face" width={100} height={100}/>
       <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
 
       <div className="margin-text-2">

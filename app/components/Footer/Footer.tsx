@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="text-white text-center w-full mt-auto text-size postion-footer">
+        <footer className="text-8 text-white text-center w-full mt-auto text-size postion-footer">
             <p>© Sens.ùs — All Rights Reserved</p>
             <p className="leading-relaxed">
                 Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)

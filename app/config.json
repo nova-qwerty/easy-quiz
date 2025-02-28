@@ -8,10 +8,10 @@
         {
             "code": "STEP_1",
             "title": {
-                "it": "Qual è il sottotone della tua pelle?",
-                "en": "Qual è il sottotone della tua pelle?",
-                "fr": "Qual è il sottotone della tua pelle?",
-                "es": "Qual è il sottotone della tua pelle?"
+                "it": "Qual è il sottotono della tua pelle?",
+                "en": "Qual è il sottotono della tua pelle?",
+                "fr": "Qual è il sottotono della tua pelle?",
+                "es": "Qual è il sottotono della tua pelle?"
             },
             "options": {
                 "type": "GRID_IMAGE",
@@ -41,10 +41,10 @@
         },
         {
             "title": {
-                "it": "Qual è il sottotone della tua pelle?",
-                "en": "Qual è il sottotone della tua pelle?",
-                "fr": "Qual è il sottotone della tua pelle?",
-                "es": "Qual è il sottotone della tua pelle?"
+                "it": "Qual è il sottotono della tua pelle?",
+                "en": "Qual è il sottotono della tua pelle?",
+                "fr": "Qual è il sottotono della tua pelle?",
+                "es": "Qual è il sottotono della tua pelle?"
             },
             "question": {
                 "text": {
@@ -62,7 +62,7 @@
                         "text": {
                             "it": "",
                             "en": "",
-                            "fr": "Qual è il sottotone della tua pelle?",
+                            "fr": "Qual è il sottotono della tua pelle?",
                             "es": ""
                         },
                         "imageUrl": ""
@@ -72,7 +72,7 @@
                         "text": {
                             "it": "",
                             "en": "",
-                            "fr": "Qual è il sottotone della tua pelle?",
+                            "fr": "Qual è il sottotono della tua pelle?",
                             "es": ""
                         },
                         "imageUrl": ""
@@ -110,10 +110,10 @@
             "code": "THANKING",
             "iconHeaderUrl": "",
             "title": {
-                "it": "Qual è il sottotone della tua pelle?",
-                "en": "Qual è il sottotone della tua pelle?",
-                "fr": "Qual è il sottotone della tua pelle?",
-                "es": "Qual è il sottotone della tua pelle?"
+                "it": "Qual è il sottotono della tua pelle?",
+                "en": "Qual è il sottotono della tua pelle?",
+                "fr": "Qual è il sottotono della tua pelle?",
+                "es": "Qual è il sottotono della tua pelle?"
             },
             "subtitle": {
                 "it": "Scegli il sottotono della tua pelle",
@@ -137,10 +137,10 @@
             "code": "FINAL",
             "iconHeaderUrl": "",
             "title": {
-                "it": "Qual è il sottotone della tua pelle?",
-                "en": "Qual è il sottotone della tua pelle?",
-                "fr": "Qual è il sottotone della tua pelle?",
-                "es": "Qual è il sottotone della tua pelle?"
+                "it": "Qual è il sottotono della tua pelle?",
+                "en": "Qual è il sottotono della tua pelle?",
+                "fr": "Qual è il sottotono della tua pelle?",
+                "es": "Qual è il sottotono della tua pelle?"
             },
             "subtitle": {
                 "it": "Scegli il sottotono della tua pelle",
