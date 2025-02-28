@@ -70,14 +70,22 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         </div>
 
         <div className="absolute top-2 w-full flex justify-between px-2">
-          {steps.slice(0, 6).map((_, index) => (
-            <span
-              key={index}
-              className={`text-xs font-medium position-bar text-bar-${index} ${index <= currentStep ? "text-white font-bold" : "text-gray-400"}`}
-            >
-              {index + 1}
-            </span>
-          ))}
+          {
+            currentStep == 6 ? 
+              <span className="mr-[auto] ml-[auto] mb-[0] mt-[5px]">MANCA UN ULTIMO PASSO</span>
+            :
+              currentStep == 7 ?
+                <span className="mr-[auto] ml-[auto] mb-[0] mt-[5px]">HAI FINITO!</span>
+              :
+                steps.slice(0, 6).map((_, index) => (
+                  <span
+                    key={index}
+                    className={`text-sm position-bar text-bar-${index} ${index <= currentStep ? "text-white font-bold" : "text-gray-400"}`}
+                  >
+                    {index + 1}
+                  </span>
+                ))
+            }
         </div>
       </div>
 

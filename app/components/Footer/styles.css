@@ -2,6 +2,10 @@
     font-size: 8px;
 }
 
+.text-size-links {
+    font-size: 12px;
+}
+
 .postion-footer {
     bottom: 15px;
 }

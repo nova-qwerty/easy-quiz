@@ -28,7 +28,9 @@ const StepperImage: React.FC<StepperProps & { onSelect: (stepIndex: number, valu
             onClick={() => onSelect(currentStep, option.value)}
             className={`border rounded-[3px] border-[#b1b3ce] w-full flex flex-col items-center hover:shadow-lg transition-all card-height-vertical ${selectedOption === option.value ? "bg-[#b1b4ce] text-white border-white" : ""}`}
           >
-            <span className={`text-base mt-2 font-normal h-[48px] ${currentStep !== 0 ? "leading-[48px]" : ""}`}>{option.answer}</span>
+            <span className={`mt-2 font-medium h-[48px] ${currentStep !== 0 && option.value != "FREDDO" ? "leading-[48px]" : ""}`}>
+              {option.answer}
+            </span>
             <div className="w-[130px] h-[175px] bg-cover bg-center" style={{ backgroundImage: `url(/${option.logo})` }}></div>
           </button>
         ))}

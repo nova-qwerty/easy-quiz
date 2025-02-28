@@ -54,7 +54,8 @@ const ResultContent: React.FC = () => {
               src={`/result/${data.personality}/${data.classHair}/${data.suggestions[0]}.webp`}
               alt="Logo Sensus"
               width={1920}
-              height={300}
+              height={250}
+              className="h-[250px]"
             />
             <span className="absolute top-[1rem] left-[3rem] bg-[#b1b4ce] w-16 h-8 text-white text-[20px] text-center">
               {data.suggestions[0]?.substring(1)}
@@ -69,7 +70,8 @@ const ResultContent: React.FC = () => {
               src={`/result/${data.personality}/${data.classHair}/${data.suggestions[1]}.webp`}
               alt="Logo Sensus"
               width={1920}
-              height={300}
+              height={250}
+              className="h-[250px]"
             />
             <span className="absolute top-[1rem] left-[3rem] bg-[#b1b4ce] w-16 h-8 text-white text-[20px] text-center">
               {data.suggestions[1]?.substring(1)}
@@ -90,7 +92,7 @@ const ResultContent: React.FC = () => {
               bilanciati e i castani sono
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              particolarmente adatti a te
+              particolarmente adatti a te.
             </p>
           </div>
 
@@ -103,7 +105,8 @@ const ResultContent: React.FC = () => {
               src={`/result/${data.personality}/${data.classHair}/${data.pairable[0]}.webp`}
               alt="Logo Sensus"
               width={1920}
-              height={300}
+              height={250}
+              className="h-[250px]"
             />
             <span className="absolute top-[1rem] left-[3rem] bg-[#b1b4ce] w-16 h-8 text-white text-[20px] text-center">
               {data.pairable[0]?.substring(1)}
@@ -118,7 +121,8 @@ const ResultContent: React.FC = () => {
               src={`/result/${data.personality}/${data.classHair}/${data.pairable[1]}.webp`}
               alt="Logo Sensus"
               width={1920}
-              height={300}
+              height={250}
+              className="h-[250px]"
             />
             <span className="absolute top-[1rem] left-[3rem] bg-[#b1b4ce] w-16 h-8 text-white text-[20px] text-center">
               {data.pairable[1]?.substring(1)}

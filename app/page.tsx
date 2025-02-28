@@ -121,7 +121,7 @@ const steps = [
   },
   {
     code: "STEP_7",
-    question: "Hai quasi finito 😊",
+    question: "Hai quasi finito",
     type: "FORM_CONTACT",
   },
   {
