@@ -8,11 +8,49 @@ import Footer from "../components/Footer/Footer";
 import axios from "axios";
 
 const ResultContent: React.FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
+  const [language, setLanguage] = useState<"it" | "en">("it");
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
 
+  const translations: any = {
+    it: [
+      {
+        title: "ECCO IL TUO RISULTATO",
+        text: [
+          "La tua palette è neutra. Puoi spaziare tra",
+          "toni freddi e caldi, ma i toni beige",
+          "bilanciati e i castani sono",
+          "particolarmente adatti a te."
+        ],
+        match: "ABBINABILI CON",
+        text_final: [
+            "Trova il salone più vicino a te e",
+            "chiedigli di Giulietta"
+          ],
+        store_locator: "STORE LOCATOR",
+        share_social: "CONDIVIDI SUI SOCIAL"
+      }
+    ],
+    en: [
+      {
+        title: "HERE IS YOUR RESULT",
+        text: [
+          "Your palette is neutral. You can range between",
+          "cool and warm tones, but balanced beige",
+          "tones and browns are",
+          "particularly suitable for you."
+        ],
+        match: "MATCHABLE WITH",
+        text_final: [
+          "Find the nearest salon to you and",
+          "ask them about Giulietta"
+        ],
+        store_locator: "STORE LOCATOR",
+        share_social: "SHARE ON SOCIAL MEDIA"
+      }
+    ],
+  }
   useEffect(() => {
     const fetchData = async () => {
       if (!email) return; // Evitar ejecutar si no hay email
@@ -38,12 +76,12 @@ const ResultContent: React.FC = () => {
 
   return (
     <div className="min-screen relative">
-      <Header />
+      <Header language={language} setLanguage={setLanguage} />
 
       {data ? (
         <div className="mt-6">
           <p className="m-0 p-0 text-center text-[25px] text-[#9EA5C4]">
-            ECCO IL TUO RISULTATO
+            {translations[language][0].title}
           </p>
           <p className="m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
             {data.classHair?.replace(/_/g, " ").toUpperCase()}
@@ -83,21 +121,23 @@ const ResultContent: React.FC = () => {
 
           <div className="mt-6">
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              La tua palette è neutra. Puoi spaziare tra
+              {translations[language][0].text[0]}
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              toni freddi e caldi, ma i toni beige
+              {translations[language][0].text[1]}
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              bilanciati e i castani sono
+              {translations[language][0].text[2]}
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              particolarmente adatti a te.
+              {translations[language][0].text[3]}
             </p>
           </div>
 
           <div className="mt-6">
-            <p className="text-center font-bold text-[22px] text-[#FFFFFF]">ABBINABILI CON</p>
+            <p className="text-center font-bold text-[22px] text-[#FFFFFF]">
+              {translations[language][0].match}
+            </p>
           </div>
 
           <div className="mt-6 relative">
@@ -141,23 +181,23 @@ const ResultContent: React.FC = () => {
 
           <div className="mt-6">
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              Trova il salone più vicino a te e
+              {translations[language][0].text_final[0]}
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
-              chiedigli di Giulietta
+              {translations[language][0].text_final[1]}
             </p>
           </div>
 
           <div className="mt-2 text-center">
             <button className="w-64 transition input-button text-white px-3 mt-4"
                 onClick={() => window.open("https://www.ilovesensus.it/salon-locator/", "_blank")}>
-              STORE LOCATOR
+              {translations[language][0].store_locator}
             </button>
           </div>
 
           <div className="mt-0 mb-4 text-center">
             <button className="w-64 transition text-white input-button-2 px-3 mt-4">
-              CONDIVIDI SUI SOCIAL
+              {translations[language][0].share_social}
             </button>
           </div>
         </div>
@@ -165,7 +205,7 @@ const ResultContent: React.FC = () => {
         <p className="text-center text-white">Caricamento risultati...</p>
       )}
 
-      <Footer />
+      <Footer language={language} />
     </div>
   );
 };

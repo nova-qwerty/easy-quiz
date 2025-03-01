@@ -17,6 +17,9 @@ interface Step {
   question: string,
   type: string,
   replies?: Option[],
+  next?: string,
+  previous?: string,
+  last?: string,
 }
 interface StepperProps {
   steps: Step[];
@@ -72,10 +75,10 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         <div className="absolute top-2 w-full flex justify-between px-2">
           {
             currentStep == 6 ? 
-              <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">MANCA UN ULTIMO PASSO</span>
+              <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">{steps[6].last}</span>
             :
               currentStep == 7 ?
-                <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">HAI FINITO!</span>
+                <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">{steps[7].last}</span>
               :
                 steps.slice(0, 6).map((_, index) => (
                   <span
@@ -116,7 +119,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
                 className={`rounded-md previous-button ${currentStep === 0 ? "bg-gray-500 cursor-not-allowed" : ""} text-white`}
               >
                 <Image className="rotate-image" src="/Arrow.svg" alt="Previous arrow" width={10} height={10} />
-                INDIETRO
+                {steps[0].previous}
               </button>
             </div>
             
@@ -127,8 +130,8 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
                 style={{ display: currentStep === steps.length ? "none" : "" }}
                 className={`text-lg font-normal rounded-md next-button ${isNextDisabled ? "bg-gray-500 cursor-not-allowed" : ""} text-white`}
                 >
-                CONTINUA
-                <Image src="/Arrow.svg" alt="Next arrow" width={10} height={10} />
+                  {steps[0].next}
+                  <Image src="/Arrow.svg" alt="Next arrow" width={10} height={10} />
               </button>
             </div>
           </div>

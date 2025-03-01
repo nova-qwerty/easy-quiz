@@ -11,6 +11,8 @@ interface Step {
   question: string,
   type: string,
   replies?: Option[],
+  email_check?: any,
+  store_locator?: string,
 }
 interface StepperProps {
   steps: Step[];
@@ -24,15 +26,15 @@ const StepperFinal: React.FC<StepperProps> = ({ steps, currentStep }) => {
       <h2 className="text-xl font-semibold text-center margin-text w-full">{steps[currentStep].question}</h2>
 
       <div className="margin-text-2">
-        <p className="text-center m-0 p-0 paragraf-text-2">Controlla la tua casella di</p>
-        <p className="text-center m-0 p-0 paragraf-text-2">posta elettronica</p>
+        <p className="text-center m-0 p-0 paragraf-text-2">{steps[currentStep].email_check.text[0]}</p>
+        <p className="text-center m-0 p-0 paragraf-text-2">{steps[currentStep].email_check.text[1]}</p>
       </div>
 
       <button
         className="w-full transition input-button px-3 mt-4"
         onClick={() => window.open("https://www.ilovesensus.it/salon-locator/", "_blank")}
         >
-        VISITA IL NOSTRO STORE LOCATOR
+          {steps[currentStep].store_locator}
       </button>
       
     </div>

@@ -3,9 +3,8 @@ import React, { useState } from 'react';
 import Image from "next/image";
 import "./styles.css";
 
-const Header: React.FC = () => {
+const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en") => void }> = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("IT");
 
   return (
     <header className="text-white header-margin">
@@ -13,13 +12,13 @@ const Header: React.FC = () => {
         <Image src="/logo-sensus.svg" alt="Logo Sensus" width={135} height={47.37} />
         
         <div className="flex items-center gap-1">
-          <select
+          <select 
             value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+            onChange={(e) => setLanguage(e.target.value as "it" | "en")}
             className="bg-transparent border border-[#9EA5C4] rounded-[1px] py-1 text-white cursor-pointer focus-visible:outline-none"
           >
-            <option value="IT">IT</option>
-            <option value="EN">EN</option>
+            <option value="it">IT</option>
+            <option value="en">EN</option>
           </select>
           
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
