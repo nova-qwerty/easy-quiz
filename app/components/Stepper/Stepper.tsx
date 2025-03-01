@@ -55,7 +55,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-xs font-bold position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
+              className={`text-[2rem] leading-[2rem] position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
             >
               |
             </span>
@@ -72,15 +72,15 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         <div className="absolute top-2 w-full flex justify-between px-2">
           {
             currentStep == 6 ? 
-              <span className="mr-[auto] ml-[auto] mb-[0] mt-[5px]">MANCA UN ULTIMO PASSO</span>
+              <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">MANCA UN ULTIMO PASSO</span>
             :
               currentStep == 7 ?
-                <span className="mr-[auto] ml-[auto] mb-[0] mt-[5px]">HAI FINITO!</span>
+                <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">HAI FINITO!</span>
               :
                 steps.slice(0, 6).map((_, index) => (
                   <span
                     key={index}
-                    className={`text-sm position-bar text-bar-${index} ${index <= currentStep ? "text-white font-bold" : "text-gray-400"}`}
+                    className={`text-sm position-text text-bar-${index} ${index <= currentStep ? "text-white" : "text-gray-400"}`}
                   >
                     {index + 1}
                   </span>
@@ -107,7 +107,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       {
       steps[currentStep]?.type !== "FORM_CONTACT"  && steps[currentStep]?.type !== "FINAL" 
         ?
-          <div className="flex justify-between w-full p-6">
+          <div className="flex justify-between w-full md:w-[636px] pl-[0] pr-[0] pt-6">
             <div>
               <button
                 onClick={handlePrevious}

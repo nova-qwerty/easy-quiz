@@ -78,7 +78,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
     <div>
       <div className="flex items-center justify-center gap-4 margin-text w-full">
         <h2 className="text-xl font-semibold">{steps[currentStep].question}</h2>
-        <Image src="/emoticon.svg" alt="Smiling face" width={30} height={30}/>
+        <Image src="/Emoji.svg" alt="Smiling face" width={30} height={30}/>
       </div>
       <p className="text-center mt-2">Inserisci la tua mail e scopri il risultato</p>
 

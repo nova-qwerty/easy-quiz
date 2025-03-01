@@ -78,27 +78,32 @@
     left: 284px;
 }
 
+.position-text {
+    position: absolute;
+    top: 10px;
+}
+
 .text-bar-0 {
-    left: 45px;
+    left: 46px;
 }
 
 .text-bar-1 {
-    left: 92px;
+    left: 93px;
 }
 
 .text-bar-2 {
-    left: 140px;
+    left: 141px;
 }
 
 .text-bar-3 {
-    left: 188px;
+    left: 189px;
 }
 
 .text-bar-4 {
-    left: 236px;
+    left: 237px;
 }
 .text-bar-5 {
-    left: 283px;
+    left: 284px;
 }
 
 .card-height-vertical {

@@ -29,6 +29,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 636px) {
+  body {
+    width: 636px;
+  }
+}
+
 @media screen and (max-width: 40em) {
   body {
     background: var(--background) url("/circle.svg") no-repeat;
