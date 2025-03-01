@@ -20,7 +20,7 @@ interface StepperProps {
 
 const StepperImageVertical: React.FC<StepperProps & { onSelect: (stepIndex: number, value: string) => void, selectedOption: string | null }> = ({ steps, currentStep, onSelect, selectedOption }) => {
   return (
-    <div>
+    <div className="w-[334px]">
       <h2 className="text-xl font-semibold text-center margin-text mb-4">{steps[currentStep].question}</h2>
       <div className="flex flex-col gap-2 w-full">
         {steps[currentStep].replies?.map((option, index) => (

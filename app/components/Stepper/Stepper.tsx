@@ -50,7 +50,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
 
   return (
     <div className="flex flex-col items-center p-6 text-white rounded-xl max-w-md mx-auto">
-      <div className="w-full relative">
+      <div className="w-[334px]  relative">
         <div className="relative -top-4 w-full flex justify-between px-2">
           {steps.slice(0, 6).map((_, index) => (
             <span
