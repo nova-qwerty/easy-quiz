@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export const manrope = Manrope({
+const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"]
 });
