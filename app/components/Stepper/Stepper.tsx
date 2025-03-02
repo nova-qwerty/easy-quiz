@@ -58,7 +58,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-[2rem] leading-[2rem] position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
+              className={`text-[1.5rem] leading-[1.5rem] position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
             >
               |
             </span>
