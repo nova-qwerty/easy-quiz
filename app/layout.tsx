@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export const geistManrope = Manrope({
-  variable: "--font-geist-manrope",
+export const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"]
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistManrope.variable} antialiased relative`}
+        className={`${manrope.variable} antialiased relative`}
       >
         {children}
       </body>
