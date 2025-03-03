@@ -26,8 +26,8 @@ const Footer: React.FC<{ language: "it" | "en" }> = ({ language }) => {
         }
     }
     return (
-        <footer className="text-white text-center w-full mt-auto postion-footer">
-            <div className="text-size">
+        <footer className="text-white text-center w-full mt-auto">
+            <div className="text-[8px] font-normal">
                 <p>© Sens.ùs — All Rights Reserved</p>
                 <p className="leading-relaxed">
                     {translations[language].text[0]}
@@ -37,7 +37,7 @@ const Footer: React.FC<{ language: "it" | "en" }> = ({ language }) => {
                     {translations[language].text[2]}
                 </p>
             </div>
-            <div className="mt-2 space-x-1 text-size-links">
+            <div className="mt-2 space-x-1 text-[12px] font-medium">
                 <a href="https://www.ilovesensus.it/privacy-policy/" target="_blank" className="n-underline hover:text-gray-300">{translations[language].privacy_policy}</a>
                 <span>|</span>
                 <a href="https://www.ilovesensus.it/cookie-policy/" target="_blank" className="n-underline hover:text-gray-300">{translations[language].cookie_policy}</a>

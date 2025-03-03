@@ -20,7 +20,7 @@ interface StepperProps {
 const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: number, value: string) => void, selectedOption: string | null }> = ({ steps, currentStep, onSelect, selectedOption }) => {
   return (
     <div className="mt-4">
-      <h2 className="text-xl font-semibold text-center margin-text mb-4">{steps[currentStep].question}</h2>
+      <h2 className="text-[36px] font-normal text-center margin-text mb-4">{steps[currentStep].question}</h2>
       <div className="flex flex-col gap-2 w-full">
         {steps[currentStep].replies?.map((option, index) => (
           <button
@@ -31,7 +31,7 @@ const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: nu
           >
             <div className="flex flex-col items-center text-center  w-full">
               {option.answer.replace(" ", "\n").split("\n").map((line, index) => (
-                <span key={index} className="block">{line}</span>
+                <span key={index} className="block text-[16px] font-normal">{line}</span>
               ))}
             </div>
           </button>
