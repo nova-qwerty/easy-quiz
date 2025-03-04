@@ -57,7 +57,7 @@ const ResultContent: React.FC = () => {
 
       try {
         const response = await axios.get(
-          `https://easy-quiz-361443445667.europe-west1.run.app/get-data?email=${email}`,
+          `https://sensus-giulietta.ew.r.appspot.com/get-data?email=${email}`,
           {
             headers: {
               "Content-Type": "application/json",
