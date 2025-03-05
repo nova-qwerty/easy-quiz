@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #595D7A;
+  --background: #70708c;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #595D7A;
+    --background: #70708c;
     --foreground: #ededed;
   }
 }
@@ -33,6 +33,7 @@ body {
 @media screen and (max-width: 40em) {
   body {
     background: var(--background) url("/circle.svg") no-repeat;
+    background-position: 0 -33px;
   }
 }
 

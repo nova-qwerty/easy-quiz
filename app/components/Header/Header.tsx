@@ -15,7 +15,7 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
           <select 
             value={language}
             onChange={(e) => setLanguage(e.target.value as "it" | "en")}
-            className="bg-transparent border border-[#9EA5C4] rounded-[1px] py-1 text-white cursor-pointer focus-visible:outline-none text-center"
+            className="bg-transparent border border-[#9EA5C4] rounded-[1px] py-1 text-white cursor-pointer focus-visible:outline-none text-center w-[45px]"
           >
             <option value="it">IT</option>
             <option value="en">EN</option>

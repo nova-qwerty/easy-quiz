@@ -14,7 +14,7 @@ interface Option {
 }
 interface Step {
   code: string,
-  question: string,
+  question?: any,
   type: string,
   replies?: Option[],
   next?: string,
@@ -52,22 +52,22 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
   const isNextDisabled = stepRequiresSelection && !selections[currentStep];
 
   return (
-    <div className="flex flex-col items-center p-6 text-white rounded-xl max-w-md mx-auto">
-      <div className="w-[334px]  relative">
+    <div className="flex flex-col items-center pt-[28px] text-white rounded-xl w-[300px] mx-auto">
+      <div className="w-[300px]  relative">
         <div className="relative -top-4 w-full flex justify-between px-2">
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-[1.5rem] leading-[1.5rem] position-bar position-bar-${index} ${index <= currentStep ? "text-white" : "text-bar-color-active"}`}
+              className={`text-[1.5rem] leading-[1.5rem] position-bar position-bar-${index} text-[#b1b4ce]`}
             >
               |
             </span>
           ))}
         </div>
 
-        <div className="w-full h-2 bg-bar-color rounded-full overflow-hidden relative">
+        <div className="w-full h-2 bg-bar-color rounded-full overflow-hidden relative border border-[#b1b4ce]">
           <div
-            className="h-2 bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active"
+            className="h-2 bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active mt-[-1px]"
             style={{ width: `${((currentStep + 1) / 7) * 100}%` }}
           ></div>
         </div>
@@ -110,7 +110,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       {
       steps[currentStep]?.type !== "FORM_CONTACT"  && steps[currentStep]?.type !== "FINAL" 
         ?
-          <div className="flex justify-between w-full md:w-[636px] pl-[0] pr-[0] pt-6">
+          <div className="flex justify-between w-full md:w-[636px] pl-[0] pr-[0] pt-[45px]">
             <div>
               <button
                 onClick={handlePrevious}

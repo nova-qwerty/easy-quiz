@@ -8,7 +8,7 @@ interface Option {
 }
 interface Step {
   code: string,
-  question: string,
+  question?: string,
   type: string,
   replies?: Option[],
   email_check?: any,

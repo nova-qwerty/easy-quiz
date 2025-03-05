@@ -8,7 +8,7 @@ interface Option {
 }
 interface Step {
   code: string,
-  question: string,
+  question?: string,
   type: string,
   replies?: Option[],
 }
@@ -21,7 +21,7 @@ const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: nu
   return (
     <div className="mt-4">
       <h2 className="text-[36px] font-normal text-center margin-text mb-4">{steps[currentStep].question}</h2>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 w-full h-[249px]">
         {steps[currentStep].replies?.map((option, index) => (
           <button
             key={index}
@@ -31,7 +31,7 @@ const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: nu
           >
             <div className="flex flex-col items-center text-center  w-full">
               {option.answer.replace(" ", "\n").split("\n").map((line, index) => (
-                <span key={index} className="block text-[16px] font-normal">{line}</span>
+                <span key={index} className="block text-[15px] font-normal">{line}</span>
               ))}
             </div>
           </button>
