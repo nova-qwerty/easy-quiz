@@ -52,7 +52,7 @@
 
 .position-bar {
     position: absolute;
-    top: 6px;
+    top: 8px;
 }
 
 .position-bar-0 {
@@ -60,22 +60,22 @@
 }
 
 .position-bar-1 {
-    left: 82px;
+    left: 81px;
 }
 
 .position-bar-2 {
-    left: 125px;
+    left: 124px;
 }
 
 .position-bar-3 {
-    left: 167px;
+    left: 166px;
 }
 
 .position-bar-4 {
-    left: 210px;
+    left: 209px;
 }
 .position-bar-5 {
-    left: 253px;
+    left: 252px;
 }
 
 .position-text {
@@ -88,22 +88,22 @@
 }
 
 .text-bar-1 {
-    left: 82px;
+    left: 81px;
 }
 
 .text-bar-2 {
-    left: 125px;
+    left: 124px;
 }
 
 .text-bar-3 {
-    left: 167px;
+    left: 166px;
 }
 
 .text-bar-4 {
-    left: 210px;
+    left: 209px;
 }
 .text-bar-5 {
-    left: 253px;
+    left: 252px;
 }
 
 .card-height-vertical {

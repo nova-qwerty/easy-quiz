@@ -58,16 +58,16 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           {steps.slice(0, 6).map((_, index) => (
             <span
               key={index}
-              className={`text-[1.5rem] leading-[1.5rem] position-bar position-bar-${index} text-[#b1b4ce]`}
+              className={`text-[1.5rem] leading-[1.5rem] position-bar position-bar-${index} ${index <= currentStep ? "text-[#9092ad] z-1" : "text-[#b1b4ce]"}`}
             >
               |
             </span>
           ))}
         </div>
 
-        <div className="w-full h-2 bg-bar-color rounded-full overflow-hidden relative border border-[#b1b4ce]">
+        <div className="w-full h-[10px] bg-bar-color rounded-full overflow-hidden relative border border-[#b1b4ce]">
           <div
-            className="h-2 bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active mt-[-1px]"
+            className="h-[10px] bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active mt-[-1px]"
             style={{ width: `${((currentStep + 1) / 7) * 100}%` }}
           ></div>
         </div>
