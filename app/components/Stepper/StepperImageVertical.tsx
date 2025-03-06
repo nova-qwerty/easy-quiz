@@ -22,7 +22,7 @@ const StepperImageVertical: React.FC<StepperProps & { onSelect: (stepIndex: numb
   return (
     <div className="w-[300px]">
       <div className="flex items-center flex-col justify-center">
-        <span className="text-[25px] font-normal text-center h-[37px] mt-[80px]">{steps[currentStep].question[0]}</span>
+        <span className="text-[25px] font-normal text-center h-[37px] mt-[75px] md:mt-[80px]">{steps[currentStep].question[0]}</span>
         <span className="text-[25px] font-normal text-center mb-4">{steps[currentStep].question[1]}</span>
       </div>
       <div className="flex flex-col gap-2 w-full h-[249px]">

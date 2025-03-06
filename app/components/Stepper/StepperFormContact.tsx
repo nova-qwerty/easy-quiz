@@ -82,7 +82,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-4 margin-text w-full">
+      <div className="flex items-center justify-center gap-4 mt-[75px] md:mt-[80px] text-[25px] w-full">
         <h2 className="text-xl font-semibold">{steps[currentStep].question}</h2>
         <Image src="/Emoji.svg" alt="Smiling face" width={30} height={30}/>
       </div>

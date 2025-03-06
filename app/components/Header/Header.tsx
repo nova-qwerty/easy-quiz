@@ -15,13 +15,13 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
           <select 
             value={language}
             onChange={(e) => setLanguage(e.target.value as "it" | "en")}
-            className="bg-transparent border border-[#9EA5C4] rounded-[1px] py-1 text-white cursor-pointer focus-visible:outline-none text-center w-[45px]"
+            className="bg-transparent border border-[#9EA5C4] rounded-[1px] py-1 text-white cursor-pointer focus-visible:outline-none text-center w-[55px]"
           >
             <option value="it">IT</option>
             <option value="en">EN</option>
           </select>
           
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-0 pl-2">
             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 12h16" />

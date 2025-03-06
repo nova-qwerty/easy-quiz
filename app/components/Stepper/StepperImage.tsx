@@ -20,7 +20,7 @@ interface StepperProps {
 const StepperImage: React.FC<StepperProps & { onSelect: (stepIndex: number, value: string) => void, selectedOption: string | null }> = ({ steps, currentStep, onSelect, selectedOption }) => {
   return (
     <div className="mt-4">
-      <h2 className="text-[36px] font-normal text-center margin-text mb-4">{steps[currentStep].question}</h2>
+      <h2 className="text-[25px] font-normal text-center mt-[75px] md:mt-[80px] mb-4">{steps[currentStep].question}</h2>
       <div className="grid grid-cols-2 gap-4 h-[249px] md:w-[636px]">
         {steps[currentStep].replies?.map((option, index) => (
           <button
@@ -40,7 +40,5 @@ const StepperImage: React.FC<StepperProps & { onSelect: (stepIndex: number, valu
     </div>
   );
 };
-
-
 
 export default StepperImage;
