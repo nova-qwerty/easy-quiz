@@ -108,7 +108,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         }
       </div>
       {
-      steps[currentStep]?.type !== "FORM_CONTACT"  && steps[currentStep]?.type !== "FINAL" 
+      steps[currentStep]?.type !== "FORM_CONTACT"
         ?
           <div className="flex justify-between w-full md:w-[636px] pl-[0] pr-[0] pt-[45px]">
             <div>

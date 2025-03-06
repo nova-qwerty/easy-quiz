@@ -2,7 +2,7 @@
 import React from 'react';
 import "./styles.css";
 
-const Footer: React.FC<{ language: "it" | "en" }> = ({ language }) => {
+const Footer: React.FC<{ language: "it" | "en", marginTop?: boolean }> = ({ language, marginTop }) => {
     const translations: any = {
         it: {
             text: [
@@ -26,7 +26,7 @@ const Footer: React.FC<{ language: "it" | "en" }> = ({ language }) => {
         }
     }
     return (
-        <footer className="text-white text-center w-full mt-auto">
+        <footer className={`text-white text-center w-full mt-auto ${marginTop ? "mb-[1rem]" : ""}`}>
             <div className="text-[8px] font-normal">
                 <p>© Sens.ùs — All Rights Reserved</p>
                 <p className="leading-relaxed">

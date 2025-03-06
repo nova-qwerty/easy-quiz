@@ -195,7 +195,7 @@ const ResultContent: React.FC = () => {
             </button>
           </div>
 
-          <div className="mt-0 mb-4 text-center">
+          <div className="mt-0 mb-[2.5rem] text-center">
             <button className="w-64 transition text-white input-button-2 px-3 mt-4">
               {translations[language][0].share_social}
             </button>
@@ -205,7 +205,7 @@ const ResultContent: React.FC = () => {
         <p className="text-center text-white">Caricamento risultati...</p>
       )}
 
-      <Footer language={language} />
+      <Footer language={language} marginTop={true} />
     </div>
   );
 };
