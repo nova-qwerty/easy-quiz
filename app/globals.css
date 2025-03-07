@@ -16,9 +16,9 @@
 
 body {
   color: var(--foreground);
-  background: var(--background) url("/circle.svg") no-repeat;
-  background-position-x: center;
-  object-fit: cover;
+  background: var(--background) url("/circle.svg") no-repeat center center;
+  background-size: cover;
+  background-position: 365px -435px;
   font-family: Arial, Helvetica, sans-serif;
   width: 414px;
   margin: 0 auto;
