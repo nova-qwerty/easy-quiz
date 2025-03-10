@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { backgroundImage, backgroundColor } from "./config.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,6 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>{`
+          :root {
+            --logo-url: url(${backgroundImage});
+            --background: ${backgroundColor};
+          }
+        `}</style>
+      </head>
       <body
         className={`${manrope.variable} antialiased relative`}
       >

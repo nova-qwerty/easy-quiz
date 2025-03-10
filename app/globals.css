@@ -2,21 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #70708c;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #70708c;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background) url("/circle.svg") no-repeat center center;
+  background: var(--background) var(--logo-url) no-repeat center center;
   background-size: cover;
   background-position: 365px -435px;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +26,7 @@ body {
 
 @media screen and (max-width: 40em) {
   body {
-    background: var(--background) url("/circle.svg") no-repeat;
+    background: var(--background) var(--logo-url) no-repeat;
     background-position: 0 -33px;
   }
 

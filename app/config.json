@@ -1,172 +1,352 @@
 {
-    "logoUrl": "",
-    "titleImgUrl": "",
-    "backgroundColor": "",
-    "backgroundImage": "",
-    "scrollColor": "",
-    "steps": [
-        {
-            "code": "STEP_1",
-            "title": {
-                "it": "Qual è il sottotono della tua pelle?",
-                "en": "Qual è il sottotono della tua pelle?",
-                "fr": "Qual è il sottotono della tua pelle?",
-                "es": "Qual è il sottotono della tua pelle?"
-            },
-            "options": {
-                "type": "GRID_IMAGE",
-                "replies": [
-                    {
-                        "code": "ROSATO_BEIGE_OLIVASTRO",
-                        "text": {
-                            "it": "ROSATO - BEIGE OLIVASTRO",
-                            "en": "ROSATO - BEIGE OLIVASTRO",
-                            "fr": "ROSATO - BEIGE OLIVASTRO",
-                            "es": "ROSATO - BEIGE OLIVASTRO"
-                        },
-                        "imageUrl": ""
-                    },
-                    {
-                        "code": "PESCA_AVORIO_AMBRATO",
-                        "text": {
-                            "it": "PESCA - AVORIO AMBRATO",
-                            "en": "PESCA - AVORIO AMBRATO",
-                            "fr": "PESCA - AVORIO AMBRATO",
-                            "es": "PESCA - AVORIO AMBRATO"
-                        },
-                        "imageUrl": ""
-                    }
-                ]
-            }
+  "logoUrl": "/logo-sensus.svg",
+  "titleImgUrl": "/logo-giulietta.svg",
+  "arrowImgUrl": "/Arrow.svg",
+  "backgroundImage": "/circle.svg",
+  "backgroundColor": "#70708c",
+  "scrollColor": "",
+  "steps": {
+    "en": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "What is your skin undertone?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "PINKISH - BEIGE OLIVE",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "COOL"
+          },
+          {
+            "answer": "PEACH - AMBER IVORY",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "WARM"
+          }
+        ],
+        "next": "CONTINUE",
+        "previous": "BACK"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "What is the color of your lips?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "PINKISH",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "COOL"
+          },
+          { "answer": "PEACH", "logo": "Labbra_Pesca_q2.webp", "value": "WARM" }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "What is your skin color after tanning?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "TENDS TO REDDEN",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "COOL"
+          },
+          {
+            "answer": "GOLDEN",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "WARM"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "What is your natural hair color?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DARK (levels 1 to 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DARK"
+          },
+          {
+            "answer": "MEDIUM (levels 6 to 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIUM"
+          },
+          {
+            "answer": "LIGHT (levels 8 to 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "LIGHT"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "What is the color of your eyebrows?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DARK (levels 1 to 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DARK"
+          },
+          {
+            "answer": "MEDIUM (levels 6 to 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIUM"
+          },
+          {
+            "answer": "LIGHT (levels 8 to 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "LIGHT"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": ["What is your", "personality like?"],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          { "answer": "SHY, RESERVED", "logo": "", "value": "INTROVERT" },
+          { "answer": "EXUBERANT, OUTGOING", "logo": "", "value": "EXTROVERT" }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "You're almost done",
+        "type": "FORM_CONTACT",
+        "last": "JUST ONE MORE STEP",
+        "message": "Enter your email and discover the result",
+        "placeholder": "Your email address",
+        "send": "SEND",
+        "consent1": {
+          "text": [
+            "Having read and understood the privacy policy",
+            "I consent (by ticking the appropriate box) to the processing for the",
+            "purposes indicated in point 2 letter A of the information (in summary: to respond to the request)"
+          ]
         },
-        {
-            "title": {
-                "it": "Qual è il sottotono della tua pelle?",
-                "en": "Qual è il sottotono della tua pelle?",
-                "fr": "Qual è il sottotono della tua pelle?",
-                "es": "Qual è il sottotono della tua pelle?"
-            },
-            "question": {
-                "text": {
-                    "it": "",
-                    "en": "",
-                    "fr": "",
-                    "es": ""
-                }
-            },
-            "options": {
-                "type": "GRID_IMAGE_HORIZONTAL",
-                "replies": [
-                    {
-                        "code": "ROSATO_BEIGE_OLIVASTRO",
-                        "text": {
-                            "it": "",
-                            "en": "",
-                            "fr": "Qual è il sottotono della tua pelle?",
-                            "es": ""
-                        },
-                        "imageUrl": ""
-                    },
-                    {
-                        "code": "PESCA_AVORIO_AMBRATO",
-                        "text": {
-                            "it": "",
-                            "en": "",
-                            "fr": "Qual è il sottotono della tua pelle?",
-                            "es": ""
-                        },
-                        "imageUrl": ""
-                    }
-                ]
-            }
-        }
+        "consent2": {
+          "text": [
+            "I consent (by ticking the appropriate box) to the processing for the",
+            "purposes indicated in point 2 letter A of the information",
+            "(in summary: receiving advertising/informational communications)"
+          ]
+        },
+        "options": { "accept": "I Consent", "not_accept": "I Do Not Consent" }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Thank you!",
+        "type": "FINAL",
+        "last": "YOU'RE DONE!",
+        "email_check": { "text": ["Check your", "email inbox"] },
+        "store_locator": "VISIT OUR STORE LOCATOR"
+      }
     ],
-    "final-steps": [
-        {
-            "code": "FORM_CONTACT",
-            "title": {
-                "it": "Hai quasi finito",
-                "en": "Hai quasi finito",
-                "fr": "Hai quasi finito",
-                "es": "Hai quasi finito"
-            },
-            "subtitle": {
-                "it": "Inserisci la tua email e scopri il risultato",
-                "en": "Inserisci la tua email e scopri il risultato",
-                "fr": "Inserisci la tua email e scopri il risultato",
-                "es": "Inserisci la tua email e scopri il risultato"
-            },
-            "component": {
-                "type": "FORM_CONTACT",
-                "placeholder": {
-                    "it": "Inserisci la tua email",
-                    "en": "Inserisci la tua email",
-                    "fr": "Inserisci la tua email",
-                    "es": "Inserisci la tua email"
-                }
-            }
+    "it": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Qual è il sottotono della tua pelle?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSATO - BEIGE OLIVASTRO",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "FREDDO"
+          },
+          {
+            "answer": "PESCA - AVORIO AMBRATO",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "CALDO"
+          }
+        ],
+        "next": "CONTINUA",
+        "previous": "INDIETRO"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Qual è il colore della tue labbra?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSATE",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "FREDDO"
+          },
+          {
+            "answer": "PESCA",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "CALDO"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Qual è il colore della tua pelle dopo l'abbronzatura?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "TENDENZA ARROSAMENTO",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "FREDDO"
+          },
+          {
+            "answer": "DORATA",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "CALDO"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Qual è il colore naturale dei tuoi capelli?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "SCURI (livelli da 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "SCURO"
+          },
+          {
+            "answer": "MEDI (livelli da 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIO"
+          },
+          {
+            "answer": "CHIARI (livelli da 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CHIARO"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Qual è il colore delle tue soppracciglia?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "SCURI (livelli da 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "SCURO"
+          },
+          {
+            "answer": "MEDI (livelli da 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIO"
+          },
+          {
+            "answer": "CHIARI (livelli da 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CHIARO"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": ["Com'è il tuo", "carattere?"],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          { "answer": "TIMIDO, RISERVATO", "logo": "", "value": "INTROVERSO" },
+          {
+            "answer": "ESUBERANTE, ESTROVERSO",
+            "logo": "",
+            "value": "ESTROVERSO"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Hai quasi finito",
+        "type": "FORM_CONTACT",
+        "last": "MANCA UN ULTIMO PASSO",
+        "message": "Inserisci la tua mail e scopri il risultato",
+        "placeholder": "Il tuo indirizzo mail",
+        "send": "INVIA",
+        "consent1": {
+          "text": [
+            "Preso atto dell'informativa e avendola compresa",
+            "Acconsento (barrando l'apposita casella) al trattamento per le",
+            "finalità indicate al punto 2 lett. A della informativa (in sintesi: per rispondere alla richiesta)"
+          ]
         },
-        {
-            "code": "THANKING",
-            "iconHeaderUrl": "",
-            "title": {
-                "it": "Qual è il sottotono della tua pelle?",
-                "en": "Qual è il sottotono della tua pelle?",
-                "fr": "Qual è il sottotono della tua pelle?",
-                "es": "Qual è il sottotono della tua pelle?"
-            },
-            "subtitle": {
-                "it": "Scegli il sottotono della tua pelle",
-                "en": "Scegli il sottotono della tua pelle",
-                "fr": "Scegli il sottotono della tua pelle",
-                "es": "Scegli il sottotono della tua pelle"
-            },
-            "buttons": [
-                {
-                    "text": {
-                        "it": "ROSATO - BEIGE OLIVASTRO",
-                        "en": "ROSATO - BEIGE OLIVASTRO",
-                        "fr": "ROSATO - BEIGE OLIVASTRO",
-                        "es": "ROSATO - BEIGE OLIVASTRO"
-                    },
-                    "link": "https://www.google.com"
-                }
-            ]
+        "consent2": {
+          "text": [
+            "Acconsento (barrando l'apposita casella) al trattamento per le",
+            "finalità indicate al punto 2 lett. A della informativa",
+            "(in sintesi: ricezione di comunicazioni pubblicitarie/informative)"
+          ]
         },
-        {
-            "code": "FINAL",
-            "iconHeaderUrl": "",
-            "title": {
-                "it": "Qual è il sottotono della tua pelle?",
-                "en": "Qual è il sottotono della tua pelle?",
-                "fr": "Qual è il sottotono della tua pelle?",
-                "es": "Qual è il sottotono della tua pelle?"
-            },
-            "subtitle": {
-                "it": "Scegli il sottotono della tua pelle",
-                "en": "Scegli il sottotono della tua pelle",
-                "fr": "Scegli il sottotono della tua pelle",
-                "es": "Scegli il sottotono della tua pelle"
-            },
-            "buttons": [
-                {
-                    "text": {
-                        "it": "ROSATO - BEIGE OLIVASTRO",
-                        "en": "ROSATO - BEIGE OLIVASTRO",
-                        "fr": "ROSATO - BEIGE OLIVASTRO",
-                        "es": "ROSATO - BEIGE OLIVASTRO"
-                    },
-                    "link": "https://www.google.com"
-                }
-            ]
-        }
+        "options": { "accept": "Acconsento", "not_accept": "Non Acconsento" }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Grazie!",
+        "type": "FINAL",
+        "last": "HAI FINITO!",
+        "email_check": {
+          "text": ["Controlla la tua casella di", "posta elettronica"]
+        },
+        "store_locator": "VISITA IL NOSTRO STORE LOCATOR"
+      }
+    ]
+  },
+  "result": {
+    "it": [
+      {
+        "title": "ECCO IL TUO RISULTATO",
+        "text": [
+          "La tua palette è neutra. Puoi spaziare tra",
+          "toni freddi e caldi, ma i toni beige",
+          "bilanciati e i castani sono",
+          "particolarmente adatti a te."
+        ],
+        "match": "ABBINABILI CON",
+        "text_final": [
+          "Trova il salone più vicino a te e",
+          "chiedigli di Giulietta"
+        ],
+        "store_locator": "STORE LOCATOR",
+        "share_social": "CONDIVIDI SUI SOCIAL"
+      }
     ],
-    "footer":{
-        "text":{
-            "it": "Inserendo la tua email accetti la nostra Privacy Policy",
-            "en": "Inserendo la tua email accetti la nostra Privacy Policy",
-            "fr": "Inserendo la tua email accetti la nostra Privacy Policy",
-            "es": "Inserendo la tua email accetti la nostra Privacy Policy"
-        }
+    "en": [
+      {
+        "title": "HERE IS YOUR RESULT",
+        "text": [
+          "Your palette is neutral. You can range between",
+          "cool and warm tones, but balanced beige",
+          "tones and browns are",
+          "particularly suitable for you."
+        ],
+        "match": "MATCHABLE WITH",
+        "text_final": [
+          "Find the nearest salon to you and",
+          "ask them about Giulietta"
+        ],
+        "store_locator": "STORE LOCATOR",
+        "share_social": "SHARE ON SOCIAL MEDIA"
+      }
+    ]
+  },
+  "footer": {
+    "it": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Privacy Policy",
+      "cookie_policy": "Cookie Policy",
+      "terms_of_use": "Termini d'uso"
+    },
+    "en": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. registered office at via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italy)",
+        "Tax Code, VAT No. and Business Register of Padua No. 04937500280, R.E.A. PD 430007",
+        "Share capital €7,500,000.00 i.v., company subject to management and coordination by AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Privacy Policy",
+      "cookie_policy": "Cookie Policy",
+      "terms_of_use": "Terms of Use"
     }
+  }
 }
