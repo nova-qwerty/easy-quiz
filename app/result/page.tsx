@@ -7,10 +7,11 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { result } from "../config.json";
 import axios from "axios";
+import { Language } from "../languages";
 
 const ResultContent: React.FC = () => {
   const [data, setData] = useState<any>(null);
-  const [language, setLanguage] = useState<"it" | "en">("it");
+  const [language, setLanguage] = useState<Language>("it");
   const searchParams = useSearchParams();   
   const email = searchParams.get("email");
 
