@@ -20,7 +20,7 @@ const ResultContent: React.FC = () => {
 
       try {
         const response = await axios.get(
-          `https://sensus-giulietta.ew.r.appspot.com/get-data?email=${email}`,
+          `https://giorgiainitaliano.ew.r.appspot.com/get-data?email=${email}`,
           {
             headers: {
               "Content-Type": "application/json",
