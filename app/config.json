@@ -1,291 +1,235 @@
 {
-  "logoUrl": "/logo-sensus.svg",
-  "titleImgUrl": "/logo-giulietta.svg",
+  "logoUrl": "/logo.webp",
+  "titleImgUrl": "/foto-giorgia.png",
   "arrowImgUrl": "/Arrow.svg",
-  "backgroundImage": "/circle.svg",
-  "backgroundColor": "#70708c",
+  "backgroundImage": "",
+  "backgroundColor": "gray",
   "scrollColor": "",
   "steps": {
-    "en": [
-      {
-        "code": "SKIN_UNDERTONE",
-        "question": "What is your skin undertone?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "PINKISH - BEIGE OLIVE",
-            "logo": "Pelle_Beige_q1.svg",
-            "value": "COOL"
-          },
-          {
-            "answer": "PEACH - AMBER IVORY",
-            "logo": "Pelle_Pesca_q1.svg",
-            "value": "WARM"
-          }
-        ],
-        "next": "CONTINUE",
-        "previous": "BACK"
-      },
-      {
-        "code": "LIP_COLOR",
-        "question": "What is the color of your lips?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "PINKISH",
-            "logo": "Labbra_Rosate_q2.webp",
-            "value": "COOL"
-          },
-          { "answer": "PEACH", "logo": "Labbra_Pesca_q2.webp", "value": "WARM" }
-        ]
-      },
-      {
-        "code": "TANNED_SKIN",
-        "question": "What is your skin color after tanning?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "TENDS TO REDDEN",
-            "logo": "Pelle_Arrossata_q3.webp",
-            "value": "COOL"
-          },
-          {
-            "answer": "GOLDEN",
-            "logo": "Pelle_Dorata_q3.webp",
-            "value": "WARM"
-          }
-        ]
-      },
-      {
-        "code": "NATURAL_HAIR_COLOR",
-        "question": "What is your natural hair color?",
-        "type": "GRID_IMAGE_HORIZONTAL",
-        "replies": [
-          {
-            "answer": "DARK (levels 1 to 5)",
-            "logo": "Hair_L5_q4.webp",
-            "value": "DARK"
-          },
-          {
-            "answer": "MEDIUM (levels 6 to 7)",
-            "logo": "Hair_L7_q4.webp",
-            "value": "MEDIUM"
-          },
-          {
-            "answer": "LIGHT (levels 8 to 11)",
-            "logo": "Hair_L9_q4.webp",
-            "value": "LIGHT"
-          }
-        ]
-      },
-      {
-        "code": "EYEBROW_COLOR",
-        "question": "What is the color of your eyebrows?",
-        "type": "GRID_IMAGE_HORIZONTAL",
-        "replies": [
-          {
-            "answer": "DARK (levels 1 to 5)",
-            "logo": "Hair_L5_q4.webp",
-            "value": "DARK"
-          },
-          {
-            "answer": "MEDIUM (levels 6 to 7)",
-            "logo": "Hair_L7_q4.webp",
-            "value": "MEDIUM"
-          },
-          {
-            "answer": "LIGHT (levels 8 to 11)",
-            "logo": "Hair_L9_q4.webp",
-            "value": "LIGHT"
-          }
-        ]
-      },
-      {
-        "code": "PERSONALITY",
-        "question": ["What is your", "personality like?"],
-        "type": "GRID_IMAGE_VERTICAL",
-        "replies": [
-          { "answer": "SHY, RESERVED", "logo": "", "value": "INTROVERT" },
-          { "answer": "EXUBERANT, OUTGOING", "logo": "", "value": "EXTROVERT" }
-        ]
-      },
-      {
-        "code": "STEP_7",
-        "question": "You're almost done",
-        "type": "FORM_CONTACT",
-        "last": "JUST ONE MORE STEP",
-        "message": "Enter your email and discover the result",
-        "placeholder": "Your email address",
-        "send": "SEND",
-        "consent1": {
-          "text": [
-            "Having read and understood the privacy policy",
-            "I consent (by ticking the appropriate box) to the processing for the",
-            "purposes indicated in point 2 letter A of the information (in summary: to respond to the request)"
-          ]
-        },
-        "consent2": {
-          "text": [
-            "I consent (by ticking the appropriate box) to the processing for the",
-            "purposes indicated in point 2 letter A of the information",
-            "(in summary: receiving advertising/informational communications)"
-          ]
-        },
-        "options": { "accept": "I Consent", "not_accept": "I Do Not Consent" }
-      },
-      {
-        "code": "STEP_8",
-        "question": "Thank you!",
-        "type": "FINAL",
-        "last": "YOU'RE DONE!",
-        "email_check": { "text": ["Check your", "email inbox"] },
-        "store_locator": "VISIT OUR STORE LOCATOR"
-      }
-    ],
     "it": [
       {
-        "code": "SKIN_UNDERTONE",
-        "question": "Qual è il sottotono della tua pelle?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "ROSATO - BEIGE OLIVASTRO",
-            "logo": "Pelle_Beige_q1.svg",
-            "value": "FREDDO"
-          },
-          {
-            "answer": "PESCA - AVORIO AMBRATO",
-            "logo": "Pelle_Pesca_q1.svg",
-            "value": "CALDO"
-          }
-        ],
-        "next": "CONTINUA",
-        "previous": "INDIETRO"
-      },
-      {
-        "code": "LIP_COLOR",
-        "question": "Qual è il colore della tue labbra?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "ROSATE",
-            "logo": "Labbra_Rosate_q2.webp",
-            "value": "FREDDO"
-          },
-          {
-            "answer": "PESCA",
-            "logo": "Labbra_Pesca_q2.webp",
-            "value": "CALDO"
-          }
-        ]
-      },
-      {
-        "code": "TANNED_SKIN",
-        "question": "Qual è il colore della tua pelle dopo l'abbronzatura?",
-        "type": "GRID_IMAGE",
-        "replies": [
-          {
-            "answer": "TENDENZA ARROSAMENTO",
-            "logo": "Pelle_Arrossata_q3.webp",
-            "value": "FREDDO"
-          },
-          {
-            "answer": "DORATA",
-            "logo": "Pelle_Dorata_q3.webp",
-            "value": "CALDO"
-          }
-        ]
-      },
-      {
-        "code": "NATURAL_HAIR_COLOR",
-        "question": "Qual è il colore naturale dei tuoi capelli?",
+        "code": "LEVEL_LANGUAGE",
+        "question": "¿Cuál es tu nivel actual del idioma que deseas aprender?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "SCURI (livelli da 1 a 5)",
-            "logo": "Hair_L5_q4.webp",
-            "value": "SCURO"
+            "answer": "Ningún conocimiento",
+            "value": "BASE_1"
           },
           {
-            "answer": "MEDI (livelli da 6 a 7)",
-            "logo": "Hair_L7_q4.webp",
-            "value": "MEDIO"
+            "answer": "Elemental (entiendo y uso frases simples)",
+            "value": "BASE_2"
           },
           {
-            "answer": "CHIARI (livelli da 8 a 11)",
-            "logo": "Hair_L9_q4.webp",
-            "value": "CHIARO"
+            "answer": "Intermedio (puedo discutir sobre temas simples)",
+            "value": "INTERMEDIO_1"
+          },
+          {
+            "answer": "Avanzado (puedo discutir sobre temas complejos)",
+            "value": "INTERMEDIO_2"
           }
         ]
       },
       {
-        "code": "EYEBROW_COLOR",
-        "question": "Qual è il colore delle tue soppracciglia?",
+        "code": "FOLLOWED_COURSE",
+        "question": "¿Has seguido algún curso de italiano antes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "SCURI (livelli da 1 a 5)",
-            "logo": "Hair_L5_q4.webp",
-            "value": "SCURO"
+            "answer": "Sí, pero necesito refrescar las bases.",
+            "value": "BASE_1"
           },
           {
-            "answer": "MEDI (livelli da 6 a 7)",
-            "logo": "Hair_L7_q4.webp",
-            "value": "MEDIO"
+            "answer": "Sí, pero quiero mejorar mi nivel actual.",
+            "value": "INTERMEDIO"
           },
           {
-            "answer": "CHIARI (livelli da 8 a 11)",
-            "logo": "Hair_L9_q4.webp",
-            "value": "CHIARO"
+            "answer": "No, soy un principiante absoluto.",
+            "value": "BASE_2"
           }
         ]
       },
       {
-        "code": "PERSONALITY",
-        "question": ["Com'è il tuo", "carattere?"],
-        "type": "GRID_IMAGE_VERTICAL",
+        "code": "OBJECTIVE",
+        "question": "¿Cuál es tu principal objetivo al aprender este idioma?",
+        "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
-          { "answer": "TIMIDO, RISERVATO", "logo": "", "value": "INTROVERSO" },
           {
-            "answer": "ESUBERANTE, ESTROVERSO",
-            "logo": "",
-            "value": "ESTROVERSO"
+            "answer": "Viajar",
+            "value": "BASE"
+          },
+          {
+            "answer": "Trabajo o carrera",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Estudio académico/certificación",
+            "value": "BASE_2"
+          },
+          {
+            "answer": "Interés personal/cultural",
+            "value": "BASE_3"
+          },
+          {
+            "answer": " Mejorar las habilidades lingüísticas para comunicarse con amigos o familiares",
+            "value": "BASE_4"
           }
         ]
       },
       {
-        "code": "STEP_7",
-        "question": "Hai quasi finito",
-        "type": "FORM_CONTACT",
-        "last": "MANCA UN ULTIMO PASSO",
-        "message": "Inserisci la tua mail e scopri il risultato",
-        "placeholder": "Il tuo indirizzo mail",
-        "send": "INVIA",
-        "consent1": {
-          "text": [
-            "Preso atto dell'informativa e avendola compresa",
-            "Acconsento (barrando l'apposita casella) al trattamento per le",
-            "finalità indicate al punto 2 lett. A della informativa (in sintesi: per rispondere alla richiesta)"
-          ]
-        },
-        "consent2": {
-          "text": [
-            "Acconsento (barrando l'apposita casella) al trattamento per le",
-            "finalità indicate al punto 2 lett. A della informativa",
-            "(in sintesi: ricezione di comunicazioni pubblicitarie/informative)"
-          ]
-        },
-        "options": { "accept": "Acconsento", "not_accept": "Non Acconsento" }
+        "code": "TIME_STUDY",
+        "question": "¿Cuánto tiempo puedes dedicar al estudio cada semana?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Con lecciones en video",
+            "value": "BASE"
+          },
+          {
+            "answer": "Con ejercicios escritos y prácticos",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Con conversaciones en vivo",
+            "value": "BASE_2"
+          },
+          {
+            "answer": "Una combinación de todo",
+            "value": "BASE_3"
+          }
+        ]
       },
       {
-        "code": "STEP_8",
-        "question": "Grazie!",
-        "type": "FINAL",
-        "last": "HAI FINITO!",
-        "email_check": {
-          "text": ["Controlla la tua casella di", "posta elettronica"]
-        },
-        "store_locator": "VISITA IL NOSTRO STORE LOCATOR"
+        "code": "TIME_STUDY",
+        "question": "¿Qué tan importante es para ti la flexibilidad al seguir el curso?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "1-2 hora",
+            "value": "BASE"
+          },
+          {
+            "answer": "3-5 horas",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Más de 5 horas",
+            "value": "BASE_2"
+          }
+        ]
+      }
+    ],
+    "en": [
+      {
+        "code": "LEVEL_LANGUAGE",
+        "question": "¿Cuál es tu nivel actual del idioma que deseas aprender?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Ningún conocimiento",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Elemental (entiendo y uso frases simples)",
+            "value": "BASE_2"
+          },
+          {
+            "answer": "Intermedio (puedo discutir sobre temas simples)",
+            "value": "INTERMEDIO_1"
+          },
+          {
+            "answer": "Avanzado (puedo discutir sobre temas complejos)",
+            "value": "INTERMEDIO_2"
+          }
+        ]
+      },
+      {
+        "code": "FOLLOWED_COURSE",
+        "question": "¿Has seguido algún curso de italiano antes?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Sí, pero necesito refrescar las bases.",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Sí, pero quiero mejorar mi nivel actual.",
+            "value": "INTERMEDIO"
+          },
+          {
+            "answer": "No, soy un principiante absoluto.",
+            "value": "BASE_2"
+          }
+        ]
+      },
+      {
+        "code": "OBJECTIVE",
+        "question": "¿Cuál es tu principal objetivo al aprender este idioma?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Viajar",
+            "value": "BASE"
+          },
+          {
+            "answer": "Trabajo o carrera",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Estudio académico/certificación",
+            "value": "BASE_2"
+          },
+          {
+            "answer": "Interés personal/cultural",
+            "value": "BASE_3"
+          },
+          {
+            "answer": " Mejorar las habilidades lingüísticas para comunicarse con amigos o familiares",
+            "value": "BASE_4"
+          }
+        ]
+      },
+      {
+        "code": "TIME_STUDY",
+        "question": "¿Cuánto tiempo puedes dedicar al estudio cada semana?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Con lecciones en video",
+            "value": "BASE"
+          },
+          {
+            "answer": "Con ejercicios escritos y prácticos",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Con conversaciones en vivo",
+            "value": "BASE_2"
+          },
+          {
+            "answer": "Una combinación de todo",
+            "value": "BASE_3"
+          }
+        ]
+      },
+      {
+        "code": "TIME_STUDY",
+        "question": "¿Qué tan importante es para ti la flexibilidad al seguir el curso?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "1-2 hora",
+            "value": "BASE"
+          },
+          {
+            "answer": "3-5 horas",
+            "value": "BASE_1"
+          },
+          {
+            "answer": "Más de 5 horas",
+            "value": "BASE_2"
+          }
+        ]
       }
     ]
   },
@@ -330,23 +274,13 @@
   "footer": {
     "it": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
-        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
-        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
-      ],
-      "privacy_policy": "Privacy Policy",
-      "cookie_policy": "Cookie Policy",
-      "terms_of_use": "Termini d'uso"
+        "Powered by Nova Qwerty"
+      ]
     },
     "en": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. registered office at via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italy)",
-        "Tax Code, VAT No. and Business Register of Padua No. 04937500280, R.E.A. PD 430007",
-        "Share capital €7,500,000.00 i.v., company subject to management and coordination by AGF88 Holding S.r.l."
-      ],
-      "privacy_policy": "Privacy Policy",
-      "cookie_policy": "Cookie Policy",
-      "terms_of_use": "Terms of Use"
+        "Powered by Nova Qwerty"
+      ]
     }
   }
 }

@@ -53,7 +53,7 @@ const ResultContent: React.FC = () => {
           <div className="mt-6 relative">
             <Image
               src={`/result/${data.personality}/${data.classHair}/${data.suggestions[0]}.webp`}
-              alt="Logo Sensus"
+              alt="Logo Giorgia"
               width={1920}
               height={250}
               className="h-[250px]"
@@ -69,7 +69,7 @@ const ResultContent: React.FC = () => {
           <div className="mt-3 relative">
             <Image
               src={`/result/${data.personality}/${data.classHair}/${data.suggestions[1]}.webp`}
-              alt="Logo Sensus"
+              alt="Logo Giorgia"
               width={1920}
               height={250}
               className="h-[250px]"
@@ -106,7 +106,7 @@ const ResultContent: React.FC = () => {
           <div className="mt-6 relative">
             <Image
               src={`/result/${data.personality}/${data.classHair}/${data.pairable[0]}.webp`}
-              alt="Logo Sensus"
+              alt="Logo Giorgia"
               width={1920}
               height={250}
               className="h-[250px]"
@@ -122,7 +122,7 @@ const ResultContent: React.FC = () => {
           <div className="mt-3 relative">
             <Image
               src={`/result/${data.personality}/${data.classHair}/${data.pairable[1]}.webp`}
-              alt="Logo Sensus"
+              alt="Logo Giorgia"
               width={1920}
               height={250}
               className="h-[250px]"

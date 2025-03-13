@@ -5,13 +5,13 @@ import { logoUrl, titleImgUrl, arrowImgUrl } from "../../config.json";
 import "./styles.css";
 
 const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en") => void }> = ({ language, setLanguage }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <header className="text-white header-margin">
       <div className="flex justify-between items-center">
-        <Image src={`${logoUrl}`} alt="Logo Sensus" width={135} height={47.37} />
+        <Image src={`${logoUrl}`} alt="Logo Giorgia" width={80} height={35.37} />
         <div className="flex items-center gap-1 relative">
           <div className="relative w-[55px]">
             <button
@@ -39,13 +39,13 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
             )}
           </div>
 
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-0 pl-2">
+          {/* <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-0 pl-2">
             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 12h16" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 18h16" />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -60,7 +60,7 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
       )}
 
       <div className="flex justify-center image-margin">
-        <Image src={`${titleImgUrl}`} alt="Logo Giulietta" width={217.5} height={95} />
+        <Image src={`${titleImgUrl}`} alt="Logo Giorgia" width={150.5} height={88} />
       </div>
     </header>
   );

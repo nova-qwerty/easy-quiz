@@ -24,7 +24,7 @@ const Result: NextPage = () => {
             <p>classHair: {classHair}</p>
             <p>personality: {personality}</p>
             <div className='mt-3'>
-                <Image src="/result.svg" alt="Logo Giulietta" width={414} height={390} />
+                <Image src="/result.svg" alt="Logo Giorgia" width={414} height={390} />
             </div>
 
             <div className="mt-6">

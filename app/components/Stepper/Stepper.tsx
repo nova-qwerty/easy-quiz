@@ -9,7 +9,7 @@ import StepperFinal from "./StepperFinal";
 
 interface Option {
   answer: string,
-  logo: string,
+  logo?: string,
   value: string
 }
 interface Step {
