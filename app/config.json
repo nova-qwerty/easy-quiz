@@ -78,7 +78,7 @@
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Cuánto tiempo puedes dedicar al estudio cada semana?",
+        "question": "¿Como prefieres aprender?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
@@ -101,7 +101,7 @@
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Qué tan importante es para ti la flexibilidad al seguir el curso?",
+        "question": "¿Cuanto tiempo puedes dedicar al estudio cada semana?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
@@ -115,6 +115,36 @@
           {
             "answer": "Más de 5 horas",
             "value": "BASE_2"
+          }
+        ]
+      },
+      {
+        "code": "FLEXIBILITY",
+        "question": "¿Que tan importante es para ti la flexibilidad al seguir el curso?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "Muy importante (quiero estudiar cuando quiera)",
+            "value": "BASE"
+          },
+          {
+            "answer": "No muy importante (estoy dispuesto a seguir un programa fijo)",
+            "value": "BASE_1"
+          }
+        ]
+      },
+      {
+        "code": "PRIVATE_REGISTERED_LESSONS",
+        "question": "¿Prefieres cursos con lecciones en vivo o grabadas?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "En vivo (con un profesor)",
+            "value": "BASE"
+          },
+          {
+            "answer": "Grabadas (puedo seguirlas cuando quiera)",
+            "value": "BASE_1"
           }
         ]
       }
