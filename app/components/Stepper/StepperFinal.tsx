@@ -4,7 +4,7 @@ import "./styles.css";
 
 interface Option {
   answer: string,
-  logo: string,
+  logo?: string,
 }
 interface Step {
   code: string,

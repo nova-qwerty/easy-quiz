@@ -5,7 +5,7 @@ import Image from "next/image";
 
 interface Option {
   answer: string,
-  logo: string,
+  logo?: string,
 }
 interface Step {
   code: string,
