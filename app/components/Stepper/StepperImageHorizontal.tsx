@@ -1,21 +1,7 @@
 import React from "react";
 import "./styles.css";
+import { StepperProps } from "./stepper.interface"
 
-interface Option {
-  answer: string,
-  logo?: string,
-  value:string
-}
-interface Step {
-  code: string,
-  question?: string,
-  type: string,
-  replies?: Option[],
-}
-interface StepperProps {
-  steps: Step[];
-  currentStep: number;
-}
 
 const StepperImageHorizontal: React.FC<StepperProps & { onSelect: (stepIndex: number, value: string) => void, selectedOption: string | null }> = ({ steps, currentStep, onSelect, selectedOption }) => {
   return (

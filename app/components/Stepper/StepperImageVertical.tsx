@@ -1,22 +1,6 @@
 import React from "react";
 import "./styles.css";
-
-
-interface Option {
-  answer: string,
-  logo?: string,
-  value:string
-}
-interface Step {
-  code: string,
-  question?: any,
-  type: string,
-  replies?: Option[],
-}
-interface StepperProps {
-  steps: Step[];
-  currentStep: number;
-}
+import { StepperProps } from "./stepper.interface"
 
 const StepperImageVertical: React.FC<StepperProps & { onSelect: (stepIndex: number, value: string) => void, selectedOption: string | null }> = ({ steps, currentStep, onSelect, selectedOption }) => {
   return (

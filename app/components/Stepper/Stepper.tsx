@@ -6,37 +6,19 @@ import StepperImageHorizontal from "./StepperImageHorizontal";
 import StepperImageVertical from "./StepperImageVertical";
 import StepperFormContact from "./StepperFormContact";
 import StepperFinal from "./StepperFinal";
+import { StepperProps } from "./stepper.interface"
 
-interface Option {
-  answer: string,
-  logo?: string,
-  value: string
-}
-interface Step {
-  code: string,
-  question?: any,
-  type: string,
-  replies?: Option[],
-  next?: string,
-  previous?: string,
-  last?: string,
-}
-interface StepperProps {
-  steps: Step[];
-  currentStep: number;
-  setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
-}
 const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep }) => {
   const [selections, setSelections] = useState<{ [key: number]: string | null }>({});
 
   const handleNext = () => {
-    if (currentStep < steps.length) {
+    if (currentStep < steps.length && setCurrentStep) {
       setCurrentStep((prev) => prev + 1);
     }
   };
 
   const handlePrevious = () => {
-    if (currentStep > 0) {
+    if (currentStep > 0 && setCurrentStep) {
       setCurrentStep((prev) => prev - 1);
     }
   };
@@ -93,19 +75,39 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       </div>
 
       <div>
-        {
-          steps[currentStep]?.type === "GRID_IMAGE"
-            ? (<StepperImage steps={steps} currentStep={currentStep} onSelect={handleSelection} selectedOption={selections[currentStep]} />)
-            : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL"
-            ? (<StepperImageHorizontal steps={steps} currentStep={currentStep} onSelect={handleSelection} selectedOption={selections[currentStep]} />)
-            : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL"
-            ? (<StepperImageVertical steps={steps} currentStep={currentStep} onSelect={handleSelection} selectedOption={selections[currentStep]} />)
-            : steps[currentStep]?.type === "FORM_CONTACT"
-            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} selections={selections} />)
-            : steps[currentStep]?.type === "FINAL"
-            ? (<StepperFinal steps={steps} currentStep={currentStep} />)
-            : null
-        }
+      {
+        steps[currentStep]?.type === "GRID_IMAGE" ? (
+          <StepperImage
+            steps={steps}
+            currentStep={currentStep}
+            onSelect={handleSelection}
+            selectedOption={selections[currentStep]}
+          />
+        ) : steps[currentStep]?.type === "GRID_IMAGE_HORIZONTAL" ? (
+          <StepperImageHorizontal
+            steps={steps}
+            currentStep={currentStep}
+            onSelect={handleSelection}
+            selectedOption={selections[currentStep]}
+          />
+        ) : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL" ? (
+          <StepperImageVertical
+            steps={steps}
+            currentStep={currentStep}
+            onSelect={handleSelection}
+            selectedOption={selections[currentStep]}
+          />
+        ) : steps[currentStep]?.type === "FORM_CONTACT" && setCurrentStep ? (
+          <StepperFormContact
+            steps={steps}
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep}
+            selections={selections}
+          />
+        ) : steps[currentStep]?.type === "FINAL" ? (
+          <StepperFinal steps={steps} currentStep={currentStep} />
+        ) : null
+      }
       </div>
       {
       steps[currentStep]?.type !== "FORM_CONTACT"
