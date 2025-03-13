@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { logoUrl, titleImgUrl, arrowImgUrl } from "../../config.json";
 import "./styles.css";
+import { LANGUAGES, Language } from "../../languages";
 
-const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en") => void }> = ({ language, setLanguage }) => {
+
+const Header: React.FC<{ language: Language; setLanguage: (lang: Language) => void }> = ({ language, setLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -23,7 +25,7 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
             </button>
             {isDropdownOpen && (
               <ul className="absolute left-0 w-full bg-[#70708c] border border-[#9EA5C4] mt-1 rounded-[1px] text-center">
-                {["it", "en"].map((lang) => (
+                {LANGUAGES.map((lang) => (
                   <li
                     key={lang}
                     onClick={() => {

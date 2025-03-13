@@ -6,11 +6,12 @@ import Footer from "./components/Footer/Footer";
 import Thanks from "./components/Thanks/Thanks";
 import Result from "./components/Result/Result";
 import { steps } from "./config"
+import { Language } from "./languages";
 
 const Home: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [showResult, setShowResult] = useState(false);
-  const [language, setLanguage] = useState<"it" | "en">("it");
+  const [language, setLanguage] = useState<Language>("it");
 
   return currentStep !== 8 ? (
     <div>
