@@ -4,7 +4,7 @@ import { backgroundImage, backgroundColor } from "./config.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sensus giulietta",
+  title: "Giorgia In Italiano",
   description: "",
 };
 
