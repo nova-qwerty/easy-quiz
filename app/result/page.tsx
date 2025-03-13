@@ -20,7 +20,7 @@ const ResultContent: React.FC = () => {
 
       try {
         const response = await axios.get(
-          `https://sensus-giulietta.ew.r.appspot.com/get-data?email=${email}`,
+          `https://sensus-giulietta-453610.ew.r.appspot.com/get-data?email=${email}`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -46,7 +46,10 @@ const ResultContent: React.FC = () => {
           <p className="m-0 p-0 text-center text-[25px] text-[#9EA5C4]">
             {result[language][0].title}
           </p>
-          <p className="m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
+          <p className="mt-2 text-center text-[18px] text-[#FFFFFF]">
+          {result[language][0].subtitle}
+          </p>
+          <p className="mt-2 m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
             {data.classHair?.replace(/_/g, " ").toUpperCase()}
           </p>
 
@@ -83,6 +86,11 @@ const ResultContent: React.FC = () => {
           </div>
 
           <div className="mt-6">
+            <p className="text-center font-bold text-[22px] text-[#FFFFFF]">
+              {result[language][0].match}
+            </p>
+          </div>
+          <div className="mt-2">
             <p className="text-center text-[18px] text-[#FFFFFF]">
               {result[language][0].text[0]}
             </p>
@@ -94,12 +102,6 @@ const ResultContent: React.FC = () => {
             </p>
             <p className="text-center text-[18px] text-[#FFFFFF]">
               {result[language][0].text[3]}
-            </p>
-          </div>
-
-          <div className="mt-6">
-            <p className="text-center font-bold text-[22px] text-[#FFFFFF]">
-              {result[language][0].match}
             </p>
           </div>
 

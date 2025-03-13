@@ -293,11 +293,9 @@
     "it": [
       {
         "title": "ECCO IL TUO RISULTATO",
+        "subtitle": "secondo la nostra analisi le famiglie colore per te sono:",
         "text": [
-          "La tua palette è neutra. Puoi spaziare tra",
-          "toni freddi e caldi, ma i toni beige",
-          "bilanciati e i castani sono",
-          "particolarmente adatti a te."
+          "puoi abbinare al risultato queste famiglie colore:"
         ],
         "match": "ABBINABILI CON",
         "text_final": [
@@ -311,11 +309,9 @@
     "en": [
       {
         "title": "HERE IS YOUR RESULT",
+        "subtitle": "according to our analysis the color families for you are:",
         "text": [
-          "Your palette is neutral. You can range between",
-          "cool and warm tones, but balanced beige",
-          "tones and browns are",
-          "particularly suitable for you."
+         "you can match these color families with the result:"
         ],
         "match": "MATCHABLE WITH",
         "text_final": [
