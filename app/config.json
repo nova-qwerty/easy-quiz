@@ -36,7 +36,11 @@
             "logo": "Labbra_Rosate_q2.webp",
             "value": "COOL"
           },
-          { "answer": "PEACH", "logo": "Labbra_Pesca_q2.webp", "value": "WARM" }
+          {
+            "answer": "PEACH",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "WARM"
+          }
         ]
       },
       {
@@ -102,11 +106,22 @@
       },
       {
         "code": "PERSONALITY",
-        "question": ["What is your", "personality like?"],
+        "question": [
+          "What is your",
+          "personality like?"
+        ],
         "type": "GRID_IMAGE_VERTICAL",
         "replies": [
-          { "answer": "SHY, RESERVED", "logo": "", "value": "INTROVERT" },
-          { "answer": "EXUBERANT, OUTGOING", "logo": "", "value": "EXTROVERT" }
+          {
+            "answer": "SHY, RESERVED",
+            "logo": "",
+            "value": "INTROVERT"
+          },
+          {
+            "answer": "EXUBERANT, OUTGOING",
+            "logo": "",
+            "value": "EXTROVERT"
+          }
         ]
       },
       {
@@ -131,14 +146,22 @@
             "(in summary: receiving advertising/informational communications)"
           ]
         },
-        "options": { "accept": "I Consent", "not_accept": "I Do Not Consent" }
+        "options": {
+          "accept": "I Consent",
+          "not_accept": "I Do Not Consent"
+        }
       },
       {
         "code": "STEP_8",
         "question": "Thank you!",
         "type": "FINAL",
         "last": "YOU'RE DONE!",
-        "email_check": { "text": ["Check your", "email inbox"] },
+        "email_check": {
+          "text": [
+            "Check your",
+            "email inbox"
+          ]
+        },
         "store_locator": "VISIT OUR STORE LOCATOR"
       }
     ],
@@ -242,10 +265,17 @@
       },
       {
         "code": "PERSONALITY",
-        "question": ["Com'è il tuo", "carattere?"],
+        "question": [
+          "Com'è il tuo",
+          "carattere?"
+        ],
         "type": "GRID_IMAGE_VERTICAL",
         "replies": [
-          { "answer": "TIMIDO, RISERVATO", "logo": "", "value": "INTROVERSO" },
+          {
+            "answer": "TIMIDO, RISERVATO",
+            "logo": "",
+            "value": "INTROVERSO"
+          },
           {
             "answer": "ESUBERANTE, ESTROVERSO",
             "logo": "",
@@ -275,7 +305,10 @@
             "(in sintesi: ricezione di comunicazioni pubblicitarie/informative)"
           ]
         },
-        "options": { "accept": "Acconsento", "not_accept": "Non Acconsento" }
+        "options": {
+          "accept": "Acconsento",
+          "not_accept": "Non Acconsento"
+        }
       },
       {
         "code": "STEP_8",
@@ -283,9 +316,138 @@
         "type": "FINAL",
         "last": "HAI FINITO!",
         "email_check": {
-          "text": ["Controlla la tua casella di", "posta elettronica"]
+          "text": [
+            "Controlla la tua casella di",
+            "posta elettronica"
+          ]
         },
         "store_locator": "VISITA IL NOSTRO STORE LOCATOR"
+      }
+    ],
+    "es": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "¿Cuál es el subtono de tu piel?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSADO - BEIGE OLIVÁCEO",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "FRÍO"
+          },
+          {
+            "answer": "DURAZNO - ÁMBAR MARFIL",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "CÁLIDO"
+          }
+        ],
+        "next": "CONTINUAR",
+        "previous": "ATRÁS"
+      }
+    ],
+    "fr": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Quel est le sous-ton de votre peau?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSE - BEIGE OLIVÂTRE",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "FROID"
+          },
+          {
+            "answer": "PÊCHE - AMBRE IVOIRE",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "CHAUD"
+          }
+        ],
+        "next": "CONTINUER",
+        "previous": "RETOUR"
+      }
+    ],
+    "pt": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Qual é o subtom da sua pele?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSADO - BEGE OLIVADO",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "FRIO"
+          },
+          {
+            "answer": "PÊSSEGO - ÂMBAR MARFIM",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "QUENTE"
+          }
+        ],
+        "next": "CONTINUAR",
+        "previous": "VOLTAR"
+      }
+    ],
+    "de": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Was ist Ihr Hautunterton?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSIG - BEIGE OLIV",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "KÜHL"
+          },
+          {
+            "answer": "PFIRSICH - AMBER ELFENBEIN",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "WARM"
+          }
+        ],
+        "next": "WEITER",
+        "previous": "ZURÜCK"
+      }
+    ],
+    "nl": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Wat is jouw ondertoon van je huid?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROZE - BEIGE OLIVE",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "KOEL"
+          },
+          {
+            "answer": "PERZIK - AMBER IVOOR",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "WARM"
+          }
+        ],
+        "next": "DOORGAAN",
+        "previous": "TERUG"
+      }
+    ],
+    "pl": [
+      {
+        "code": "SKIN_UNDERTONE",
+        "question": "Jaki jest podton Twojej skóry?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "RÓŻOWY - BEŻOWY OLIWKOWY",
+            "logo": "Pelle_Beige_q1.svg",
+            "value": "ZIMNY"
+          },
+          {
+            "answer": "BRZOSKWINIOWY - BURSZTYNOWY KOŚĆ SŁONIOWA",
+            "logo": "Pelle_Pesca_q1.svg",
+            "value": "CIEPŁY"
+          }
+        ],
+        "next": "DALEJ",
+        "previous": "WSTECZ"
       }
     ]
   },
@@ -311,7 +473,7 @@
         "title": "HERE IS YOUR RESULT",
         "subtitle": "according to our analysis the color families for you are:",
         "text": [
-         "you can match these color families with the result:"
+          "you can match these color families with the result:"
         ],
         "match": "MATCHABLE WITH",
         "text_final": [
@@ -320,6 +482,102 @@
         ],
         "store_locator": "STORE LOCATOR",
         "share_social": "SHARE ON SOCIAL MEDIA"
+      }
+    ],
+    "es": [
+      {
+        "title": "ESTE ES TU RESULTADO",
+        "subtitle": "según nuestro análisis, las familias de colores para ti son:",
+        "text": [
+          "puedes combinar con el resultado estas familias de colores:"
+        ],
+        "match": "COMBINABLE CON",
+        "text_final": [
+          "Encuentra el salón más cercano a ti y",
+          "pídele a Giulietta"
+        ],
+        "store_locator": "LOCALIZADOR DE TIENDAS",
+        "share_social": "COMPARTE EN LAS REDES SOCIALES"
+      }
+    ],
+    "fr": [
+      {
+        "title": "VOICI VOTRE RÉSULTAT",
+        "subtitle": "selon notre analyse, les familles de couleurs pour vous sont :",
+        "text": [
+          "vous pouvez associer à ce résultat ces familles de couleurs :"
+        ],
+        "match": "ASSOCIABLE AVEC",
+        "text_final": [
+          "Trouvez le salon le plus proche de chez vous et",
+          "demandez à Giulietta"
+        ],
+        "store_locator": "LOCALISATEUR DE MAGASINS",
+        "share_social": "PARTAGEZ SUR LES RÉSEAUX SOCIAUX"
+      }
+    ],
+    "pt": [
+      {
+        "title": "ESSE É O SEU RESULTADO",
+        "subtitle": "segundo nossa análise, as famílias de cores para você são:",
+        "text": [
+          "você pode combinar com o resultado essas famílias de cores:"
+        ],
+        "match": "COMBINÁVEL COM",
+        "text_final": [
+          "Encontre o salão mais próximo de você e",
+          "peça para Giulietta"
+        ],
+        "store_locator": "LOCALIZADOR DE LOJAS",
+        "share_social": "COMPARTILHE NAS REDES SOCIAIS"
+      }
+    ],
+    "de": [
+      {
+        "title": "DAS IST DEIN ERGEBNIS",
+        "subtitle": "laut unserer Analyse sind die Farbfamilien für dich:",
+        "text": [
+          "du kannst mit diesem Ergebnis diese Farbfamilien kombinieren:"
+        ],
+        "match": "KOMBINIERT MIT",
+        "text_final": [
+          "Finde den nächsten Salon und",
+          "frage nach Giulietta"
+        ],
+        "store_locator": "STANDORTFINDER",
+        "share_social": "TEILE IN DEN SOZIALEN NETZWERKEN"
+      }
+    ],
+    "nl": [
+      {
+        "title": "DIT IS JE RESULTAAT",
+        "subtitle": "volgens onze analyse zijn de kleurfamilies voor jou:",
+        "text": [
+          "je kunt met dit resultaat de volgende kleurfamilies combineren:"
+        ],
+        "match": "COMBINEREN MET",
+        "text_final": [
+          "Vind de dichtstbijzijnde salon en",
+          "vraag naar Giulietta"
+        ],
+        "store_locator": "WINKELVINDER",
+        "share_social": "DEEL OP SOCIAL MEDIA"
+      }
+    ],
+    "pl": [
+      {
+        "title": "TO JEST TWOJ WYNIK",
+        "subtitle": "zgodnie z naszą analizą, rodziny kolorów dla Ciebie to:",
+        "text": [
+          "możesz dopasować do tego wyniku następujące rodziny kolorów:"
+        ],
+        "match": "MOŻLIWE DO POŁĄCZENIA Z",
+        "text_final": [
+          "Znajdź najbliższy salon i",
+          "zapytaj o Giuliettę"
+        ],
+        "store_locator": "LOKALIZATOR SKLEPÓW",
+        "share_social": "UDOSTĘPNIJ W SOCIAL MEDIACH"
       }
     ]
   },
@@ -343,6 +601,66 @@
       "privacy_policy": "Privacy Policy",
       "cookie_policy": "Cookie Policy",
       "terms_of_use": "Terms of Use"
+    },
+    "es": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. con sede legal en vía del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "CIF, NIF y Registro de Empresas de Padua n. 04937500280, R.E.A. PD 430007",
+        "Capital social €7.500.000,00 al día, sociedad sujeta a dirección y coordinación de AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Política de privacidad",
+      "cookie_policy": "Política de cookies",
+      "terms_of_use": "Términos de uso"
+    },
+    "fr": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. siège social situé à via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italie)",
+        "Code fiscal, TVA et Registre des Entreprises de Padoue n. 04937500280, R.E.A. PD 430007",
+        "Capital social €7.500.000,00 libéré, société soumise à la direction et au contrôle d'AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Politique de confidentialité",
+      "cookie_policy": "Politique de cookies",
+      "terms_of_use": "Conditions d'utilisation"
+    },
+    "pt": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. com sede em via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Itália)",
+        "NIF, NIPC e Registo das Empresas de Pádua n. 04937500280, R.E.A. PD 430007",
+        "Capital social €7.500.000,00, sociedade sujeita à direção e coordenação da AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Política de Privacidade",
+      "cookie_policy": "Política de Cookies",
+      "terms_of_use": "Termos de uso"
+    },
+    "de": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. mit Sitz in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italien)",
+        "Steuernummer, USt-IdNr. und Handelsregister von Padua Nr. 04937500280, R.E.A. PD 430007",
+        "Gesellschaftskapital €7.500.000,00 eingezahlt, Gesellschaft unter der Leitung und Koordination von AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Datenschutzerklärung",
+      "cookie_policy": "Cookie-Richtlinie",
+      "terms_of_use": "Nutzungsbedingungen"
+    },
+    "nl": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. gevestigd in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italië)",
+        "BTW-nummer, KvK en Handelsregister van Padua nr. 04937500280, R.E.A. PD 430007",
+        "Maatschappelijk kapitaal €7.500.000,00 volgestort, onder leiding en coördinatie van AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Privacybeleid",
+      "cookie_policy": "Cookiebeleid",
+      "terms_of_use": "Gebruiksvoorwaarden"
+    },
+    "pl": {
+      "text": [
+        "Pettenon Cosmetics S.p.A. S.B. z siedzibą przy via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Włochy)",
+        "NIP, VAT i Rejestr Firm w Padwie nr 04937500280, R.E.A. PD 430007",
+        "Kapitał zakładowy €7.500.000,00 wpłacony, firma podlega kierownictwu i koordynacji AGF88 Holding S.r.l."
+      ],
+      "privacy_policy": "Polityka prywatności",
+      "cookie_policy": "Polityka plików cookie",
+      "terms_of_use": "Warunki użytkowania"
     }
   }
 }
