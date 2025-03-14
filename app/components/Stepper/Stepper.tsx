@@ -107,7 +107,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
       {
       steps[currentStep]?.type !== "FORM_CONTACT"
         ?
-          <div className="flex justify-between w-full pl-[0] pr-[0] pt-[45px]">
+          <div className="flex justify-between w-[225px] pl-[0] pr-[0] pt-[35px] md:pt-[25px]">
             <div>
               <button
                 onClick={handlePrevious}

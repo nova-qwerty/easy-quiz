@@ -11,8 +11,9 @@ const Home: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [language, setLanguage] = useState<"it" | "en">("it");
+  console.log(steps[language]);
 
-  return currentStep !== 8 ? (
+  return currentStep !== steps[language].length ? (
     <div>
       <div className="min-screen relative">
         <Header language={language} setLanguage={setLanguage} />
