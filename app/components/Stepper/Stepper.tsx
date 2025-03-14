@@ -48,18 +48,20 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
     }));
   };
 
+  console.log(currentStep);
+
   const stepRequiresSelection = ["GRID_IMAGE", "GRID_IMAGE_HORIZONTAL", "GRID_IMAGE_VERTICAL"].includes(steps[currentStep]?.type);
   const isNextDisabled = stepRequiresSelection && !selections[currentStep];
   return (
     <div className="flex flex-col items-center pt-[28px] text-black rounded-xl w-[300px] mx-auto">
       <div className="w-[300px]  relative">
       <div className="relative -top-4 w-full flex justify-between px-2">
-        {steps.slice(0, steps.length).map((_, index) => (
+        {steps.slice(0, steps.length - 1).map((_, index) => (
           <span
             key={index}
             className={`text-[1.5rem] leading-[1.5rem] position-bar absolute 
               ${index <= currentStep ? "text-[#9092ad] z-1" : "text-[#b1b4ce]"}`}
-            style={{ left: `${((index + 1) / (steps.length + 1)) * 100}%` }}
+            style={{ left: `${((index + 1) / (steps.length)) * 100}%` }}
           >
             |
           </span>
@@ -69,18 +71,21 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         <div className="w-full h-[10px] bg-bar-color rounded-full overflow-hidden relative border border-[#b1b4ce]">
           <div
             className="h-[10px] bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active mt-[-1px]"
-            style={{ width: `${((currentStep + 1) / (steps.length + 1)) * 100 + 1.5}%` }}
+            style={{ width: `${((currentStep + 1) / (steps.length)) * 100 + 1.5}%` }}
           ></div>
         </div>
 
         <div className="absolute top-2 w-full flex justify-between px-2">
           {
-            steps.slice(0, steps.length).map((_, index) => (
+            currentStep == 5 ? 
+            <span className="mr-[auto] ml-[auto] mb-[0] mt-[15px]">{steps[5].last}</span>
+          :
+            steps.slice(0, steps.length - 1).map((_, index) => (
               <span
                 key={index}
                 className={`font-medium text-[12px] position-text absolute transform -translate-x-1/2
                   ${index <= currentStep ? "text-black" : "text-gray-400"}`}
-                  style={{ left: `${((index + 1) / (steps.length + 1)) * 100 + 1}%` }}
+                  style={{ left: `${((index + 1) / (steps.length)) * 100 + 1}%` }}
               >
                 {index + 1}
               </span>
