@@ -1,18 +1,19 @@
+
 "use client";
-import React, { useState } from "react";
 import Image from "next/image";
-import { logoUrl, titleImgUrl, arrowImgUrl } from "../../config.json";
+import React, { useState } from "react";
+import { titleImgUrl } from "../../config.json";
 import "./styles.css";
 
-const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en") => void }> = ({ language, setLanguage }) => {
+const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en") => void }> = () => {
   const [isMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <header className="text-white header-margin">
       <div className="flex justify-between items-center">
-        <Image src={`${logoUrl}`} alt="Logo Giorgia" width={80} height={35.37} />
-        <div className="flex items-center gap-1 relative">
+        {/* <Image src={`${logoUrl}`} alt="Logo Giorgia" width={80} height={35.37} /> */}
+        {/* <div className="flex items-center gap-1 relative">
           <div className="relative w-[55px]">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -39,14 +40,8 @@ const Header: React.FC<{ language: "it" | "en"; setLanguage: (lang: "it" | "en")
             )}
           </div>
 
-          {/* <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-0 pl-2">
-            <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 12h16" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 18h16" />
-            </svg>
-          </button> */}
-        </div>
+          {}
+        </div> */}
       </div>
 
       {isMenuOpen && (

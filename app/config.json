@@ -1,150 +1,104 @@
 {
   "logoUrl": "/logo.webp",
-  "titleImgUrl": "/foto-giorgia.png",
+  "titleImgUrl": "/title-image.png",
   "arrowImgUrl": "/Arrow.svg",
   "backgroundImage": "",
-  "backgroundColor": "gray",
+  "backgroundColor": "blanchedalmond",
   "scrollColor": "",
   "steps": {
     "it": [
       {
         "code": "LEVEL_LANGUAGE",
-        "question": "¿Cuál es tu nivel actual del idioma que deseas aprender?",
+        "question": "Cuando escuchas una conversación en italiano, ¿cuánto entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Ningún conocimiento",
+            "answer": "Entiendo solo algunas palabras.",
             "value": "BASE_1"
           },
           {
-            "answer": "Elemental (entiendo y uso frases simples)",
+            "answer": "Entiendo el sentido general, pero se me escapan algunos detalles",
             "value": "BASE_2"
           },
           {
-            "answer": "Intermedio (puedo discutir sobre temas simples)",
+            "answer": "Entiendo casi todo y puedo seguir bien la conversación.",
             "value": "INTERMEDIO_1"
-          },
-          {
-            "answer": "Avanzado (puedo discutir sobre temas complejos)",
-            "value": "INTERMEDIO_2"
           }
         ]
       },
       {
         "code": "FOLLOWED_COURSE",
-        "question": "¿Has seguido algún curso de italiano antes?",
+        "question": "Si ves una película en italiano sin subtítulos, ¿la entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Sí, pero necesito refrescar las bases.",
+            "answer": "Entiendo pocas palabras y me pierdo en la historia.",
             "value": "BASE_1"
           },
           {
-            "answer": "Sí, pero quiero mejorar mi nivel actual.",
-            "value": "INTERMEDIO"
+            "answer": "Entiendo lo suficiente para seguir la trama, pero a veces se me escapan algunos detalles.",
+            "value": "BASE_2"
           },
           {
-            "answer": "No, soy un principiante absoluto.",
-            "value": "BASE_2"
+            "answer": "Entiendo todo y disfruto la película sin dificultad.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "OBJECTIVE",
-        "question": "¿Cuál es tu principal objetivo al aprender este idioma?",
+        "question": "Si un italiano te habla rápido, ¿puedes responderle?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Viajar",
-            "value": "BASE"
-          },
-          {
-            "answer": "Trabajo o carrera",
+            "answer": "Me bloqueo y le pido que repita.",
             "value": "BASE_1"
           },
           {
-            "answer": "Estudio académico/certificación",
+            "answer": "Entiendo el sentido, pero a veces tengo que pedirle que hable más despacio.",
             "value": "BASE_2"
           },
           {
-            "answer": "Interés personal/cultural",
-            "value": "BASE_3"
-          },
-          {
-            "answer": " Mejorar las habilidades lingüísticas para comunicarse con amigos o familiares",
-            "value": "BASE_4"
+            "answer": "Puedo seguirlo sin problemas y responder.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Como prefieres aprender?",
+        "question": "Si tienes que hablar en italiano, ¿cómo te sientes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Con lecciones en video",
+            "answer": "Me siento inseguro y me cuesta encontrar las palabras.",
             "value": "BASE"
           },
           {
-            "answer": "Con ejercicios escritos y prácticos",
+            "answer": "Puedo expresarme, aunque con algunos errores.",
             "value": "BASE_1"
           },
           {
-            "answer": "Con conversaciones en vivo",
-            "value": "BASE_2"
-          },
-          {
-            "answer": "Una combinación de todo",
-            "value": "BASE_3"
+            "answer": "Hablo con naturalidad y seguridad.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Cuanto tiempo puedes dedicar al estudio cada semana?",
+        "question": "Cuando lees un texto en italiano, ¿cuánto entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "1-2 hora",
-            "value": "BASE"
-          },
-          {
-            "answer": "3-5 horas",
+            "answer": "Entiendo solo algunas palabras y necesito un traductor.",
             "value": "BASE_1"
           },
           {
-            "answer": "Más de 5 horas",
+            "answer": "Entiendo el sentido general, aunque algunas palabras sean nuevas para mí.",
             "value": "BASE_2"
-          }
-        ]
-      },
-      {
-        "code": "FLEXIBILITY",
-        "question": "¿Que tan importante es para ti la flexibilidad al seguir el curso?",
-        "type": "GRID_IMAGE_HORIZONTAL",
-        "replies": [
-          {
-            "answer": "Muy importante (quiero estudiar cuando quiera)",
-            "value": "BASE"
           },
           {
-            "answer": "No muy importante (estoy dispuesto a seguir un programa fijo)",
-            "value": "BASE_1"
-          }
-        ]
-      },
-      {
-        "code": "PRIVATE_REGISTERED_LESSONS",
-        "question": "¿Prefieres cursos con lecciones en vivo o grabadas?",
-        "type": "GRID_IMAGE_HORIZONTAL",
-        "replies": [
-          {
-            "answer": "En vivo (con un profesor)",
-            "value": "BASE"
-          },
-          {
-            "answer": "Grabadas (puedo seguirlas cuando quiera)",
-            "value": "BASE_1"
+            "answer": "Entiendo todo sin dificultad.",
+            "value": "INTERMEDIO"
           }
         ]
       }
@@ -152,112 +106,96 @@
     "en": [
       {
         "code": "LEVEL_LANGUAGE",
-        "question": "¿Cuál es tu nivel actual del idioma que deseas aprender?",
+        "question": "Cuando escuchas una conversación en italiano, ¿cuánto entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Ningún conocimiento",
+            "answer": "Entiendo solo algunas palabras.",
             "value": "BASE_1"
           },
           {
-            "answer": "Elemental (entiendo y uso frases simples)",
+            "answer": "Entiendo el sentido general, pero se me escapan algunos detalles",
             "value": "BASE_2"
           },
           {
-            "answer": "Intermedio (puedo discutir sobre temas simples)",
+            "answer": "Entiendo casi todo y puedo seguir bien la conversación.",
             "value": "INTERMEDIO_1"
-          },
-          {
-            "answer": "Avanzado (puedo discutir sobre temas complejos)",
-            "value": "INTERMEDIO_2"
           }
         ]
       },
       {
         "code": "FOLLOWED_COURSE",
-        "question": "¿Has seguido algún curso de italiano antes?",
+        "question": "Si ves una película en italiano sin subtítulos, ¿la entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Sí, pero necesito refrescar las bases.",
+            "answer": "Entiendo pocas palabras y me pierdo en la historia.",
             "value": "BASE_1"
           },
           {
-            "answer": "Sí, pero quiero mejorar mi nivel actual.",
-            "value": "INTERMEDIO"
+            "answer": "Entiendo lo suficiente para seguir la trama, pero a veces se me escapan algunos detalles.",
+            "value": "BASE_2"
           },
           {
-            "answer": "No, soy un principiante absoluto.",
-            "value": "BASE_2"
+            "answer": "Entiendo todo y disfruto la película sin dificultad.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "OBJECTIVE",
-        "question": "¿Cuál es tu principal objetivo al aprender este idioma?",
+        "question": "Si un italiano te habla rápido, ¿puedes responderle?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Viajar",
-            "value": "BASE"
-          },
-          {
-            "answer": "Trabajo o carrera",
+            "answer": "Me bloqueo y le pido que repita.",
             "value": "BASE_1"
           },
           {
-            "answer": "Estudio académico/certificación",
+            "answer": "Entiendo el sentido, pero a veces tengo que pedirle que hable más despacio.",
             "value": "BASE_2"
           },
           {
-            "answer": "Interés personal/cultural",
-            "value": "BASE_3"
-          },
-          {
-            "answer": " Mejorar las habilidades lingüísticas para comunicarse con amigos o familiares",
-            "value": "BASE_4"
+            "answer": "Puedo seguirlo sin problemas y responder.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Cuánto tiempo puedes dedicar al estudio cada semana?",
+        "question": "Si tienes que hablar en italiano, ¿cómo te sientes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "Con lecciones en video",
+            "answer": "Me siento inseguro y me cuesta encontrar las palabras.",
             "value": "BASE"
           },
           {
-            "answer": "Con ejercicios escritos y prácticos",
+            "answer": "Puedo expresarme, aunque con algunos errores.",
             "value": "BASE_1"
           },
           {
-            "answer": "Con conversaciones en vivo",
-            "value": "BASE_2"
-          },
-          {
-            "answer": "Una combinación de todo",
-            "value": "BASE_3"
+            "answer": "Hablo con naturalidad y seguridad.",
+            "value": "INTERMEDIO"
           }
         ]
       },
       {
         "code": "TIME_STUDY",
-        "question": "¿Qué tan importante es para ti la flexibilidad al seguir el curso?",
+        "question": "Cuando lees un texto en italiano, ¿cuánto entiendes?",
         "type": "GRID_IMAGE_HORIZONTAL",
         "replies": [
           {
-            "answer": "1-2 hora",
-            "value": "BASE"
-          },
-          {
-            "answer": "3-5 horas",
+            "answer": "Entiendo solo algunas palabras y necesito un traductor.",
             "value": "BASE_1"
           },
           {
-            "answer": "Más de 5 horas",
+            "answer": "Entiendo el sentido general, aunque algunas palabras sean nuevas para mí.",
             "value": "BASE_2"
+          },
+          {
+            "answer": "Entiendo todo sin dificultad.",
+            "value": "INTERMEDIO"
           }
         ]
       }

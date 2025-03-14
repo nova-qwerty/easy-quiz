@@ -25,6 +25,7 @@ export default function RootLayout({
           :root {
             --logo-url: url(${backgroundImage});
             --background: ${backgroundColor};
+            --color: black;
           }
         `}</style>
       </head>

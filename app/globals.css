@@ -9,6 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 414px;
   margin: 0 auto;
+  color: red !important;
 }
 
 .min-screen {
