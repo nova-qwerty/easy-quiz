@@ -8,10 +8,9 @@ const Result: NextPage = () => {
     const [showResult, setShowResult] = useState(false);
     const router = useRouter();
     const { suggestion1, suggestion2, pairable1, pairable2, classHair, personality } = router.query;
-    console.log(suggestion1, suggestion2, pairable1, pairable2);
 
     if (showResult) {
-        return <Result />; // Muestra el componente Result en lugar del actual
+        return <Result />;
     }   
 
     return (
