@@ -78,7 +78,7 @@
     padding: 13px 12px;
     text-align: center;
     background-color: #FFFFFF52;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .input-email::placeholder {
@@ -95,7 +95,7 @@
 }
 
 .input-radio {
-    accent-color: #909090;
+    accent-color: #82c468;
     width: 20px;
     height: 20px;
 }

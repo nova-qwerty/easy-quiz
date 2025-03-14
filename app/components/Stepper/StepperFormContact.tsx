@@ -66,7 +66,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
         });
   
         if (response.data) {
-          if (currentStep < steps.length - 1) {
+          if (currentStep < steps.length) {
             setCurrentStep((prev) => prev + 1);
           }
         }
@@ -97,9 +97,6 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
           onChange={handleEmailChange}
           required
         />
-        {/* {!isValidEmail && email.length > 0 && ( 
-          <p className="text-white-500 text-sm text-center">Inserisci una email valida</p>
-        )} */}
         <button
           onClick={handleNext}
           disabled={isButtonDisabled} 
