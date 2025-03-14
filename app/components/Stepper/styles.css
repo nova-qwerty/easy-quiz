@@ -55,55 +55,9 @@
     top: 8px;
 }
 
-.position-bar-0 {
-    left: 39px;
-}
-
-.position-bar-1 {
-    left: 81px;
-}
-
-.position-bar-2 {
-    left: 124px;
-}
-
-.position-bar-3 {
-    left: 166px;
-}
-
-.position-bar-4 {
-    left: 209px;
-}
-.position-bar-5 {
-    left: 252px;
-}
-
 .position-text {
     position: absolute;
     top: 10px;
-}
-
-.text-bar-0 {
-    left: 39px;
-}
-
-.text-bar-1 {
-    left: 81px;
-}
-
-.text-bar-2 {
-    left: 124px;
-}
-
-.text-bar-3 {
-    left: 166px;
-}
-
-.text-bar-4 {
-    left: 209px;
-}
-.text-bar-5 {
-    left: 252px;
 }
 
 .card-height-vertical {
