@@ -10,9 +10,7 @@ const Thanks: React.FC<{ setShowResult: (value: boolean) => void }> = ({ setShow
             </div>
 
             <div className="mt-[17px]">
-                <p className="text-center m-0 p-0 text-[18px]">Il tuo resiltato e pronto e ti aspetta:</p>
-                <p className="text-center m-0 p-0 text-[18px]">scopri subito la tua palette ideale e i</p>
-                <p className="text-center m-0 p-0 text-[18px]">consigli di bellezza personalizzati</p>
+                <p className="text-center m-0 p-0 text-[18px]">Il tuo risultato è pronto e ti aspetta:</p>
             </div>
 
             <div className="text-center">
