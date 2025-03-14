@@ -48,8 +48,6 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
     }));
   };
 
-  console.log(currentStep);
-
   const stepRequiresSelection = ["GRID_IMAGE", "GRID_IMAGE_HORIZONTAL", "GRID_IMAGE_VERTICAL"].includes(steps[currentStep]?.type);
   const isNextDisabled = stepRequiresSelection && !selections[currentStep];
   return (
@@ -60,7 +58,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
           <span
             key={index}
             className={`text-[1.5rem] leading-[1.5rem] position-bar absolute 
-              ${index <= currentStep ? "text-[#9092ad] z-1" : "text-[#b1b4ce]"}`}
+              ${index <= currentStep ? "text-[#000] z-1" : "text-[#82c468]"}`}
             style={{ left: `${((index + 1) / (steps.length)) * 100}%` }}
           >
             |
@@ -68,7 +66,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
         ))}
       </div>
 
-        <div className="w-full h-[10px] bg-bar-color rounded-full overflow-hidden relative border border-[#b1b4ce]">
+        <div className="w-full h-[10px] bg-bar-color rounded-full overflow-hidden relative border border-[#82c468]">
           <div
             className="h-[10px] bg-bar-color-active transition-all rounded-[5px] bg-bar-border-active mt-[-1px]"
             style={{ width: `${((currentStep + 1) / (steps.length)) * 100 + 1.5}%` }}
@@ -84,7 +82,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
               <span
                 key={index}
                 className={`font-medium text-[12px] position-text absolute transform -translate-x-1/2
-                  ${index <= currentStep ? "text-black" : "text-gray-400"}`}
+                  ${index <= currentStep ? "text-black" : "text-[#82c468]"}`}
                   style={{ left: `${((index + 1) / (steps.length)) * 100 + 1}%` }}
               >
                 {index + 1}
