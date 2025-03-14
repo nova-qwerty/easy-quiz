@@ -5,7 +5,7 @@ import { footer } from "../../config"
 
 const Footer: React.FC<{ language: "it" | "en", marginTop?: boolean }> = ({ language, marginTop }) => {
     return (
-        <footer className={`text-white text-center w-full mt-auto ${marginTop ? "mb-[1rem]" : ""}`}>
+        <footer className={`text-black text-center w-full mt-auto ${marginTop ? "mb-[1rem]" : ""}`}>
             <div className="text-[8px] font-normal">
                 <p className="leading-relaxed">
                     {footer[language].text[0]}

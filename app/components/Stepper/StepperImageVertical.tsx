@@ -31,7 +31,7 @@ const StepperImageVertical: React.FC<StepperProps & { onSelect: (stepIndex: numb
             key={index}
             onClick={() => onSelect(currentStep, option.value)}
             style={{ backgroundImage: `url(/${option.logo})` }}
-            className={`border rounded-[3px] border-[#b1b3ce] w-full flex flex-col items-center hover:shadow-lg transition-all card-height-triple ${selectedOption === option.value ? "bg-[#b1b4ce] text-white border-white" : ""}`}
+            className={`border rounded-[3px] border-[#82c468] w-full flex flex-col items-center hover:shadow-lg transition-all card-height-triple ${selectedOption === option.value ? "bg-[#82c468] text-white border-white" : ""}`}
           >
             <span className="mt-2 text-[15px] font-normal h-[48px] leading-[50px] text-custom-center">{option.answer}</span>
           </button>
