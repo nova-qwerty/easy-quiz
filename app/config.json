@@ -101,6 +101,33 @@
             "value": "INTERMEDIO"
           }
         ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Hai quasi finito",
+        "type": "FORM_CONTACT",
+        "last": "MANCA UN ULTIMO PASSO",
+        "message": "Inserisci la tua mail e scopri il risultato",
+        "placeholder": "Il tuo indirizzo mail",
+        "send": "INVIA",
+        "consent1": {
+          "text": [
+            "Preso atto dell'informativa e avendola compresa",
+            "Acconsento (barrando l'apposita casella) al trattamento per le",
+            "finalità indicate al punto 2 lett. A della informativa (in sintesi: per rispondere alla richiesta)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Acconsento (barrando l'apposita casella) al trattamento per le",
+            "finalità indicate al punto 2 lett. A della informativa",
+            "(in sintesi: ricezione di comunicazioni pubblicitarie/informative)"
+          ]
+        },
+        "options": {
+          "accept": "Acconsento",
+          "not_accept": "Non Acconsento"
+        }
       }
     ],
     "en": [
@@ -198,6 +225,33 @@
             "value": "INTERMEDIO"
           }
         ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "You're almost done",
+        "type": "FORM_CONTACT",
+        "last": "JUST ONE MORE STEP",
+        "message": "Enter your email and discover the result",
+        "placeholder": "Your email address",
+        "send": "SEND",
+        "consent1": {
+          "text": [
+            "Having read and understood the privacy policy",
+            "I consent (by ticking the appropriate box) to the processing for the",
+            "purposes indicated in point 2 letter A of the information (in summary: to respond to the request)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "I consent (by ticking the appropriate box) to the processing for the",
+            "purposes indicated in point 2 letter A of the information",
+            "(in summary: receiving advertising/informational communications)"
+          ]
+        },
+        "options": {
+          "accept": "I Consent",
+          "not_accept": "I Do Not Consent"
+        }
       }
     ]
   },
