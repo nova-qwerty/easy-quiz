@@ -125,6 +125,46 @@
         ]
       },
       {
+        "code": "PERSONALITY",
+        "question": [
+          "What is your",
+          "personality like?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "SHY, RESERVED",
+            "logo": "",
+            "value": "INTROVERT"
+          },
+          {
+            "answer": "EXUBERANT, OUTGOING",
+            "logo": "",
+            "value": "EXTROVERT"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "What is your",
+          "personality like?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "SHY, RESERVED",
+            "logo": "",
+            "value": "INTROVERT"
+          },
+          {
+            "answer": "EXUBERANT, OUTGOING",
+            "logo": "",
+            "value": "EXTROVERT"
+          }
+        ]
+      },
+      {
         "code": "STEP_7",
         "question": "You're almost done",
         "type": "FORM_CONTACT",
@@ -283,6 +323,47 @@
           }
         ]
       },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Com'è il tuo",
+          "carattere?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "TIMIDO, RISERVATO",
+            "logo": "",
+            "value": "INTROVERSO"
+          },
+          {
+            "answer": "ESUBERANTE, ESTROVERSO",
+            "logo": "",
+            "value": "ESTROVERSO"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Com'è il tuo",
+          "carattere?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "TIMIDO, RISERVATO",
+            "logo": "",
+            "value": "INTROVERSO"
+          },
+          {
+            "answer": "ESUBERANTE, ESTROVERSO",
+            "logo": "",
+            "value": "ESTROVERSO"
+          }
+        ]
+      },
+
       {
         "code": "STEP_7",
         "question": "Hai quasi finito",
