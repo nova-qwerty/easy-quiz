@@ -327,32 +327,170 @@
     "es": [
       {
         "code": "SKIN_UNDERTONE",
-        "question": "¿Cuál es el subtono de tu piel?",
+        "question": "¿Cuál es tu tono de piel?",
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSADO - BEIGE OLIVÁCEO",
+            "answer": "ROSADO - BEIGE OLIVA",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FRÍO"
           },
           {
-            "answer": "DURAZNO - ÁMBAR MARFIL",
+            "answer": "MELOCOTÓN - ÁMBAR MARFIL",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "CÁLIDO"
           }
         ],
         "next": "CONTINUAR",
         "previous": "ATRÁS"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "¿De qué color son tus labios?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSADO",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "FRÍO"
+          },
+          {
+            "answer": "MELOCOTÓN",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "CÁLIDO"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "¿Cómo es tu piel después de broncearte?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "TIENDE A ENROJECERSE",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "FRÍO"
+          },
+          {
+            "answer": "DORADA",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "CÁLIDO"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "¿Cuál es tu color natural de cabello?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "OSCURO (niveles 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "OSCURO"
+          },
+          {
+            "answer": "MEDIO (niveles 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIO"
+          },
+          {
+            "answer": "CLARO (niveles 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLARO"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "¿De qué color son tus cejas?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "OSCURO (niveles 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "OSCURO"
+          },
+          {
+            "answer": "MEDIO (niveles 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MEDIO"
+          },
+          {
+            "answer": "CLARO (niveles 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLARO"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "¿Cómo es tu",
+          "personalidad?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "TÍMIDO, RESERVADO",
+            "logo": "",
+            "value": "INTROVERTIDO"
+          },
+          {
+            "answer": "EXUBERANTE, EXTROVERTIDO",
+            "logo": "",
+            "value": "EXTROVERTIDO"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Estás casi listo",
+        "type": "FORM_CONTACT",
+        "last": "SOLO UN PASO MÁS",
+        "message": "Introduce tu correo y descubre el resultado",
+        "placeholder": "Tu dirección de correo electrónico",
+        "send": "ENVIAR",
+        "consent1": {
+          "text": [
+            "He leído y comprendido la política de privacidad",
+            "Doy mi consentimiento (marcando la casilla correspondiente) para el tratamiento con los",
+            "fines indicados en el punto 2, letra A de la información (en resumen: responder a la solicitud)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Doy mi consentimiento (marcando la casilla correspondiente) para el tratamiento con los",
+            "fines indicados en el punto 2, letra A de la información",
+            "(en resumen: recibir comunicaciones publicitarias/informativas)"
+          ]
+        },
+        "options": {
+          "accept": "Doy mi consentimiento",
+          "not_accept": "No doy mi consentimiento"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "¡Gracias!",
+        "type": "FINAL",
+        "last": "¡HAS TERMINADO!",
+        "email_check": {
+          "text": [
+            "Revisa tu",
+            "bandeja de entrada"
+          ]
+        },
+        "store_locator": "VISITA NUESTRO LOCALIZADOR DE TIENDAS"
       }
     ],
     "fr": [
       {
         "code": "SKIN_UNDERTONE",
-        "question": "Quel est le sous-ton de votre peau?",
+        "question": "Quel est votre sous-ton de peau ?",
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSE - BEIGE OLIVÂTRE",
+            "answer": "ROSE - BEIGE OLIVE",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FROID"
           },
@@ -364,16 +502,154 @@
         ],
         "next": "CONTINUER",
         "previous": "RETOUR"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Quelle est la couleur de vos lèvres ?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSE",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "FROID"
+          },
+          {
+            "answer": "PÊCHE",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "CHAUD"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Quelle est la couleur de votre peau après un bronzage ?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "TEND À ROUGIR",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "FROID"
+          },
+          {
+            "answer": "DORÉE",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "CHAUD"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Quelle est votre couleur naturelle de cheveux ?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "FONCÉ (niveaux 1 à 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "FONCÉ"
+          },
+          {
+            "answer": "MOYEN (niveaux 6 à 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MOYEN"
+          },
+          {
+            "answer": "CLAIR (niveaux 8 à 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLAIR"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Quelle est la couleur de vos sourcils ?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "FONCÉ (niveaux 1 à 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "FONCÉ"
+          },
+          {
+            "answer": "MOYEN (niveaux 6 à 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MOYEN"
+          },
+          {
+            "answer": "CLAIR (niveaux 8 à 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLAIR"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Quelle est votre",
+          "personnalité ?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "TIMIDE, RÉSERVÉ",
+            "logo": "",
+            "value": "INTROVERTI"
+          },
+          {
+            "answer": "EXUBÉRANT, SOCIABLE",
+            "logo": "",
+            "value": "EXTRAVERTI"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Vous y êtes presque",
+        "type": "FORM_CONTACT",
+        "last": "PLUS QU'UNE ÉTAPE",
+        "message": "Entrez votre e-mail pour découvrir le résultat",
+        "placeholder": "Votre adresse e-mail",
+        "send": "ENVOYER",
+        "consent1": {
+          "text": [
+            "Après avoir lu et compris la politique de confidentialité",
+            "je consens (en cochant la case correspondante) au traitement des données",
+            "pour les finalités indiquées au point 2 lettre A de l'information (en résumé : répondre à la demande)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Je consens (en cochant la case correspondante) au traitement des données",
+            "pour les finalités indiquées au point 2 lettre A de l'information",
+            "(en résumé : recevoir des communications publicitaires/informatives)"
+          ]
+        },
+        "options": {
+          "accept": "Je consens",
+          "not_accept": "Je ne consens pas"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Merci !",
+        "type": "FINAL",
+        "last": "C'EST TERMINÉ !",
+        "email_check": {
+          "text": [
+            "Vérifiez votre",
+            "boîte de réception"
+          ]
+        },
+        "store_locator": "VISITEZ NOTRE LOCALISATEUR DE MAGASINS"
       }
     ],
     "pt": [
       {
         "code": "SKIN_UNDERTONE",
-        "question": "Qual é o subtom da sua pele?",
+        "question": "Qual é o seu subtom de pele?",
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSADO - BEGE OLIVADO",
+            "answer": "ROSA - BEGE OLIVA",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FRIO"
           },
@@ -385,6 +661,144 @@
         ],
         "next": "CONTINUAR",
         "previous": "VOLTAR"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Qual é a cor dos seus lábios?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSA",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "FRIO"
+          },
+          {
+            "answer": "PÊSSEGO",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "QUENTE"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Qual é a cor da sua pele depois do bronzeado?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "TENDE A FICAR VERMELHA",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "FRIO"
+          },
+          {
+            "answer": "DOURADA",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "QUENTE"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Qual é a cor natural do seu cabelo?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "ESCURO (níveis 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "ESCURO"
+          },
+          {
+            "answer": "MÉDIO (níveis 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MÉDIO"
+          },
+          {
+            "answer": "CLARO (níveis 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLARO"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Qual é a cor das suas sobrancelhas?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "ESCURO (níveis 1 a 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "ESCURO"
+          },
+          {
+            "answer": "MÉDIO (níveis 6 a 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MÉDIO"
+          },
+          {
+            "answer": "CLARO (níveis 8 a 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "CLARO"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Como é a sua",
+          "personalidade?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "TÍMIDO, RESERVADO",
+            "logo": "",
+            "value": "INTROVERTIDO"
+          },
+          {
+            "answer": "EXUBERANTE, SOCIÁVEL",
+            "logo": "",
+            "value": "EXTROVERTIDO"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Você está quase lá",
+        "type": "FORM_CONTACT",
+        "last": "SÓ MAIS UM PASSO",
+        "message": "Digite seu e-mail e descubra o resultado",
+        "placeholder": "Seu endereço de e-mail",
+        "send": "ENVIAR",
+        "consent1": {
+          "text": [
+            "Após ler e entender a política de privacidade",
+            "eu consinto (marcando a caixa apropriada) o processamento de dados",
+            "para os fins indicados no ponto 2, letra A da informação (resumo: responder à solicitação)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Eu consinto (marcando a caixa apropriada) o processamento de dados",
+            "para os fins indicados no ponto 2, letra A da informação",
+            "(resumo: receber comunicações publicitárias/informativas)"
+          ]
+        },
+        "options": {
+          "accept": "Eu consinto",
+          "not_accept": "Não consinto"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Obrigado!",
+        "type": "FINAL",
+        "last": "VOCÊ TERMINOU!",
+        "email_check": {
+          "text": [
+            "Verifique sua",
+            "caixa de entrada"
+          ]
+        },
+        "store_locator": "VISITE NOSSO LOCALIZADOR DE LOJAS"
       }
     ],
     "de": [
@@ -394,24 +808,162 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSIG - BEIGE OLIV",
+            "answer": "ROSA - BEIGE OLIV",
             "logo": "Pelle_Beige_q1.svg",
             "value": "KÜHL"
           },
           {
-            "answer": "PFIRSICH - AMBER ELFENBEIN",
+            "answer": "PFIRSICH - BERNSTEIN ELFENBEIN",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "WARM"
           }
         ],
         "next": "WEITER",
         "previous": "ZURÜCK"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Welche Farbe haben Ihre Lippen?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROSIG",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "KÜHL"
+          },
+          {
+            "answer": "PFIRSICH",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "WARM"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Welche Farbe hat Ihre Haut nach dem Bräunen?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "NEIGT ZUM RÖTEN",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "KÜHL"
+          },
+          {
+            "answer": "GOLDEN",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "WARM"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Welche ist Ihre natürliche Haarfarbe?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DUNKEL (Stufen 1 bis 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DUNKEL"
+          },
+          {
+            "answer": "MITTEL (Stufen 6 bis 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MITTEL"
+          },
+          {
+            "answer": "HELL (Stufen 8 bis 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "HELL"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Welche Farbe haben Ihre Augenbrauen?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DUNKEL (Stufen 1 bis 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DUNKEL"
+          },
+          {
+            "answer": "MITTEL (Stufen 6 bis 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MITTEL"
+          },
+          {
+            "answer": "HELL (Stufen 8 bis 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "HELL"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Wie ist Ihre",
+          "Persönlichkeit?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "SCHÜCHTERN, ZURÜCKHALTEND",
+            "logo": "",
+            "value": "INTROVERTIERT"
+          },
+          {
+            "answer": "LEBHAFT, AUFGESCHLOSSEN",
+            "logo": "",
+            "value": "EXTROVERTIERT"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Sie sind fast fertig",
+        "type": "FORM_CONTACT",
+        "last": "NUR NOCH EIN SCHRITT",
+        "message": "Geben Sie Ihre E-Mail-Adresse ein, um das Ergebnis zu erfahren",
+        "placeholder": "Ihre E-Mail-Adresse",
+        "send": "SENDEN",
+        "consent1": {
+          "text": [
+            "Nach dem Lesen und Verstehen der Datenschutzrichtlinie",
+            "stimme ich der Verarbeitung meiner Daten zu",
+            "für die unter Punkt 2 Buchstabe A der Information genannten Zwecke (Zusammenfassung: Beantwortung der Anfrage)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Ich stimme der Verarbeitung meiner Daten zu",
+            "für die unter Punkt 2 Buchstabe A der Information genannten Zwecke",
+            "(Zusammenfassung: Erhalt von Werbe-/Informationsmitteilungen)"
+          ]
+        },
+        "options": {
+          "accept": "Ich stimme zu",
+          "not_accept": "Ich stimme nicht zu"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Danke!",
+        "type": "FINAL",
+        "last": "SIE SIND FERTIG!",
+        "email_check": {
+          "text": [
+            "Überprüfen Sie Ihren",
+            "E-Mail-Posteingang"
+          ]
+        },
+        "store_locator": "BESUCHEN SIE UNSEREN STORE LOCATOR"
       }
     ],
     "nl": [
       {
         "code": "SKIN_UNDERTONE",
-        "question": "Wat is jouw ondertoon van je huid?",
+        "question": "Wat is jouw huidondertoon?",
         "type": "GRID_IMAGE",
         "replies": [
           {
@@ -427,18 +979,156 @@
         ],
         "next": "DOORGAAN",
         "previous": "TERUG"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Wat is de kleur van jouw lippen?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "ROZIG",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "KOEL"
+          },
+          {
+            "answer": "PERZIK",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "WARM"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Welke kleur heeft jouw huid na het zonnen?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "NEIGT NAAR RODE KLEUR",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "KOEL"
+          },
+          {
+            "answer": "GOUDKLEURIG",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "WARM"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Wat is jouw natuurlijke haarkleur?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DONKER (niveaus 1 tot 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DONKER"
+          },
+          {
+            "answer": "MIDDEL (niveaus 6 tot 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MIDDEL"
+          },
+          {
+            "answer": "LICHT (niveaus 8 tot 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "LICHT"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Wat is de kleur van jouw wenkbrauwen?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "DONKER (niveaus 1 tot 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "DONKER"
+          },
+          {
+            "answer": "MIDDEL (niveaus 6 tot 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "MIDDEL"
+          },
+          {
+            "answer": "LICHT (niveaus 8 tot 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "LICHT"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Hoe is jouw",
+          "persoonlijkheid?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "VERLEGEN, TERUGGETROKKEN",
+            "logo": "",
+            "value": "INTROVERT"
+          },
+          {
+            "answer": "UITBUNDIG, SPONTAAN",
+            "logo": "",
+            "value": "EXTRAVERT"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Je bent bijna klaar",
+        "type": "FORM_CONTACT",
+        "last": "NOG ÉÉN STAP",
+        "message": "Vul je e-mailadres in en ontdek het resultaat",
+        "placeholder": "Jouw e-mailadres",
+        "send": "VERSTUREN",
+        "consent1": {
+          "text": [
+            "Na het lezen en begrijpen van het privacybeleid",
+            "stem ik ermee in (door het juiste vakje aan te vinken) dat mijn gegevens worden verwerkt",
+            "voor de doeleinden vermeld in punt 2, letter A van de informatie (samenvatting: beantwoorden van de aanvraag)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Ik stem ermee in (door het juiste vakje aan te vinken) dat mijn gegevens worden verwerkt",
+            "voor de doeleinden vermeld in punt 2, letter A van de informatie",
+            "(samenvatting: ontvangst van reclame-/informatieberichten)"
+          ]
+        },
+        "options": {
+          "accept": "Ik ga akkoord",
+          "not_accept": "Ik ga niet akkoord"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Bedankt!",
+        "type": "FINAL",
+        "last": "JE BENT KLAAR!",
+        "email_check": {
+          "text": [
+            "Controleer je",
+            "e-mail inbox"
+          ]
+        },
+        "store_locator": "BEZOEK ONZE WINKELLOCATOR"
       }
     ],
     "pl": [
       {
         "code": "SKIN_UNDERTONE",
-        "question": "Jaki jest podton Twojej skóry?",
+        "question": "Jaki jest twój odcień skóry?",
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "RÓŻOWY - BEŻOWY OLIWKOWY",
+            "answer": "RÓŻOWY - BEŻOWY OLIVKOWY",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "ZIMNY"
+            "value": "CHŁODNY"
           },
           {
             "answer": "BRZOSKWINIOWY - BURSZTYNOWY KOŚĆ SŁONIOWA",
@@ -447,7 +1137,145 @@
           }
         ],
         "next": "DALEJ",
-        "previous": "WSTECZ"
+        "previous": "WRÓĆ"
+      },
+      {
+        "code": "LIP_COLOR",
+        "question": "Jaki jest kolor twoich ust?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "RÓŻOWY",
+            "logo": "Labbra_Rosate_q2.webp",
+            "value": "CHŁODNY"
+          },
+          {
+            "answer": "BRZOSKWINIOWY",
+            "logo": "Labbra_Pesca_q2.webp",
+            "value": "CIEPŁY"
+          }
+        ]
+      },
+      {
+        "code": "TANNED_SKIN",
+        "question": "Jaki kolor ma twoja skóra po opalaniu?",
+        "type": "GRID_IMAGE",
+        "replies": [
+          {
+            "answer": "MA TENDENCJĘ DO CZERWIENIENIA SIĘ",
+            "logo": "Pelle_Arrossata_q3.webp",
+            "value": "CHŁODNY"
+          },
+          {
+            "answer": "ZŁOTY",
+            "logo": "Pelle_Dorata_q3.webp",
+            "value": "CIEPŁY"
+          }
+        ]
+      },
+      {
+        "code": "NATURAL_HAIR_COLOR",
+        "question": "Jaki jest twój naturalny kolor włosów?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "CIEMNY (poziomy 1 do 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "CIEMNY"
+          },
+          {
+            "answer": "ŚREDNI (poziomy 6 do 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "ŚREDNI"
+          },
+          {
+            "answer": "JASNY (poziomy 8 do 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "JASNY"
+          }
+        ]
+      },
+      {
+        "code": "EYEBROW_COLOR",
+        "question": "Jaki jest kolor twoich brwi?",
+        "type": "GRID_IMAGE_HORIZONTAL",
+        "replies": [
+          {
+            "answer": "CIEMNY (poziomy 1 do 5)",
+            "logo": "Hair_L5_q4.webp",
+            "value": "CIEMNY"
+          },
+          {
+            "answer": "ŚREDNI (poziomy 6 do 7)",
+            "logo": "Hair_L7_q4.webp",
+            "value": "ŚREDNI"
+          },
+          {
+            "answer": "JASNY (poziomy 8 do 11)",
+            "logo": "Hair_L9_q4.webp",
+            "value": "JASNY"
+          }
+        ]
+      },
+      {
+        "code": "PERSONALITY",
+        "question": [
+          "Jaka jest twoja",
+          "osobowość?"
+        ],
+        "type": "GRID_IMAGE_VERTICAL",
+        "replies": [
+          {
+            "answer": "NIEŚMIAŁA, POWŚCIĄGLIWA",
+            "logo": "",
+            "value": "INTROWERTYK"
+          },
+          {
+            "answer": "EKSPRESYJNA, TOWARZYSKA",
+            "logo": "",
+            "value": "EKSTRAWERTYK"
+          }
+        ]
+      },
+      {
+        "code": "STEP_7",
+        "question": "Jesteś prawie gotowy",
+        "type": "FORM_CONTACT",
+        "last": "JESZCZE JEDEN KROK",
+        "message": "Wpisz swój adres e-mail i odkryj wynik",
+        "placeholder": "Twój adres e-mail",
+        "send": "WYŚLIJ",
+        "consent1": {
+          "text": [
+            "Po przeczytaniu i zrozumieniu polityki prywatności",
+            "wyrażam zgodę (zaznaczając odpowiednie pole) na przetwarzanie moich danych",
+            "w celach określonych w punkcie 2 litera A informacji (podsumowanie: odpowiedź na zapytanie)"
+          ]
+        },
+        "consent2": {
+          "text": [
+            "Wyrażam zgodę (zaznaczając odpowiednie pole) na przetwarzanie moich danych",
+            "w celach określonych w punkcie 2 litera A informacji",
+            "(podsumowanie: otrzymywanie komunikatów reklamowych/informacyjnych)"
+          ]
+        },
+        "options": {
+          "accept": "Zgadzam się",
+          "not_accept": "Nie zgadzam się"
+        }
+      },
+      {
+        "code": "STEP_8",
+        "question": "Dziękujemy!",
+        "type": "FINAL",
+        "last": "WSZYSTKO GOTOWE!",
+        "email_check": {
+          "text": [
+            "Sprawdź swoją",
+            "skrzynkę e-mailową"
+          ]
+        },
+        "store_locator": "ODWIEDŹ NASZĄ LOKALIZACJĘ SKLEPÓW"
       }
     ]
   },
