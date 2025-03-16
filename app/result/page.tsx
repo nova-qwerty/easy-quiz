@@ -5,7 +5,7 @@ import Image from "next/image";
 import "./styles.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { result } from "../config.json";
+import { result } from "../config";
 import axios from "axios";
 import { Language } from "../languages";
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import { backgroundImage, backgroundColor } from "./config.json";
+import { backgroundImage, backgroundColor } from "./config";
 import "./globals.css";
 
 export const metadata: Metadata = {

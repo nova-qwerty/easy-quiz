@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { logoUrl, titleImgUrl, arrowImgUrl } from "../../config.json";
+import { logoUrl, titleImgUrl, arrowImgUrl } from "../../config";
 import "./styles.css";
 import { LANGUAGES, Language } from "../../languages";
 
