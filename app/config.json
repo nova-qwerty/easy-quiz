@@ -13,12 +13,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "PINKISH - BEIGE OLIVE",
+            "answer": "PINKISH - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
             "value": "COOL"
           },
           {
-            "answer": "PEACH - AMBER IVORY",
+            "answer": "PEACH - AMBER - IVORY",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "WARM"
           }
@@ -172,12 +172,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSATO - BEIGE OLIVASTRO",
+            "answer": "ROSATO - BEIGE - OLIVASTRO",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FREDDO"
           },
           {
-            "answer": "PESCA - AVORIO AMBRATO",
+            "answer": "PESCA - AVORIO - AMBRATO",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "CALDO"
           }
@@ -331,12 +331,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSADO - BEIGE OLIVA",
+            "answer": "ROSADO - BEIGE - OLIVA",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FRÍO"
           },
           {
-            "answer": "MELOCOTÓN - ÁMBAR MARFIL",
+            "answer": "MELOCOTÓN - ÁMBAR - MARFIL",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "CÁLIDO"
           }
@@ -490,12 +490,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSE - BEIGE OLIVE",
+            "answer": "ROSE - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FROID"
           },
           {
-            "answer": "PÊCHE - AMBRE IVOIRE",
+            "answer": "PÊCHE - AMBRE - IVOIRE",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "CHAUD"
           }
@@ -649,12 +649,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSA - BEGE OLIVA",
+            "answer": "ROSA - BEGE - OLIVA",
             "logo": "Pelle_Beige_q1.svg",
             "value": "FRIO"
           },
           {
-            "answer": "PÊSSEGO - ÂMBAR MARFIM",
+            "answer": "PÊSSEGO - ÂMBAR - MARFIM",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "QUENTE"
           }
@@ -808,12 +808,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROSA - BEIGE OLIV",
+            "answer": "ROSA - BEIGE - OLIV",
             "logo": "Pelle_Beige_q1.svg",
             "value": "KÜHL"
           },
           {
-            "answer": "PFIRSICH - BERNSTEIN ELFENBEIN",
+            "answer": "PFIRSICH - BERNSTEIN - ELFENBEIN",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "WARM"
           }
@@ -967,12 +967,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "ROZE - BEIGE OLIVE",
+            "answer": "ROZE - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
             "value": "KOEL"
           },
           {
-            "answer": "PERZIK - AMBER IVOOR",
+            "answer": "PERZIK - AMBER - IVOOR",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "WARM"
           }
@@ -1126,12 +1126,12 @@
         "type": "GRID_IMAGE",
         "replies": [
           {
-            "answer": "RÓŻOWY - BEŻOWY OLIVKOWY",
+            "answer": "RÓŻOWY - BEŻOWY-  OLIVKOWY",
             "logo": "Pelle_Beige_q1.svg",
             "value": "CHŁODNY"
           },
           {
-            "answer": "BRZOSKWINIOWY - BURSZTYNOWY KOŚĆ SŁONIOWA",
+            "answer": "BRZOSKWINIOWY - BURSZTYNOWY KOŚĆ - SŁONIOWA",
             "logo": "Pelle_Pesca_q1.svg",
             "value": "CIEPŁY"
           }
@@ -1422,9 +1422,9 @@
     },
     "en": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. registered office at via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italy)",
-        "Tax Code, VAT No. and Business Register of Padua No. 04937500280, R.E.A. PD 430007",
-        "Share capital €7,500,000.00 i.v., company subject to management and coordination by AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Privacy Policy",
       "cookie_policy": "Cookie Policy",
@@ -1432,9 +1432,9 @@
     },
     "es": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. con sede legal en vía del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
-        "CIF, NIF y Registro de Empresas de Padua n. 04937500280, R.E.A. PD 430007",
-        "Capital social €7.500.000,00 al día, sociedad sujeta a dirección y coordinación de AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Política de privacidad",
       "cookie_policy": "Política de cookies",
@@ -1442,9 +1442,9 @@
     },
     "fr": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. siège social situé à via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italie)",
-        "Code fiscal, TVA et Registre des Entreprises de Padoue n. 04937500280, R.E.A. PD 430007",
-        "Capital social €7.500.000,00 libéré, société soumise à la direction et au contrôle d'AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Politique de confidentialité",
       "cookie_policy": "Politique de cookies",
@@ -1452,9 +1452,9 @@
     },
     "pt": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. com sede em via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Itália)",
-        "NIF, NIPC e Registo das Empresas de Pádua n. 04937500280, R.E.A. PD 430007",
-        "Capital social €7.500.000,00, sociedade sujeita à direção e coordenação da AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Política de Privacidade",
       "cookie_policy": "Política de Cookies",
@@ -1462,9 +1462,9 @@
     },
     "de": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. mit Sitz in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italien)",
-        "Steuernummer, USt-IdNr. und Handelsregister von Padua Nr. 04937500280, R.E.A. PD 430007",
-        "Gesellschaftskapital €7.500.000,00 eingezahlt, Gesellschaft unter der Leitung und Koordination von AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Datenschutzerklärung",
       "cookie_policy": "Cookie-Richtlinie",
@@ -1472,9 +1472,9 @@
     },
     "nl": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. gevestigd in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italië)",
-        "BTW-nummer, KvK en Handelsregister van Padua nr. 04937500280, R.E.A. PD 430007",
-        "Maatschappelijk kapitaal €7.500.000,00 volgestort, onder leiding en coördinatie van AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Privacybeleid",
       "cookie_policy": "Cookiebeleid",
@@ -1482,9 +1482,9 @@
     },
     "pl": {
       "text": [
-        "Pettenon Cosmetics S.p.A. S.B. z siedzibą przy via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Włochy)",
-        "NIP, VAT i Rejestr Firm w Padwie nr 04937500280, R.E.A. PD 430007",
-        "Kapitał zakładowy €7.500.000,00 wpłacony, firma podlega kierownictwu i koordynacji AGF88 Holding S.r.l."
+        "Pettenon Cosmetics S.p.A. S.B. sede legale in via del Palù, 7/D, 35018 - San Martino di Lupari (PD - Italia)",
+        "Cod. Fisc., P.Iva e Registro delle Imprese di Padova n. 04937500280, R.E.A. PD 430007",
+        "Cap. Soc. €7.500.000,00 i.v., società soggetta a direzione e coordinamento di AGF88 Holding S.r.l."
       ],
       "privacy_policy": "Polityka prywatności",
       "cookie_policy": "Polityka plików cookie",
