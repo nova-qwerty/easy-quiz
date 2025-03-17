@@ -6,6 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sensus giulietta",
   description: "",
+  icons: [
+    { rel: "icon", url: "/favicon.ico" }, // Favicon principal
+    { rel: "shortcut icon", url: "/favicon.ico" }, // Para compatibilidad
+  ],
 };
 
 const manrope = Manrope({
@@ -21,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <style>{`
           :root {
             --logo-url: url(${backgroundImage});
