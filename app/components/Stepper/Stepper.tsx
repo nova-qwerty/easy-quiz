@@ -25,8 +25,9 @@ interface StepperProps {
   steps: Step[];
   currentStep: number;
   setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
+  lang?: string;
 }
-const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep }) => {
+const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep, lang }) => {
   const [selections, setSelections] = useState<{ [key: number]: string | null }>({});
 
   const handleNext = () => {
@@ -101,7 +102,7 @@ const Stepper: React.FC<StepperProps> = ({ steps, currentStep, setCurrentStep })
             : steps[currentStep]?.type === "GRID_IMAGE_VERTICAL"
             ? (<StepperImageVertical steps={steps} currentStep={currentStep} onSelect={handleSelection} selectedOption={selections[currentStep]} />)
             : steps[currentStep]?.type === "FORM_CONTACT"
-            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} selections={selections} />)
+            ? (<StepperFormContact steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep} selections={selections} lang={lang} />)
             : steps[currentStep]?.type === "FINAL"
             ? (<StepperFinal steps={steps} currentStep={currentStep} />)
             : null

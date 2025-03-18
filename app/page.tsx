@@ -22,6 +22,7 @@ const Home: React.FC = () => {
             steps={steps[language]}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep}
+            lang={language}
           />
         </main>
       </div>

@@ -22,10 +22,11 @@ interface Step {
 interface StepperProps {
   steps: Step[];
   currentStep: number;
-    setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
+  setCurrentStep: React.Dispatch<React.SetStateAction<number>>;
+  lang?: string;
 }
 
-const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: number, setCurrentStep: (step: number) => void, selections: { [key: number]: string | null } }> = ({ steps, currentStep, setCurrentStep, selections }) => {
+const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: number, setCurrentStep: (step: number) => void, selections: { [key: number]: string | null } }> = ({ steps, currentStep, setCurrentStep, selections, lang }) => {
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [consent1, setConsent1] = useState<string | null>(null);
@@ -52,6 +53,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
     const finalData = {
       email,
       responses: formattedResponses,
+      lang,
     };
 
     if (consent1 == "accept" && consent2 == "accept") {
