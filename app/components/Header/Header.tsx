@@ -54,9 +54,9 @@ const Header: React.FC<{ language: Language; setLanguage: (lang: Language) => vo
       {isMenuOpen && (
         <nav className="mt-4">
           <ul className="space-y-2">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.ilovesensus.it" target="_blank">sito Sens.ùs</a></li>
+            <li><a href="https://www.ilovesensus.it/linee/giulietta/" target="_blank">Giulietta</a></li>
+            <li><a href="https://www.ilovesensus.it/sensus-app/" target="_blank">Sens.ùs app</a></li>
           </ul>
         </nav>
       )}

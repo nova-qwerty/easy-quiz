@@ -31,6 +31,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [consent1, setConsent1] = useState<string | null>(null);
   const [consent2, setConsent2] = useState<string | null>(null);
+  const [isValidFormContact, setValidFormContact] = useState<boolean | null>(null);
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,8 +42,16 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
     setEmail(e.target.value);
     validateEmail(e.target.value);
   };
+  const handleEmailClick = () => {
+    if(consent1 !=='' && consent2 !== '') {
+      setValidFormContact(true);
+    }else{
+      setValidFormContact(false);
+    }
+  };
 
   const handleNext = async () => {
+    handleEmailClick();
     if (!isValidEmail || !consent1 || !consent2) return;
 
     const formattedResponses = Object.entries(selections).map(([, value], index) => ({
@@ -56,7 +65,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
       lang,
     };
 
-    if (consent1 == "accept" && consent2 == "accept") {
+    if (consent1 == "accept" && consent2 !=='') {
       try {
         const response = await axios.post(
           "https://sensus-giulietta-453610.ew.r.appspot.com/save-data", 
@@ -73,7 +82,7 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
           }
         }
       } catch (error) {
-        console.error("Error al enviar los datos:", error);
+        console.error( "error on send email", error);
       }
     }
 
@@ -97,14 +106,19 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
           className="w-full focus:outline-none input-email mb-2"
           value={email}
           onChange={handleEmailChange}
+         
           required
         />
         {/* {!isValidEmail && email.length > 0 && ( 
           <p className="text-white-500 text-sm text-center">Inserisci una email valida</p>
         )} */}
+        {
+          isValidFormContact ===false && (
+            <p className="text-white-500 text-sm text-center">Accetta i termini per procedere</p>
+          )
+        }
         <button
           onClick={handleNext}
-          disabled={isButtonDisabled} 
           className={`w-full transition input-button ${isButtonDisabled ? "bg-gray-500 cursor-not-allowed" : ""}`}
         >
           {steps[currentStep].send}

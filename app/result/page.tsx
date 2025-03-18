@@ -14,6 +14,7 @@ const ResultContent: React.FC = () => {
   const [language, setLanguage] = useState<Language>("it");
   const searchParams = useSearchParams();   
   const email = searchParams.get("email");
+  setLanguage(searchParams.get("lang") as Language || "it");
 
   useEffect(() => {
     const fetchData = async () => {
