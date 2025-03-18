@@ -42,8 +42,9 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
     setEmail(e.target.value);
     validateEmail(e.target.value);
   };
+
   const handleEmailClick = () => {
-    if(consent1 !=='' && consent2 !== '') {
+    if(consent1 !== null && consent2 !== null) {
       setValidFormContact(true);
     }else{
       setValidFormContact(false);
@@ -52,7 +53,6 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
 
   const handleNext = async () => {
     handleEmailClick();
-    if (!isValidEmail || !consent1 || !consent2) return;
 
     const formattedResponses = Object.entries(selections).map(([, value], index) => ({
       code: steps[index]?.code,
@@ -112,17 +112,17 @@ const StepperFormContact: React.FC<StepperProps & { steps: Step[], currentStep: 
         {/* {!isValidEmail && email.length > 0 && ( 
           <p className="text-white-500 text-sm text-center">Inserisci una email valida</p>
         )} */}
-        {
-          isValidFormContact ===false && (
-            <p className="text-white-500 text-sm text-center">Accetta i termini per procedere</p>
-          )
-        }
         <button
           onClick={handleNext}
           className={`w-full transition input-button ${isButtonDisabled ? "bg-gray-500 cursor-not-allowed" : ""}`}
         >
           {steps[currentStep].send}
         </button>
+        {
+          isValidFormContact === false && (
+            <p className="text-white-500 text-sm text-center">Accetta i termini per procedere</p>
+          )
+        }
       </div>
 
       <div className="mt-6 text-[11px]">
