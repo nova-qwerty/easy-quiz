@@ -94,6 +94,8 @@ const StepperFormContact: React.FC<
       email,
       responses: formattedResponses,
       lang,
+      consent1,
+      consent2,
     };
 
     if (consent1 === "accept" && consent2 !== null) {
