@@ -19,6 +19,7 @@ interface Step {
   consent1?: any;
   consent2?: any;
   options?: any;
+  warningText?: string;
 }
 
 interface StepperProps {
@@ -55,9 +56,9 @@ const StepperFormContact: React.FC<
   };
 
   const handleEmailClick = () => {
-    if(consent1 !== null && consent2 !== null) {
+    if (consent1 !== null && consent2 !== null) {
       setValidFormContact(true);
-    }else{
+    } else {
       setValidFormContact(false);
     }
   };
@@ -68,10 +69,10 @@ const StepperFormContact: React.FC<
     } else if (name === "consent2") {
       setConsent2(value);
     }
-  
+
     const newConsent1 = name === "consent1" ? value : consent1;
     const newConsent2 = name === "consent2" ? value : consent2;
-  
+
     // Validar si alguno es null o si consent1 no es "accept"
     if (!newConsent1 || !newConsent2 || newConsent1 !== "accept") {
       setValidFormContact(false);
@@ -148,8 +149,8 @@ const StepperFormContact: React.FC<
           {steps[currentStep].send}
         </button>
         {isValidFormContact === false && (
-          <p className="text-white-500 text-sm text-center">
-            Accetta i termini per procedere
+          <p className="pt-2 text-white-500 text-xs text-center">
+            {steps[currentStep].warningText}
           </p>
         )}
       </div>

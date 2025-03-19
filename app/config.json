@@ -146,6 +146,7 @@
             "(in summary: receiving advertising/informational communications)"
           ]
         },
+        "warningText":" * Accept the terms before proceeding to send",
         "options": {
           "accept": "I Consent",
           "not_accept": "I Do Not Consent"
@@ -305,6 +306,7 @@
             "(in sintesi: ricezione di comunicazioni pubblicitarie/informative)"
           ]
         },
+        "warningText":" * Accetta prima i termini per procedere all&apos;invio",
         "options": {
           "accept": "Acconsento",
           "not_accept": "Non Acconsento"
@@ -464,6 +466,7 @@
             "(en resumen: recibir comunicaciones publicitarias/informativas)"
           ]
         },
+        "warningText":" * Acepta los términos antes de proceder al envío",
         "options": {
           "accept": "Doy mi consentimiento",
           "not_accept": "No doy mi consentimiento"
@@ -623,6 +626,7 @@
             "(en résumé : recevoir des communications publicitaires/informatives)"
           ]
         },
+        "warningText":" * Acceptez les termes avant de procéder à l'envoi",
         "options": {
           "accept": "Je consens",
           "not_accept": "Je ne consens pas"
@@ -782,6 +786,7 @@
             "(resumo: receber comunicações publicitárias/informativas)"
           ]
         },
+        "warningText":" * Aceite os termos antes de prosseguir para enviar",
         "options": {
           "accept": "Eu consinto",
           "not_accept": "Não consinto"
@@ -941,6 +946,7 @@
             "(Zusammenfassung: Erhalt von Werbe-/Informationsmitteilungen)"
           ]
         },
+        "warningText":" * Akzeptieren Sie die Bedingungen, bevor Sie senden",
         "options": {
           "accept": "Ich stimme zu",
           "not_accept": "Ich stimme nicht zu"
@@ -1100,6 +1106,7 @@
             "(samenvatting: ontvangst van reclame-/informatieberichten)"
           ]
         },
+        "warningText":" * Accepteer de voorwaarden voordat u verzendt",
         "options": {
           "accept": "Ik ga akkoord",
           "not_accept": "Ik ga niet akkoord"
@@ -1259,6 +1266,7 @@
             "(podsumowanie: otrzymywanie komunikatów reklamowych/informacyjnych)"
           ]
         },
+        "warningText":" * Zaakceptuj warunki przed wysłaniem",
         "options": {
           "accept": "Zgadzam się",
           "not_accept": "Nie zgadzam się"
