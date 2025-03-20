@@ -8,6 +8,7 @@ import Footer from "../components/Footer/Footer";
 import { result } from "../config";
 import axios from "axios";
 import { Language } from "../languages";
+import { translateSuggestion } from "../utils/utils";
 
 const ResultContent: React.FC = () => {
   const [data, setData] = useState<any>(null);
@@ -53,9 +54,9 @@ const ResultContent: React.FC = () => {
           <p className="mt-2 text-center text-[18px] text-[#FFFFFF]">
           {result[language][0].subtitle}
           </p>
-          <p className="mt-2 m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
+          {/* <p className="mt-2 m-0 p-0 text-center text-[22px] text-[#FFFFFF] font-bold">
             {data.classHair?.replace(/_/g, " ").toUpperCase()}
-          </p>
+          </p> */}
 
           <div className="mt-6 relative">
             <Image
@@ -69,7 +70,7 @@ const ResultContent: React.FC = () => {
               {data.suggestions[0]?.substring(1)}
             </span>
             <span className="absolute top-[1rem] left-[8rem] text-white text-[20px] text-center">
-              {data.suggestion1Description}
+              {translateSuggestion(data.suggestion1Description, language)}
             </span>
           </div>
 
@@ -85,7 +86,7 @@ const ResultContent: React.FC = () => {
               {data.suggestions[1]?.substring(1)}
             </span>
             <span className="absolute top-[1rem] left-[8rem] text-white text-[20px] text-center">
-              {data.suggestion2Description}
+              {translateSuggestion(data.suggestion2Description, language)}
             </span>
           </div>
 
@@ -121,7 +122,7 @@ const ResultContent: React.FC = () => {
               {data.pairable[0]?.substring(1)}
             </span>
             <span className="absolute top-[1rem] left-[8rem] text-white text-[20px] text-center">
-              {data.pairable1Description}
+              {translateSuggestion(data.pairable1Description, language)}
             </span>
           </div>
 
@@ -137,7 +138,7 @@ const ResultContent: React.FC = () => {
               {data.pairable[1]?.substring(1)}
             </span>
             <span className="absolute top-[1rem] left-[8rem] text-white text-[20px] text-center">
-              {data.pairable2Description}
+              {translateSuggestion(data.pairable2Description, language)}
             </span>
           </div>
 
@@ -165,9 +166,9 @@ const ResultContent: React.FC = () => {
           </div>
 
           <div className="mt-0 mb-[2.5rem] text-center">
-            <button className="w-64 transition text-white input-button-2 px-3 mt-4">
+            {/* <button className="w-64 transition text-white input-button-2 px-3 mt-4">
               {result[language][0].share_social}
-            </button>
+            </button> */}
           </div>
         </div>
       ) : (

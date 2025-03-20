@@ -15,12 +15,12 @@
           {
             "answer": "PINKISH - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "COOL"
+            "value": "FREDDO"
           },
           {
             "answer": "PEACH - AMBER - IVORY",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ],
         "next": "CONTINUE",
@@ -34,12 +34,12 @@
           {
             "answer": "PINKISH",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "COOL"
+            "value": "FREDDO"
           },
           {
             "answer": "PEACH",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -51,12 +51,12 @@
           {
             "answer": "TENDS TO REDDEN",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "COOL"
+            "value": "FREDDO"
           },
           {
             "answer": "GOLDEN",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -68,17 +68,17 @@
           {
             "answer": "DARK (levels 1 to 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DARK"
+            "value": "SCURO"
           },
           {
             "answer": "MEDIUM (levels 6 to 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MEDIUM"
+            "value": "MEDIO"
           },
           {
             "answer": "LIGHT (levels 8 to 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "LIGHT"
+            "value": "CHIARO"
           }
         ]
       },
@@ -90,17 +90,17 @@
           {
             "answer": "DARK (levels 1 to 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DARK"
+            "value": "SCURO"
           },
           {
             "answer": "MEDIUM (levels 6 to 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MEDIUM"
+            "value": "MEDIO"
           },
           {
             "answer": "LIGHT (levels 8 to 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "LIGHT"
+            "value": "CHIARO"
           }
         ]
       },
@@ -115,12 +115,12 @@
           {
             "answer": "SHY, RESERVED",
             "logo": "",
-            "value": "INTROVERT"
+            "value": "INTROVERSO"
           },
           {
             "answer": "EXUBERANT, OUTGOING",
             "logo": "",
-            "value": "EXTROVERT"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -335,12 +335,12 @@
           {
             "answer": "ROSADO - BEIGE - OLIVA",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "FRÍO"
+            "value": "FREDDO"
           },
           {
             "answer": "MELOCOTÓN - ÁMBAR - MARFIL",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "CÁLIDO"
+            "value": "CALDO"
           }
         ],
         "next": "CONTINUAR",
@@ -354,12 +354,12 @@
           {
             "answer": "ROSADO",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "FRÍO"
+            "value": "FREDDO"
           },
           {
             "answer": "MELOCOTÓN",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "CÁLIDO"
+            "value": "CALDO"
           }
         ]
       },
@@ -371,12 +371,12 @@
           {
             "answer": "TIENDE A ENROJECERSE",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "FRÍO"
+            "value": "FREDDO"
           },
           {
             "answer": "DORADA",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "CÁLIDO"
+            "value": "CALDO"
           }
         ]
       },
@@ -388,7 +388,7 @@
           {
             "answer": "OSCURO (niveles 1 a 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "OSCURO"
+            "value": "SCURO"
           },
           {
             "answer": "MEDIO (niveles 6 a 7)",
@@ -398,7 +398,7 @@
           {
             "answer": "CLARO (niveles 8 a 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLARO"
+            "value": "CHIARO"
           }
         ]
       },
@@ -410,7 +410,7 @@
           {
             "answer": "OSCURO (niveles 1 a 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "OSCURO"
+            "value": "SCURO"
           },
           {
             "answer": "MEDIO (niveles 6 a 7)",
@@ -420,7 +420,7 @@
           {
             "answer": "CLARO (niveles 8 a 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLARO"
+            "value": "CHIARO"
           }
         ]
       },
@@ -435,12 +435,12 @@
           {
             "answer": "TÍMIDO, RESERVADO",
             "logo": "",
-            "value": "INTROVERTIDO"
+            "value": "INTROVERSO"
           },
           {
             "answer": "EXUBERANTE, EXTROVERTIDO",
             "logo": "",
-            "value": "EXTROVERTIDO"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -495,12 +495,12 @@
           {
             "answer": "ROSE - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "FROID"
+            "value": "FREDDO"
           },
           {
             "answer": "PÊCHE - AMBRE - IVOIRE",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "CHAUD"
+            "value": "CALDO"
           }
         ],
         "next": "CONTINUER",
@@ -514,12 +514,12 @@
           {
             "answer": "ROSE",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "FROID"
+            "value": "FREDDO"
           },
           {
             "answer": "PÊCHE",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "CHAUD"
+            "value": "CALDO"
           }
         ]
       },
@@ -531,12 +531,12 @@
           {
             "answer": "TEND À ROUGIR",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "FROID"
+            "value": "FREDDO"
           },
           {
             "answer": "DORÉE",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "CHAUD"
+            "value": "CALDO"
           }
         ]
       },
@@ -548,17 +548,17 @@
           {
             "answer": "FONCÉ (niveaux 1 à 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "FONCÉ"
+            "value": "SCURO"
           },
           {
             "answer": "MOYEN (niveaux 6 à 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MOYEN"
+            "value": "MEDIO"
           },
           {
             "answer": "CLAIR (niveaux 8 à 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLAIR"
+            "value": "CHIARO"
           }
         ]
       },
@@ -570,17 +570,17 @@
           {
             "answer": "FONCÉ (niveaux 1 à 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "FONCÉ"
+            "value": "SCURO"
           },
           {
             "answer": "MOYEN (niveaux 6 à 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MOYEN"
+            "value": "MEDIO"
           },
           {
             "answer": "CLAIR (niveaux 8 à 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLAIR"
+            "value": "CHIARO"
           }
         ]
       },
@@ -595,12 +595,12 @@
           {
             "answer": "TIMIDE, RÉSERVÉ",
             "logo": "",
-            "value": "INTROVERTI"
+            "value": "INTROVERSO"
           },
           {
             "answer": "EXUBÉRANT, SOCIABLE",
             "logo": "",
-            "value": "EXTRAVERTI"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -655,12 +655,12 @@
           {
             "answer": "ROSA - BEGE - OLIVA",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "FRIO"
+            "value": "FREDDO"
           },
           {
             "answer": "PÊSSEGO - ÂMBAR - MARFIM",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "QUENTE"
+            "value": "CALDO"
           }
         ],
         "next": "CONTINUAR",
@@ -674,12 +674,12 @@
           {
             "answer": "ROSA",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "FRIO"
+            "value": "FREDDO"
           },
           {
             "answer": "PÊSSEGO",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "QUENTE"
+            "value": "CALDO"
           }
         ]
       },
@@ -691,12 +691,12 @@
           {
             "answer": "TENDE A FICAR VERMELHA",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "FRIO"
+            "value": "FREDDO"
           },
           {
             "answer": "DOURADA",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "QUENTE"
+            "value": "CALDO"
           }
         ]
       },
@@ -708,17 +708,17 @@
           {
             "answer": "ESCURO (níveis 1 a 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "ESCURO"
+            "value": "SCURO"
           },
           {
             "answer": "MÉDIO (níveis 6 a 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MÉDIO"
+            "value": "MEDIO"
           },
           {
             "answer": "CLARO (níveis 8 a 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLARO"
+            "value": "CHIARO"
           }
         ]
       },
@@ -730,17 +730,17 @@
           {
             "answer": "ESCURO (níveis 1 a 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "ESCURO"
+            "value": "SCURO"
           },
           {
             "answer": "MÉDIO (níveis 6 a 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MÉDIO"
+            "value": "MEDIO"
           },
           {
             "answer": "CLARO (níveis 8 a 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "CLARO"
+            "value": "CHIARO"
           }
         ]
       },
@@ -755,12 +755,12 @@
           {
             "answer": "TÍMIDO, RESERVADO",
             "logo": "",
-            "value": "INTROVERTIDO"
+            "value": "INTROVERSO"
           },
           {
             "answer": "EXUBERANTE, SOCIÁVEL",
             "logo": "",
-            "value": "EXTROVERTIDO"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -815,12 +815,12 @@
           {
             "answer": "ROSA - BEIGE - OLIV",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "KÜHL"
+            "value": "FREDDO"
           },
           {
             "answer": "PFIRSICH - BERNSTEIN - ELFENBEIN",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ],
         "next": "WEITER",
@@ -834,12 +834,12 @@
           {
             "answer": "ROSIG",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "KÜHL"
+            "value": "FREDDO"
           },
           {
             "answer": "PFIRSICH",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -851,12 +851,12 @@
           {
             "answer": "NEIGT ZUM RÖTEN",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "KÜHL"
+              "value": "FREDDO"
           },
           {
             "answer": "GOLDEN",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -868,17 +868,17 @@
           {
             "answer": "DUNKEL (Stufen 1 bis 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DUNKEL"
+            "value": "SCURO"
           },
           {
             "answer": "MITTEL (Stufen 6 bis 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MITTEL"
+            "value": "MEDIO"
           },
           {
             "answer": "HELL (Stufen 8 bis 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "HELL"
+            "value": "CHIARO"
           }
         ]
       },
@@ -890,17 +890,17 @@
           {
             "answer": "DUNKEL (Stufen 1 bis 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DUNKEL"
+            "value": "SCURO"  
           },
           {
             "answer": "MITTEL (Stufen 6 bis 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MITTEL"
+            "value": "MEDIO"
           },
           {
             "answer": "HELL (Stufen 8 bis 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "HELL"
+            "value": "CHIARO"
           }
         ]
       },
@@ -915,12 +915,12 @@
           {
             "answer": "SCHÜCHTERN, ZURÜCKHALTEND",
             "logo": "",
-            "value": "INTROVERTIERT"
+            "value": "INTROVERSO"
           },
           {
             "answer": "LEBHAFT, AUFGESCHLOSSEN",
             "logo": "",
-            "value": "EXTROVERTIERT"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -975,12 +975,12 @@
           {
             "answer": "ROZE - BEIGE - OLIVE",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "KOEL"
+            "value": "FREDDO"
           },
           {
             "answer": "PERZIK - AMBER - IVOOR",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ],
         "next": "DOORGAAN",
@@ -994,12 +994,12 @@
           {
             "answer": "ROZIG",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "KOEL"
+            "value": "FREDDO"
           },
           {
             "answer": "PERZIK",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -1011,12 +1011,12 @@
           {
             "answer": "NEIGT NAAR RODE KLEUR",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "KOEL"
+            "value": "FREDDO"
           },
           {
             "answer": "GOUDKLEURIG",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "WARM"
+            "value": "CALDO"
           }
         ]
       },
@@ -1028,17 +1028,17 @@
           {
             "answer": "DONKER (niveaus 1 tot 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DONKER"
+            "value": "SCURO"
           },
           {
             "answer": "MIDDEL (niveaus 6 tot 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MIDDEL"
+            "value": "MEDIO"
           },
           {
             "answer": "LICHT (niveaus 8 tot 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "LICHT"
+            "value": "CHIARO"
           }
         ]
       },
@@ -1050,17 +1050,17 @@
           {
             "answer": "DONKER (niveaus 1 tot 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "DONKER"
+            "value": "SCURO"
           },
           {
             "answer": "MIDDEL (niveaus 6 tot 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "MIDDEL"
+            "value": "MEDIO"
           },
           {
             "answer": "LICHT (niveaus 8 tot 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "LICHT"
+            "value": "CHIARO"
           }
         ]
       },
@@ -1075,12 +1075,12 @@
           {
             "answer": "VERLEGEN, TERUGGETROKKEN",
             "logo": "",
-            "value": "INTROVERT"
+            "value": "INTROVERSO"
           },
           {
             "answer": "UITBUNDIG, SPONTAAN",
             "logo": "",
-            "value": "EXTRAVERT"
+            "value": "ESTROVERSO"
           }
         ]
       },
@@ -1135,12 +1135,12 @@
           {
             "answer": "RÓŻOWY - BEŻOWY-  OLIVKOWY",
             "logo": "Pelle_Beige_q1.svg",
-            "value": "CHŁODNY"
+            "value": "FREDDO"
           },
           {
             "answer": "BRZOSKWINIOWY - BURSZTYNOWY KOŚĆ - SŁONIOWA",
             "logo": "Pelle_Pesca_q1.svg",
-            "value": "CIEPŁY"
+            "value": "CALDO"
           }
         ],
         "next": "DALEJ",
@@ -1154,12 +1154,12 @@
           {
             "answer": "RÓŻOWY",
             "logo": "Labbra_Rosate_q2.webp",
-            "value": "CHŁODNY"
+            "value": "FREDDO"
           },
           {
             "answer": "BRZOSKWINIOWY",
             "logo": "Labbra_Pesca_q2.webp",
-            "value": "CIEPŁY"
+            "value": "CALDO"
           }
         ]
       },
@@ -1171,12 +1171,12 @@
           {
             "answer": "MA TENDENCJĘ DO CZERWIENIENIA SIĘ",
             "logo": "Pelle_Arrossata_q3.webp",
-            "value": "CHŁODNY"
+            "value": "FREDDO"
           },
           {
             "answer": "ZŁOTY",
             "logo": "Pelle_Dorata_q3.webp",
-            "value": "CIEPŁY"
+            "value": "CALDO"
           }
         ]
       },
@@ -1188,17 +1188,17 @@
           {
             "answer": "CIEMNY (poziomy 1 do 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "CIEMNY"
+            "value": "SCURO"
           },
           {
             "answer": "ŚREDNI (poziomy 6 do 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "ŚREDNI"
+            "value": "MEDIO"
           },
           {
             "answer": "JASNY (poziomy 8 do 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "JASNY"
+            "value": "CHIARO"
           }
         ]
       },
@@ -1210,17 +1210,17 @@
           {
             "answer": "CIEMNY (poziomy 1 do 5)",
             "logo": "Hair_L5_q4.webp",
-            "value": "CIEMNY"
+            "value": "SCURO"
           },
           {
             "answer": "ŚREDNI (poziomy 6 do 7)",
             "logo": "Hair_L7_q4.webp",
-            "value": "ŚREDNI"
+            "value": "MEDIO"
           },
           {
             "answer": "JASNY (poziomy 8 do 11)",
             "logo": "Hair_L9_q4.webp",
-            "value": "JASNY"
+            "value": "CHIARO"
           }
         ]
       },
@@ -1235,12 +1235,12 @@
           {
             "answer": "NIEŚMIAŁA, POWŚCIĄGLIWA",
             "logo": "",
-            "value": "INTROWERTYK"
+            "value": "INTROVERSO"
           },
           {
             "answer": "EKSPRESYJNA, TOWARZYSKA",
             "logo": "",
-            "value": "EKSTRAWERTYK"
+            "value": "ESTROVERSO"
           }
         ]
       },
