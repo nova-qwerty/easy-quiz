@@ -24,7 +24,7 @@ const Header: React.FC<{ language: Language; setLanguage: (lang: Language) => vo
               <Image className="rotate-90" src={`${arrowImgUrl}`} alt="Next arrow" width={10} height={10} />
             </button>
             {isDropdownOpen && (
-              <ul className="absolute left-0 w-full bg-[#70708c] border border-[#9EA5C4] mt-1 rounded-[1px] text-center">
+              <ul className="absolute left-0 w-full bg-[#70708c] border border-[#9EA5C4] mt-1 rounded-[1px] text-center z-[1]">
                 {LANGUAGES.map((lang) => (
                   <li
                     key={lang}
